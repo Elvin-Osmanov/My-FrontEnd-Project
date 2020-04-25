@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/188ed9ca64.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,562;0,600;0,700;1,400;1,500;1,562;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="scss/style.css">
@@ -12,10 +14,12 @@
 <body>
     <header>
       <!-- Nav start -->
+       <section id="navBar">
         <div class="container-fluid p-0">
-          <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+          <nav class="navbar navbar-expand-lg fixed-top">
             <a class="navbar-brand" href="#">
-                <img src="img/logo/logo-light.png"  alt="">
+                <img src="img/logo/logo-light.png"  class="first img-fluid" alt="">
+                <img src="img/logo/logo-dark.png" class="last img-fluid d-none" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -48,9 +52,69 @@
             </div>
           </nav>
         </div>
+       </section>
       <!-- Nav end -->
     </header>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <main>
+
+      <!-- Section intro starts -->
+      <section id="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="logo text-right ">
+                <img src="img/logo/logo-light.png"  class="img-fluid" alt="">
+              </div>
+
+            </div>
+            <div class="col-lg-6">
+              <div class="txt text-left">
+                <h1>A beautiful collection of<br>
+                  hand-crafted web components</h1>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="play-btn text-center">
+                <a href="#" class="linkBtn">
+                  <button class="videoBtn btn "><span> <i class="fas fa-play mr-2"></i> Watch The Overview</span></button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <div class="intro-icons">
+                <ul class="list-unstyled d-flex">
+                  <li >
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li><a href="#">
+                    <i class="fab fa-dribbble"></i></a></li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-vimeo-v"></i>
+                    </a>
+                  </li>
+                  <li><a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <!-- Section intro ends -->
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
