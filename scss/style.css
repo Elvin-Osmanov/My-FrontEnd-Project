@@ -1,0 +1,64 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  padding: 11px !important;
+}
+
+nav a.navbar-brand {
+  margin-left: 2.6%;
+}
+
+nav a.navbar-brand img {
+  height: 26px;
+}
+
+nav ul.navbar-nav {
+  margin-left: 3%;
+}
+
+nav ul.navbar-nav li {
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+nav ul.navbar-nav li a {
+  color: white !important;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+nav ul.navbar-nav li a:hover {
+  opacity: 0.5;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+nav .nav-icons {
+  margin-left: 65%;
+  margin-top: 10px;
+}
+
+nav .nav-icons li {
+  margin-right: 32px;
+}
+
+nav .nav-icons li a {
+  color: white !important;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+nav .nav-icons li a i {
+  font-size: 14px;
+}
+
+nav .nav-icons li a:hover {
+  opacity: 0.5;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/*# sourceMappingURL=style.css.map */

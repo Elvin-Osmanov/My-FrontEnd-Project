@@ -1,0 +1,57 @@
+nav{
+
+    padding: 11px!important;
+    a.navbar-brand{
+        margin-left:2.6%;
+
+        img{
+            height: 26px;
+        }
+    }
+
+
+    ul.navbar-nav{
+        margin-left: 3%;
+        li{
+            font-size: 10px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-right: 10px;
+
+            
+            a{color: white!important;
+                @include transition(all .4s);
+                &:hover{
+                    opacity: $opacityOff;
+                    @include transition(all .4s);
+                }
+            
+            }
+        }
+    }
+
+
+    .nav-icons{
+        margin-left: 65%;
+        margin-top: 10px;
+
+        
+
+        li{
+            margin-right: 32px;
+
+            a{ color: white!important;
+                @include transition(all .4s);
+
+                i{font-size: 14px;}
+
+                &:hover{
+                    opacity: $opacityOff;
+                    @include transition(all .4s);
+                }
+            }
+        }
+        
+    
+    }
+}
