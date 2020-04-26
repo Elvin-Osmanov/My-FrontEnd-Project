@@ -336,7 +336,7 @@ nav::after {
 }
 
 #creative {
-  padding: 100px 0;
+  padding: 10px 0 130px 0;
 }
 
 #creative .pictures {
@@ -552,5 +552,86 @@ nav::after {
   left: 0;
   top: 31.5%;
   background: #f4f4f4;
+}
+
+#news {
+  padding: 100px 0;
+}
+
+#news .card {
+  margin-top: 35%;
+  border: 0;
+  border-radius: 0;
+  height: 475px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#news .card:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+#news .card img {
+  border-radius: 0;
+}
+
+#news .card h5.card-title {
+  font-size: 0.625rem;
+  color: #767676;
+}
+
+#news .card p.card-text {
+  margin-top: 7%;
+  font-size: 1rem;
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 15%;
+}
+
+#news .card span {
+  margin-top: 8%;
+  font-size: 0.625rem;
+  font-style: italic;
+  display: inline-block;
+  font-family: "Lora", serif;
+  color: #767676;
+}
+
+#news .card p.down {
+  margin-top: 8%;
+  display: inline-block;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  margin-left: 1.5%;
+  color: #767676;
+}
+
+#news .news-button {
+  margin-top: 25%;
+}
+
+#news .news-button a {
+  background-color: transparent;
+  border: 2px solid rgba(35, 35, 35, 0.1);
+  padding: 12px 55px;
+  border-radius: 30px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#news .news-button a .blogBtn {
+  font-size: 0.625rem;
+  color: #343434;
+  line-height: 29px;
+}
+
+#news .news-button a:hover {
+  border-color: rgba(35, 35, 35, 0.9) !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*# sourceMappingURL=style.css.map */
