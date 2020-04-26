@@ -480,4 +480,33 @@ nav::after {
   top: 0;
   left: 0;
 }
+
+#expertise {
+  padding: 100px 0;
+}
+
+#expertise .expert-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 12%;
+}
+
+#expertise .expert-content .ex-icon i {
+  font-size: 2.8125rem;
+  color: #425cbb;
+}
+
+#expertise .expert-content .ex-text span {
+  letter-spacing: 1px;
+  font-size: 0.625rem;
+  color: #767676;
+}
+
+#expertise .expert-content .ex-text p {
+  margin-top: 5%;
+  font-weight: 300;
+  color: #767676;
+  font-family: "Lora", serif;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+#expertise{
+    padding: 100px 0;
+
+    .expert-content{
+        display: flex;
+        margin-top: 12%;
+        
+       
+
+        .ex-icon{
+            
+            i{
+                font-size: 2.8125rem;
+                color: $primary-color;
+                
+            }
+            
+            
+
+        }
+
+        .ex-text{
+            span{
+                letter-spacing: 1px;
+                font-size:0.625rem;
+                color: $body-color;
+                
+            }
+    
+            p{  
+                
+                margin-top: 5%;
+                font-weight: 300;
+                color: $body-color;
+                font-family: $fontForTitle;
+            }
+        }
+
+
+    }
+}
