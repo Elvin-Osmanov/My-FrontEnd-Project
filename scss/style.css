@@ -836,7 +836,9 @@ footer #email .footer-content3 .typing .emailBtn {
   background-color: #425cbb;
   color: white;
   font-size: 0.625rem;
-  padding: 4% 10%;
+  padding: 14px 35px;
+  line-height: 25px;
+  text-decoration: none;
 }
 
 footer #email .footer-content3 ul li {
