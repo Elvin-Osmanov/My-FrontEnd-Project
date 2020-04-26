@@ -2,6 +2,25 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #343434;
+}
+
+.title h3 {
+  font-family: "Lora", serif;
+  font-size: 1.4375em;
+  margin-top: 2.3%;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: #767676;
+}
+
 .btn:active,
 .btn:focus,
 .btn.active {
@@ -222,5 +241,85 @@ nav::after {
 
 #intro .intro-icons ul li a i {
   font-size: 1.5rem;
+}
+
+#digital {
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+#digital .digital-tab {
+  margin-top: 11%;
+}
+
+#digital .digital-tab ul li {
+  font-family: "Lora", serif;
+  font-size: 1.08rem;
+  opacity: 0.5;
+  font-style: italic;
+  cursor: pointer;
+}
+
+#digital .digital-tab ul li.active {
+  opacity: 1;
+}
+
+#digital .digital-tab ul li.backslash::before {
+  content: "/";
+  opacity: .2;
+  margin: 0 10px;
+}
+
+#digital .photo-content {
+  position: relative;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+#digital .photo-content .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #232323c4;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+#digital .photo-content .overlay h6 {
+  color: white;
+  text-align: right;
+  margin-right: 9%;
+  margin-top: 13%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-weight: 700;
+}
+
+#digital .photo-content .overlay p {
+  color: white;
+  text-align: right;
+  margin-right: 9%;
+  font-style: italic;
+  font-family: "Lora", serif;
+}
+
+#digital .photo-content:hover {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+#digital .photo-content:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+#digital .photo-content:hover .overlay h6 {
+  margin-top: 10%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 /*# sourceMappingURL=style.css.map */

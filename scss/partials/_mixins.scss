@@ -4,3 +4,27 @@
     transition: $property;
 }
 
+@mixin title {
+    
+    h1{  
+        font-size: 2rem;
+        font-weight: 700;
+        color: #343434;
+    }
+        
+        
+       
+    h3{
+        font-family: $fontForTitle;
+        font-size: 1.4375em;
+        margin-top: 2.3%;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: #767676;
+    };
+
+
+    text-align: center;
+    
+    
+}
