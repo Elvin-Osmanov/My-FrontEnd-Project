@@ -21,6 +21,20 @@ body {
   color: #767676;
 }
 
+#news .news-button a {
+  background-color: transparent;
+  padding: 15px 55px;
+  border-radius: 30px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#news .news-button a:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .btn:active,
 .btn:focus,
 .btn.active {
@@ -614,24 +628,38 @@ nav::after {
 }
 
 #news .news-button a {
-  background-color: transparent;
   border: 2px solid rgba(35, 35, 35, 0.1);
-  padding: 12px 55px;
-  border-radius: 30px;
-  text-decoration: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-#news .news-button a .blogBtn {
   font-size: 0.625rem;
   color: #343434;
-  line-height: 29px;
 }
 
 #news .news-button a:hover {
   border-color: rgba(35, 35, 35, 0.9) !important;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+}
+
+#slider {
+  padding: 50px 0;
+  background: #f4f4f4;
+}
+
+#slider .slide {
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+#slider .slide .item img {
+  opacity: .3;
+  max-width: 110px;
+  max-height: 40px;
+}
+
+#slider .slide .item img.behave {
+  margin-left: 25%;
+  max-width: 33px;
+}
+
+#slider .slide .item img.partner5 {
+  margin-top: 5px;
 }
 /*# sourceMappingURL=style.css.map */

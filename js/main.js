@@ -27,7 +27,8 @@ $(document).ready(function () {
     })
 
 
-    var photoContent=$("#digital .photo-content")
+
+    var photoContent=$("#digital div.photo-content")
     
 
     $("#digital .show-all").click(function(){
@@ -73,5 +74,30 @@ $(document).ready(function () {
                 $(photoContent).parent().css({display:"block"})
             }
         })
+    })
+
+
+
+    //slider
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:false,
+        mouseDrag:false,
+        dots:false,
+        autoplay:true,
+        autoplayTimeout:1750,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:6
+            }
+        }
     })
 })

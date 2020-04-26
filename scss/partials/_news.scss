@@ -61,23 +61,17 @@
     .news-button{
         margin-top: 25%;
         a{
-            background-color: transparent;
+            @extend %sameBtn;
             border: 2px solid rgba(35, 35, 35, 0.1);
-            padding: 12px 55px;
-            border-radius: 30px;
-            text-decoration: none;
-            @include transition(all.3s);
+            font-size: 0.625rem;
+            color: #343434;
             
-            .blogBtn{
-                font-size: 0.625rem;
-                color: #343434;
-                line-height: 29px;
                 
-            }
+            
 
             &:hover{
                 border-color: rgba(35, 35, 35, 0.9)!important;
-                @include transition(all.3s)
+                
             }
 
 
