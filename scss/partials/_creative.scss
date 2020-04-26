@@ -1,0 +1,103 @@
+#creative{
+    padding: 100px 0;
+
+    .pictures{
+        margin-top: 45%;
+        position: relative;
+        @include transition(all .6s);
+
+
+       .overlay{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color:#232323c4;
+        visibility: hidden;
+        opacity: 0;
+        @include transition(all .6s);
+
+        span{
+            display: block;
+            color: $whiteText;
+            font-size: 0.625rem;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin-left: 8%;
+            @include transition(all .4s);
+            opacity: .75;
+            margin-bottom: 1%;
+
+        }
+
+        p{ font-size:1rem;
+            font-weight: 700;
+            margin-left: 8%;
+            color: $whiteText;
+            @include transition(all .4s);
+        }
+        
+
+        .social{
+            position: relative;
+
+            ul{
+                position: absolute;
+                top: 130px;
+                left: -112px;
+                
+                li{margin-left: 33px;
+                   
+
+                    a{
+                        color: $whiteText;
+                        opacity: $opacityOff;
+                        @include transition(all .6s);
+
+
+                        &:hover{
+                        @include transition(all .6s);
+                        opacity: $opacityOn;
+                        
+                        }
+                    }
+                }
+            }
+
+            
+        }
+        
+    
+    
+        }
+
+        &:hover{
+            .overlay{
+                opacity: 1;
+                visibility: visible;
+
+                span{
+                    @include transition(all .4s);
+                    margin-left: 0;
+        
+                }
+        
+                p{ @include transition(all .4s);
+                    margin-left:0;
+                    
+        
+                }
+
+               
+            }
+            @include transition(all .6s);
+        }
+    }
+
+    
+}
