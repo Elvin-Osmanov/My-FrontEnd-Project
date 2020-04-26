@@ -10,7 +10,14 @@
                 font-size: 1.08rem;
                 opacity: $opacityOff;
                 font-style: italic;
+                color: #767676;
                 cursor: pointer;
+                @include transition(all .5s);
+
+                &:hover{
+                    @include transition(all .5s);
+                    opacity: $opacityOn;
+                }
 
                 &.active{
                     opacity: $opacityOn;

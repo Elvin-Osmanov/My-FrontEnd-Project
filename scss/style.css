@@ -146,6 +146,7 @@ nav::after {
 #intro {
   height: 100vh;
   background-image: url(../img/intro-pic/hero1.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -257,7 +258,16 @@ nav::after {
   font-size: 1.08rem;
   opacity: 0.5;
   font-style: italic;
+  color: #767676;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#digital .digital-tab ul li:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 1;
 }
 
 #digital .digital-tab ul li.active {
@@ -429,5 +439,45 @@ nav::after {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   margin-left: 0;
+}
+
+#parallax {
+  padding: 100px 0;
+  background-attachment: fixed;
+  background-image: url("../img/parallax/hero2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#parallax .parallax-icon {
+  text-align: center;
+}
+
+#parallax .parallax-icon i {
+  font-size: 4rem;
+  color: white;
+}
+
+#parallax .parallax-icon h3 {
+  font-weight: 700;
+  color: white;
+  margin: 6% 0;
+}
+
+#parallax .parallax-icon p {
+  font-style: italic;
+  font-family: "Lora", serif;
+  color: white;
+}
+
+#parallax::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */
