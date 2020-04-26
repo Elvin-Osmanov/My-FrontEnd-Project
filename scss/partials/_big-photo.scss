@@ -1,0 +1,52 @@
+#big-photo{
+    padding: 100px 0 0 0;
+    position: relative;
+
+    .photo-txt{
+        margin-top: 35%;
+        position: relative;
+
+        h3{
+            font-size: 1.4rem;
+            line-height: 2rem;
+            font-style: italic;
+            font-family: $fontForTitle;
+            color: $body-color;
+            font-weight: 400;
+
+        }
+
+        p{
+            margin-top: 6%;
+            font-size: 1em;
+            font-weight: 700;
+            margin-bottom: 0;
+            
+        }
+
+        span{
+            font-size: 0.625em;
+            letter-spacing: 1px;
+            font-weight: 400;
+
+        }
+
+
+        
+
+
+    }
+
+    &::before{
+        content: "";
+    position: absolute;
+    width: 100%;
+    height: 68.5%;
+    left: 0;
+    top: 31.5%;
+    background: #f4f4f4;
+    }
+    
+
+
+}
