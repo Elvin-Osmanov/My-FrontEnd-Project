@@ -21,16 +21,18 @@ body {
   color: #767676;
 }
 
-#news .news-button a {
+#news .news-button a, #blue .blue-content a {
   background-color: transparent;
   padding: 15px 55px;
   border-radius: 30px;
   text-decoration: none;
+  font-size: 0.625rem;
+  border: 2px solid;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-#news .news-button a:hover {
+#news .news-button a:hover, #blue .blue-content a:hover {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -661,5 +663,32 @@ nav::after {
 
 #slider .slide .item img.partner5 {
   margin-top: 5px;
+}
+
+#blue {
+  padding: 50px 0;
+  background-color: #425cbb;
+}
+
+#blue .blue-content h3 {
+  display: inline-block;
+  color: white;
+  font-size: 1.4375em;
+  font-weight: 700;
+}
+
+#blue .blue-content a {
+  margin-left: 7%;
+  color: white;
+  padding: 15px 35px;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+#blue .blue-content a:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+#blue .blue-content a span {
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=style.css.map */
