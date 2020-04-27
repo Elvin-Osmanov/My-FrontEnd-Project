@@ -45,6 +45,105 @@ body {
   box-shadow: none;
 }
 
+#navBar {
+  position: relative;
+}
+
+#navBar #modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2000;
+}
+
+#navBar #modal .closeBtn {
+  position: absolute;
+  top: 3.5%;
+  right: 2%;
+  z-index: 3000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#navBar #modal .closeBtn i {
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#navBar #modal #iconified {
+  text-indent: 50px;
+  z-index: 20000;
+  width: 725px;
+  padding: 25px 0;
+  border: 0;
+  border-radius: 30px;
+  outline: 0;
+  color: white !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #aaaaaa7a;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#navBar #modal #iconified:focus {
+  color: white;
+}
+
+#navBar #modal #iconified::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  text-align: left;
+  color: white;
+}
+
+#navBar #modal #iconified:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  text-align: left;
+  color: white;
+}
+
+#navBar #modal #iconified::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  text-align: left;
+  color: white;
+}
+
+#navBar #modal #iconified::placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  text-align: left;
+  color: white;
+}
+
+#navBar #modal .search {
+  display: inline;
+  position: relative;
+}
+
+#navBar #modal .search i {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  z-index: 3000;
+  color: white;
+}
+
 nav {
   position: relative;
   background-color: transparent;
@@ -798,33 +897,33 @@ footer #email .footer-content3 .typing input {
   padding: 7.5% 0;
   width: 65%;
   border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  text-indent: 30px;
 }
 
 footer #email .footer-content3 .typing input::-webkit-input-placeholder {
   font-family: "Lora", serif;
   font-style: italic;
-  padding-left: 10%;
   opacity: 0.5;
 }
 
 footer #email .footer-content3 .typing input:-ms-input-placeholder {
   font-family: "Lora", serif;
   font-style: italic;
-  padding-left: 10%;
   opacity: 0.5;
 }
 
 footer #email .footer-content3 .typing input::-ms-input-placeholder {
   font-family: "Lora", serif;
   font-style: italic;
-  padding-left: 10%;
   opacity: 0.5;
 }
 
 footer #email .footer-content3 .typing input::placeholder {
   font-family: "Lora", serif;
   font-style: italic;
-  padding-left: 10%;
   opacity: 0.5;
 }
 

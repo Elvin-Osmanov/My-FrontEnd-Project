@@ -123,12 +123,15 @@ footer{
                     padding: 7.5% 0;
                     width: 65%;
                     border: 0;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    outline: 0;
+                    text-indent: 30px;
                     
 
                     &::placeholder{
                         font-family: $fontForTitle;
                         font-style: italic;
-                        padding-left: 10%;
                         opacity: $opacityOff;
                     }
                 }

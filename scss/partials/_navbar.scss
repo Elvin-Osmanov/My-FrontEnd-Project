@@ -1,4 +1,90 @@
 
+#navBar{
+    position: relative;
+    #modal{
+
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2000;
+        
+        
+        
+        
+    
+        .closeBtn{
+            position: absolute;
+            top: 3.5%;
+            right: 2%;
+            z-index: 3000;
+            @include transition (all .5s);
+            i{color:$whiteText;
+            @include transition (all .5s)}
+        }
+
+        
+    
+    
+        #iconified{
+            text-indent: 50px;
+            z-index: 20000;
+            width: 725px;
+            padding: 25px 0;
+            
+            
+            border: 0;
+            border-radius: 30px;
+            outline: 0;
+            color:$whiteText!important;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            background-color:#aaaaaa7a;;
+            box-sizing: border-box;
+            &:focus{
+                color: $whiteText;
+            }
+    
+            &::placeholder{
+                font-family: $fontForTitle;
+                font-style: italic;
+                text-align:left;
+                color: white
+                
+                
+                
+            }
+        }
+    
+    
+        .search{
+            display: inline;
+            position: relative;
+            i{
+                position: absolute;
+                top: 17px;
+                left: 17px;
+                z-index: 3000;
+                color: $whiteText;
+            }
+        }
+    
+        
+        
+    
+    
+        
+    }
+
+
+
+    
+}
     
 nav{
     position: relative;

@@ -14,6 +14,27 @@ $(document).ready(function () {
         }
     });
 
+    //search button
+
+    $("#modal").hide()
+
+    $("#myModal").click(function(){
+        $("#modal").fadeIn()
+        
+    })
+
+    $(".closeBtn").click(function(){
+        $("#modal").fadeOut()
+    })
+
+
+    $("html , body").keydown(function(x){
+        if(x.which==27){
+            $("#modal").fadeOut()
+        }
+    })
+    
+
 
     //digital-tab
 
