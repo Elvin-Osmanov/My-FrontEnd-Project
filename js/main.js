@@ -17,64 +17,27 @@ $(document).ready(function () {
 
     //digital-tab
 
-
-    $("#digital .digital-tab li").each(function(){
-        $(this).click(function(){
-        $(".digital-tab li.active").removeClass("active")
-        $(this).addClass("active")})
-
-
-    })
-
-
-
-    var photoContent=$("#digital div.photo-content")
     
 
-    $("#digital .show-all").click(function(){
-        $(photoContent).each(function(){
-            if(!$(photoContent).hasClass("show")){
-                $(photoContent).parent().css("display","none")
-            }else{
-                $(photoContent).parent().css("display","block")
-            }
-        })
-    })
+    $('.digital-item').isotope({
+        
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+    });
 
+    $('#digital .digital-tab ul li').click(function(){
+        $('#digital .digital-tab ul li').removeClass("active")
+        $(this).addClass("active")
 
-    $("#digital .branding").click(function(){
-        $(photoContent).each(function(){
-            if(!$(photoContent).hasClass("brand")){
-                $(photoContent).parent().css("display","none")
-            }else{
-                $(photoContent).parent().css("display","block")
-            }
+        var selector=$(this).attr("data-filter")
+        $(".digital-item").isotope({
+            filter:selector
         })
 
-        
+        return false
     })
-    $("#digital .digit").click(function(){
-        
-        
-        $(photoContent).each(function(){
-            if(!$(photoContent).hasClass("digi")){
-                $(photoContent).parent().css("display","none")
-            }else{
-                $(photoContent).parent().css("display","block")
-            }
-        })
-    })
-    $("#digital .packaging").click(function(){
-        
-        $(photoContent).each(function(){
-            if(!$(photoContent).hasClass("pack")){
-                
-                $(photoContent).parent().css({display:"none"})
-            }else{
-                $(photoContent).parent().css({display:"block"})
-            }
-        })
-    })
+   
+
 
 
 
