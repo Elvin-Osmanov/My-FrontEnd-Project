@@ -47,6 +47,7 @@ body {
 
 #navBar {
   position: relative;
+  overflow: hidden;
 }
 
 #navBar #modal {
@@ -142,6 +143,148 @@ body {
   left: 17px;
   z-index: 3000;
   color: white;
+}
+
+#navBar #cart-content {
+  width: 400px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2500;
+  padding: 10px 0;
+  background-color: white;
+  -webkit-transform: translateX(400px);
+          transform: translateX(400px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#navBar #cart-content h5 {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-weight: 700;
+  margin: 0 6%;
+  padding: 20px 0;
+  border-bottom: 1px solid  #f1f1f1;
+}
+
+#navBar #cart-content .close-cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+#navBar #cart-content .close-cart-icon i.main {
+  position: absolute;
+  top: -60px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  line-height: 41px;
+  border-radius: 50%;
+  background-color: #232323;
+  opacity: .7;
+  color: white;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#navBar #cart-content .close-cart-icon i.main:hover {
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#navBar #cart-content .shop-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 35px 25px;
+  position: relative;
+}
+
+#navBar #cart-content .shop-content img {
+  width: 7.7rem;
+  height: 4.7rem;
+}
+
+#navBar #cart-content .shop-content .shop-content-txt {
+  position: relative;
+  margin-left: 6%;
+  width: 100%;
+}
+
+#navBar #cart-content .shop-content .shop-content-txt h5 {
+  font-size: 1rem;
+  font-family: "Lora", serif;
+  color: #767676;
+  font-weight: 400;
+  border: 0;
+}
+
+#navBar #cart-content .shop-content .shop-content-txt span {
+  position: absolute;
+  top: 75%;
+  left: 6.5%;
+  font-size: 0.625em;
+  color: #767676;
+}
+
+#navBar #cart-content .shop-content i.itemclose {
+  position: absolute;
+  top: 30%;
+  right: 7%;
+  color: #767676;
+  opacity: .7;
+  cursor: pointer;
+}
+
+#navBar #cart-content .shop-content i.itemclose:hover {
+  opacity: 1;
+}
+
+#navBar #cart-content .cart-down {
+  margin-top: 10%;
+  padding-top: 10%;
+  border-top: 1px solid #f1f1f1;
+  margin: 0 6%;
+}
+
+#navBar #cart-content .cart-down h5 {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-weight: 700;
+  display: inline;
+  border-bottom: 0;
+}
+
+#navBar #cart-content .cart-down span {
+  font-size: 1rem;
+  font-family: "Lora", serif;
+  color: #767676;
+  font-weight: 400;
+}
+
+#navBar #cart-content .cart-down .checkBtn {
+  margin-top: 20%;
+  text-align: center;
+}
+
+#navBar #cart-content .cart-down .checkBtn a {
+  text-decoration: none;
+  padding: 16px 66px;
+  background-color: #425cbb;
+}
+
+#navBar #cart-content .cart-down .checkBtn a span.checkLink {
+  color: white;
+  font-size: 0.625rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+#navBar #cart-content .cart-down .checkBtn a:hover {
+  background-color: #546cc3 !important;
 }
 
 nav {

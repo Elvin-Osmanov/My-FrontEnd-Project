@@ -33,6 +33,23 @@ $(document).ready(function () {
             $("#modal").fadeOut()
         }
     })
+
+
+    //cart button
+
+    $("#cartBtn").click(function(){
+        $("#cart-content").css({
+            transform:"translateX(0)",
+            transition:"all .5s"
+        })
+    })
+
+    $(".close-cart-icon").click(function(){
+        $("#cart-content").css({
+            transform:"translateX(400px)",
+            transition:"all .5s"
+        })
+    })
     
 
 
