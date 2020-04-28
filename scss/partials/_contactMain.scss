@@ -1,0 +1,236 @@
+#great{
+    padding: 175px 0;
+    background-image: url(../img/contact-pagebg/hero16.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &::before{
+        content: "";
+        background-color: rgba(0, 0, 0, 0.438);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
+
+    .title{
+        h1{
+            color: $whiteText;
+        }
+        h3{
+            color: $whiteText;
+        }
+    }
+}
+
+
+#corporate-info{
+    
+
+    .corporate-content{
+        padding: 100px 0;
+        text-align: center;
+
+        i{
+            font-size: 4rem;
+
+        }
+
+        h5{
+            font-weight: 700;
+            margin: 7% 0;
+
+        }
+
+        p{
+            font-family: $fontForTitle;
+            color: $body-color;
+            padding: 0 33%;
+
+
+        }
+    }
+
+
+    .corporate-content2{
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 112px 0;
+
+        i{
+            font-size: 4rem;
+
+        }
+
+        h5{
+            font-weight: 700;
+            margin: 7% 0;
+
+
+        }
+
+        p{
+            font-family: $fontForTitle;
+            color: $body-color;
+            padding: 0 34%;
+
+
+        }
+
+    }
+
+
+
+    .corporate-content3{
+        padding: 112px 0;
+        text-align: center;
+        background-color: #232323;
+
+        i{
+            font-size: 4rem;
+            color: $whiteText;
+
+
+        }
+
+        h5{
+            font-weight: 700;
+            color: $whiteText;
+            margin: 7% 0;
+
+
+        }
+
+        p{
+            font-family: $fontForTitle;
+            color: $whiteText;
+            padding: 0 29%;
+
+            a{
+                color: $whiteText;
+                text-decoration: underline;
+            }
+
+
+        }
+
+    }
+}
+
+
+#message{
+
+    padding: 100px 0;
+
+    .message-title{
+        margin-bottom: 3.5%;
+
+        h5{
+            font-weight: 700;
+        }
+    }
+
+    
+
+    .message-part{
+        position: relative;
+
+
+        .name-area{
+            input[type=text]{
+                padding: 3% 0;
+                text-indent: 7.3%;
+
+                &::placeholder{
+                    font-family: $fontForTitle;
+                    font-style: italic;
+                    opacity: $opacityOff;
+                }
+            }
+
+            i{
+                font-size:1.4375rem;
+                position: absolute;
+                top: 5%;
+                left: 2.6%;
+                color: $body-color;
+
+            }
+
+        }
+        
+
+        .email-number{
+            position: relative;
+
+            input[type=email]{
+                padding: 7% 0;
+                text-indent: 15%;
+
+                &::placeholder{
+                    font-family: $fontForTitle;
+                    font-style: italic;
+                    opacity: $opacityOff;
+                }
+     
+            }
+
+
+            input.number {
+                padding: 7% 0;
+                text-indent: 15%;
+
+                &::placeholder{
+                    font-family: $fontForTitle;
+                    font-style: italic;
+                    opacity: $opacityOff;
+                }
+    
+    
+            }
+
+            i{
+                font-size:1.4375rem;
+                position: absolute;
+                top: 27%;
+                left: 6%;
+                color: $body-color;
+            }
+
+        }
+
+        
+
+        
+
+        textarea{
+            border: 0;
+            
+
+            &::placeholder{
+                font-family: $fontForTitle;
+                font-style: italic;
+                opacity: $opacityOff;
+            }
+
+            
+        }
+
+        button[type=submit]{
+            background-color: $primary-color;
+            padding: 10px 327px;
+
+            span{
+                font-size: 0.625rem;
+                text-align: center;
+                color: $whiteText;
+
+            }
+        }
+
+    }
+
+}

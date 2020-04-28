@@ -84,7 +84,7 @@ $(document).ready(function () {
         
     })
 
-    //digital-tab
+    //shop-tab
 
     $('.shop-item').isotope({
         

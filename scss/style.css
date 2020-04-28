@@ -1455,12 +1455,16 @@ nav.loginpage::after {
   background-color: #f4f4f4;
 }
 
+#shopCards .title {
+  margin-top: 10%;
+}
+
 #shopCards .title h1 {
   font-size: 4rem;
 }
 
 #shopCards .shop-tab {
-  margin-top: 11%;
+  margin-top: 25%;
 }
 
 #shopCards .shop-tab ul li {
@@ -1598,5 +1602,263 @@ nav.loginpage::after {
   opacity: 0.5;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+#great {
+  padding: 175px 0;
+  background-image: url(../img/contact-pagebg/hero16.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#great::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.438);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#great .title h1 {
+  color: white;
+}
+
+#great .title h3 {
+  color: white;
+}
+
+#corporate-info .corporate-content {
+  padding: 100px 0;
+  text-align: center;
+}
+
+#corporate-info .corporate-content i {
+  font-size: 4rem;
+}
+
+#corporate-info .corporate-content h5 {
+  font-weight: 700;
+  margin: 7% 0;
+}
+
+#corporate-info .corporate-content p {
+  font-family: "Lora", serif;
+  color: #767676;
+  padding: 0 33%;
+}
+
+#corporate-info .corporate-content2 {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 112px 0;
+}
+
+#corporate-info .corporate-content2 i {
+  font-size: 4rem;
+}
+
+#corporate-info .corporate-content2 h5 {
+  font-weight: 700;
+  margin: 7% 0;
+}
+
+#corporate-info .corporate-content2 p {
+  font-family: "Lora", serif;
+  color: #767676;
+  padding: 0 34%;
+}
+
+#corporate-info .corporate-content3 {
+  padding: 112px 0;
+  text-align: center;
+  background-color: #232323;
+}
+
+#corporate-info .corporate-content3 i {
+  font-size: 4rem;
+  color: white;
+}
+
+#corporate-info .corporate-content3 h5 {
+  font-weight: 700;
+  color: white;
+  margin: 7% 0;
+}
+
+#corporate-info .corporate-content3 p {
+  font-family: "Lora", serif;
+  color: white;
+  padding: 0 29%;
+}
+
+#corporate-info .corporate-content3 p a {
+  color: white;
+  text-decoration: underline;
+}
+
+#message {
+  padding: 100px 0;
+}
+
+#message .message-title {
+  margin-bottom: 3.5%;
+}
+
+#message .message-title h5 {
+  font-weight: 700;
+}
+
+#message .message-part {
+  position: relative;
+}
+
+#message .message-part .name-area input[type=text] {
+  padding: 3% 0;
+  text-indent: 7.3%;
+}
+
+#message .message-part .name-area input[type=text]::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part .name-area input[type=text]:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part .name-area input[type=text]::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part .name-area input[type=text]::placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part .name-area i {
+  font-size: 1.4375rem;
+  position: absolute;
+  top: 5%;
+  left: 2.6%;
+  color: #767676;
+}
+
+#message .message-part .email-number {
+  position: relative;
+}
+
+#message .message-part .email-number input[type=email] {
+  padding: 7% 0;
+  text-indent: 15%;
+}
+
+#message .message-part .email-number input[type=email]::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part .email-number input[type=email]:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part .email-number input[type=email]::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part .email-number input[type=email]::placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part .email-number input.number {
+  padding: 7% 0;
+  text-indent: 15%;
+}
+
+#message .message-part .email-number input.number::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part .email-number input.number:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part .email-number input.number::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part .email-number input.number::placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part .email-number i {
+  font-size: 1.4375rem;
+  position: absolute;
+  top: 27%;
+  left: 6%;
+  color: #767676;
+}
+
+#message .message-part textarea {
+  border: 0;
+}
+
+#message .message-part textarea::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part textarea:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part textarea::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part textarea::placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#message .message-part button[type=submit] {
+  background-color: #425cbb;
+  padding: 10px 327px;
+}
+
+#message .message-part button[type=submit] span {
+  font-size: 0.625rem;
+  text-align: center;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
