@@ -1861,4 +1861,9 @@ nav.loginpage::after {
   text-align: center;
   color: white;
 }
+
+#message .message-part button[type=submit]:hover {
+  border-color: #546cc3 !important;
+  background-color: #546cc3 !important;
+}
 /*# sourceMappingURL=style.css.map */
