@@ -1142,7 +1142,6 @@ footer #copy .moveTop:hover i {
 #pre-nav {
   padding: 6px 0;
   background-color: #f4f4f4;
-  vertical-align: middle;
 }
 
 #pre-nav .preNav-content {
@@ -1449,5 +1448,155 @@ nav.loginpage::after {
 
 .scrolled {
   top: 0;
+}
+
+#shopCards {
+  padding: 100px 0;
+  background-color: #f4f4f4;
+}
+
+#shopCards .title h1 {
+  font-size: 4rem;
+}
+
+#shopCards .shop-tab {
+  margin-top: 11%;
+}
+
+#shopCards .shop-tab ul li {
+  font-family: "Lora", serif;
+  font-size: 1.08rem;
+  opacity: 0.5;
+  font-style: italic;
+  color: #767676;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#shopCards .shop-tab ul li:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+#shopCards .shop-tab ul li.active {
+  opacity: 1;
+}
+
+#shopCards .shop-tab ul li.backslash::before {
+  content: "/";
+  opacity: .2;
+  margin: 0 10px;
+}
+
+#shopCards .shop-content {
+  background-color: #fff;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+#shopCards .shop-content:hover {
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+#shopCards .shop-content .item-description {
+  padding: 10% 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shopCards .shop-content .item-description p {
+  letter-spacing: 1px;
+  margin-bottom: 2%;
+  font-size: 10px;
+  font-weight: 400;
+  color: #767676;
+  opacity: 0.5;
+}
+
+#shopCards .shop-content .item-description h5 {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#shopCards .shop-content .item-description .prices {
+  margin-top: -20%;
+}
+
+#shopCards .shop-content .item-description .prices span.discount {
+  opacity: 0.5;
+  text-decoration: line-through;
+  color: #767676;
+  font-family: "Lora", serif;
+}
+
+#shopCards .shop-content .item-description .prices span.no-discount {
+  color: #767676;
+  font-family: "Lora", serif;
+}
+
+#shopCards .dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shopCards .dots span {
+  margin: 0 5px;
+  display: inline-block;
+  color: #232323;
+  line-height: 30px;
+  font-size: 0.625rem;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#shopCards .dots span:hover {
+  background-color: #ececec;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#shopCards .dots span.active {
+  background-color: #ececec;
+}
+
+#shopCards .dots i {
+  font-size: 0.625rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  text-align: center;
+  line-height: 30px;
+  color: #767676;
+  opacity: 0.5;
+}
+
+#shopCards .dots i:hover {
+  background-color: #ececec;
+  opacity: 0.5;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 /*# sourceMappingURL=style.css.map */

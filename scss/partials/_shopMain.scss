@@ -1,0 +1,153 @@
+#shopCards{
+    padding: 100px 0;
+    background-color:  #f4f4f4;
+    .title{
+        h1{
+            font-size: 4rem;
+        }
+    }
+
+
+    .shop-tab{
+        margin-top: 11%;
+        ul{
+            li{
+                font-family: $fontForTitle;
+                font-size: 1.08rem;
+                opacity: $opacityOff;
+                font-style: italic;
+                color: #767676;
+                cursor: pointer;
+                @include transition(all .5s);
+
+                &:hover{
+                    @include transition(all .5s);
+                    opacity: $opacityOn;
+                }
+
+                &.active{
+                    opacity: $opacityOn;
+                }
+               
+
+            }
+
+
+            li.backslash{
+                &::before{
+                    content: "/";
+                    opacity: .2;
+                    margin:0 10px;
+                }
+            }
+            
+        }
+        
+
+    }
+
+
+
+    .shop-content{
+        background-color: #fff;
+        margin-bottom: 30px;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+        }
+        
+
+        .item-description{
+            padding: 10% 3%;
+            display: flex;
+            align-items: center;
+            
+
+            p{ letter-spacing: 1px;
+                margin-bottom: 2%;
+                font-size: 10px;
+                font-weight: 400;
+                color: $body-color;
+                opacity: $opacityOff;
+            }
+
+
+            h5{
+                display: inline-block;
+                font-size: 1rem;
+                font-weight: 700;
+            }
+
+            .prices{
+                margin-top: -20%;
+                
+                span.discount{
+                    opacity: $opacityOff;
+                    text-decoration: line-through;
+                    color: #767676;
+                    font-family: $fontForTitle;
+                    
+                }
+
+                span.no-discount{
+                    color: #767676;
+                    font-family: $fontForTitle;
+
+                }
+            }
+        }
+    }
+
+
+    .dots{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span{
+            margin: 0 5px;
+            display: inline-block;
+            color: #232323;
+            line-height: 30px;
+            font-size: 0.625rem;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            @include transition (all .4s);
+
+            &:hover{
+            background-color: #ececec;
+            @include transition (all .4s);
+            }
+
+            &.active{
+            background-color: #ececec;
+            }
+
+        }
+
+        i{
+            font-size: 0.625rem;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            @include transition (all .4s);
+            text-align: center;
+            line-height: 30px;
+            color: $body-color;
+            opacity: $opacityOff;
+
+            &:hover{
+                background-color: #ececec;
+                opacity: $opacityOff;
+                @include transition (all .4s);
+                }
+        }
+    }
+}
+
+

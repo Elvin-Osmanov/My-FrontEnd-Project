@@ -83,4 +83,31 @@ $(document).ready(function () {
 
         
     })
+
+    //digital-tab
+
+    $('.shop-item').isotope({
+        
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+    });
+
+    $('#shopCards .shop-tab ul li').click(function(){
+        $('#shopCards .shop-tab ul li').removeClass("active")
+        $(this).addClass("active")
+
+        var selector=$(this).attr("data-filter")
+        $(".shop-item").isotope({
+            filter:selector
+        })
+
+        return false
+    })
+
+    //scroll to top
+
+    $("footer #copy .moveTop a").click(function (e) { 
+        e.preventDefault();
+        $("html").animate({scrollTop: 0}, 1000);
+    });
 });
