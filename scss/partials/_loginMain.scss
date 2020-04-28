@@ -1,0 +1,284 @@
+#pre-nav {
+  padding: 6px 0;
+  background-color: #f4f4f4;
+  vertical-align: middle;
+
+  .preNav-content {
+    margin-top: 5px;
+    span {
+      color: $body-color;
+      font-size: 0.6875em;
+      font-family: $fontForTitle;
+      margin-left: 2.6%;
+    }
+  }
+
+  .pre-socialLinks {
+    margin-top: 5px;
+    ul {
+      li {
+        margin-right: 16%;
+
+        a {
+          color: black;
+          opacity: $opacityOff;
+          @include transition(all 0.4s);
+
+          &:hover {
+            @include transition(all 0.4s);
+            opacity: $opacityOn;
+          }
+
+          i {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+nav.loginpage{
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  padding: 10px!important;
+  @include transition(all .4s);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  
+  a.navbar-brand{
+      margin-left:2.6%;
+
+      img{
+          height: 26px;
+      }
+  }
+
+
+  ul.navbar-nav{
+      margin-left: 3%;
+      li{
+          font-size: 10px;
+          font-weight: 400;
+          text-transform: uppercase;
+          margin-right: 10px;
+
+          
+          a{color: black;
+              @include transition(all .4s);
+              &:hover{
+                  opacity: $opacityOff;
+                  @include transition(all .4s);
+              }
+          
+          }
+      }
+  }
+
+
+  .nav-icons{
+      margin-left: 65%;
+      margin-top: 10px;
+
+    
+      
+      
+
+      
+
+      li{
+          margin-right: 32px;
+
+          a{ color:black;
+              @include transition(all .4s);
+
+              i{font-size: 14px;}
+
+              &:hover{
+                  opacity: $opacityOff;
+                  @include transition(all .4s);
+              }
+          }
+      }
+      
+  
+  }
+
+  &::after{
+      position: absolute;
+      content:"";
+      height: 71px;
+      width: 1px;
+      background-color:rgba(209, 209, 209, 0.41);
+      top: 0;
+      right:9.5%;
+  }
+
+  
+}
+
+.login-pos {
+  top: 56px;
+  position: fixed;
+ 
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+#login {
+  padding: 100px 0;
+
+  .login-pic {
+    background-image: url(../img/login/hero13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: $opacityOn;
+  }
+
+  .login-info {
+    .login-title {
+      text-align: center;
+      margin-bottom: 5%;
+
+      .logo-part {
+        img {
+          height: 3.25rem;
+        }
+      }
+
+      h3 {
+        font-family: $fontForTitle;
+        font-size: 1.4375em;
+        margin-top: 2.3%;
+        line-height: 2.5rem;
+        font-weight: 400;
+        color: $body-color;
+      }
+    }
+
+    .typing-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      label {
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-size: 0.625rem;
+        margin-left: 8%;
+        margin-bottom: 5%;
+      }
+
+      i.user {
+        position: absolute;
+        top: 23%;
+        left: 27%;
+        font-size: 1.2rem;
+        color: #232323;
+      }
+      i.pass {
+        position: absolute;
+        top: 73%;
+        left: 27%;
+        font-size: 1.2rem;
+        color: #232323;
+      }
+
+      input {
+        border-radius: 30px;
+        background-color: #f8f8f8;
+        padding: 27px 63px;
+        text-indent: 0px;
+
+        &::placeholder {
+          font-family: $fontForTitle;
+          font-style: italic;
+          opacity: $opacityOff;
+        }
+      }
+    }
+
+    .logged {
+      display: flex;
+      justify-content: center;
+
+      i.circled {
+        background-color: #ececec;
+        color: #ececec;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      i.checked {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+        background-color: #64b671;
+        color: $whiteText;
+      }
+
+      span {
+        color: $body-color;
+        font-size: 0.6875em;
+        font-family: $fontForTitle;
+        margin-left: 2%;
+        margin-top: 1.2%;
+      }
+    }
+
+    .logBtn {
+      text-align: center;
+      margin-top: 10%;
+      a {
+        border-radius: 30px;
+        padding: 18px 151px;
+        background-color: $primary-color;
+        text-decoration: none;
+        &:hover {
+          border-color: #546cc3 !important;
+          background-color: #546cc3 !important;
+        }
+
+        .loggedBtn {
+          color: $whiteText;
+          font-size: 0.6rem;
+          text-transform: uppercase;
+          line-height: 1.563rem;
+        }
+      }
+    }
+
+    .forgot {
+      text-align: center;
+      margin-top: 1.625rem;
+
+      span {
+        color: $body-color;
+        font-size: 0.6875em;
+        font-family: $fontForTitle;
+      }
+
+      a {
+        color: $body-color;
+        font-family: $fontForTitle;
+        font-size: 0.6875em;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+.scrolled{
+    top: 0;
+}

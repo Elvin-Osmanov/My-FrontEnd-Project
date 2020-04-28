@@ -45,6 +45,13 @@ body {
   box-shadow: none;
 }
 
+input {
+  -webkit-box-shadow: none !important;
+  box-shadow: none;
+  outline: 0;
+  border: 0 !important;
+}
+
 #navBar {
   position: relative;
   overflow: hidden;
@@ -89,12 +96,8 @@ body {
   z-index: 20000;
   width: 725px;
   padding: 25px 0;
-  border: 0;
   border-radius: 30px;
-  outline: 0;
   color: white !important;
-  -webkit-box-shadow: none;
-  box-shadow: none;
   background-color: #aaaaaa7a;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -287,8 +290,7 @@ body {
   background-color: #546cc3 !important;
 }
 
-nav {
-  position: relative;
+.homepage-nav {
   background-color: transparent;
   padding: 10px !important;
   -webkit-transition: all 0.4s;
@@ -296,63 +298,63 @@ nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-nav a.navbar-brand {
+.homepage-nav a.navbar-brand {
   margin-left: 2.6%;
 }
 
-nav a.navbar-brand img {
+.homepage-nav a.navbar-brand img {
   height: 26px;
 }
 
-nav ul.navbar-nav {
+.homepage-nav ul.navbar-nav {
   margin-left: 3%;
 }
 
-nav ul.navbar-nav li {
+.homepage-nav ul.navbar-nav li {
   font-size: 10px;
   font-weight: 400;
   text-transform: uppercase;
   margin-right: 10px;
 }
 
-nav ul.navbar-nav li a {
+.homepage-nav ul.navbar-nav li a {
   color: white !important;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-nav ul.navbar-nav li a:hover {
+.homepage-nav ul.navbar-nav li a:hover {
   opacity: 0.5;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-nav .nav-icons {
+.homepage-nav .nav-icons {
   margin-left: 65%;
   margin-top: 10px;
 }
 
-nav .nav-icons li {
+.homepage-nav .nav-icons li {
   margin-right: 32px;
 }
 
-nav .nav-icons li a {
+.homepage-nav .nav-icons li a {
   color: white !important;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-nav .nav-icons li a i {
+.homepage-nav .nav-icons li a i {
   font-size: 14px;
 }
 
-nav .nav-icons li a:hover {
+.homepage-nav .nav-icons li a:hover {
   opacity: 0.5;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-nav::after {
+.homepage-nav::after {
   position: absolute;
   content: "";
   height: 71px;
@@ -703,7 +705,7 @@ nav::after {
 #parallax {
   padding: 100px 0;
   background-attachment: fixed;
-  background-image: url("../img/parallax/hero2.jpg");
+  background-image: url(../img/parallax/hero2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -1039,10 +1041,6 @@ footer #email .footer-content3 .typing input {
   border-top-right-radius: 0px;
   padding: 7.5% 0;
   width: 65%;
-  border: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  outline: 0;
   text-indent: 30px;
 }
 
@@ -1139,5 +1137,317 @@ footer #copy .moveTop:hover i {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   top: -220%;
+}
+
+#pre-nav {
+  padding: 6px 0;
+  background-color: #f4f4f4;
+  vertical-align: middle;
+}
+
+#pre-nav .preNav-content {
+  margin-top: 5px;
+}
+
+#pre-nav .preNav-content span {
+  color: #767676;
+  font-size: 0.6875em;
+  font-family: "Lora", serif;
+  margin-left: 2.6%;
+}
+
+#pre-nav .pre-socialLinks {
+  margin-top: 5px;
+}
+
+#pre-nav .pre-socialLinks ul li {
+  margin-right: 16%;
+}
+
+#pre-nav .pre-socialLinks ul li a {
+  color: black;
+  opacity: 0.5;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#pre-nav .pre-socialLinks ul li a:hover {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 1;
+}
+
+#pre-nav .pre-socialLinks ul li a i {
+  font-size: 13px;
+}
+
+nav.loginpage {
+  background-color: #f8f8f8;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  padding: 10px !important;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav.loginpage a.navbar-brand {
+  margin-left: 2.6%;
+}
+
+nav.loginpage a.navbar-brand img {
+  height: 26px;
+}
+
+nav.loginpage ul.navbar-nav {
+  margin-left: 3%;
+}
+
+nav.loginpage ul.navbar-nav li {
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+nav.loginpage ul.navbar-nav li a {
+  color: black;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+nav.loginpage ul.navbar-nav li a:hover {
+  opacity: 0.5;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+nav.loginpage .nav-icons {
+  margin-left: 65%;
+  margin-top: 10px;
+}
+
+nav.loginpage .nav-icons li {
+  margin-right: 32px;
+}
+
+nav.loginpage .nav-icons li a {
+  color: black;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+nav.loginpage .nav-icons li a i {
+  font-size: 14px;
+}
+
+nav.loginpage .nav-icons li a:hover {
+  opacity: 0.5;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+nav.loginpage::after {
+  position: absolute;
+  content: "";
+  height: 71px;
+  width: 1px;
+  background-color: rgba(209, 209, 209, 0.41);
+  top: 0;
+  right: 9.5%;
+}
+
+.login-pos {
+  top: 56px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+#login {
+  padding: 100px 0;
+}
+
+#login .login-pic {
+  background-image: url(../img/login/hero13.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+#login .login-info .login-title {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#login .login-info .login-title .logo-part img {
+  height: 3.25rem;
+}
+
+#login .login-info .login-title h3 {
+  font-family: "Lora", serif;
+  font-size: 1.4375em;
+  margin-top: 2.3%;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: #767676;
+}
+
+#login .login-info .typing-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#login .login-info .typing-info label {
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 0.625rem;
+  margin-left: 8%;
+  margin-bottom: 5%;
+}
+
+#login .login-info .typing-info i.user {
+  position: absolute;
+  top: 23%;
+  left: 27%;
+  font-size: 1.2rem;
+  color: #232323;
+}
+
+#login .login-info .typing-info i.pass {
+  position: absolute;
+  top: 73%;
+  left: 27%;
+  font-size: 1.2rem;
+  color: #232323;
+}
+
+#login .login-info .typing-info input {
+  border-radius: 30px;
+  background-color: #f8f8f8;
+  padding: 27px 63px;
+  text-indent: 0px;
+}
+
+#login .login-info .typing-info input::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#login .login-info .typing-info input:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#login .login-info .typing-info input::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#login .login-info .typing-info input::placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#login .login-info .logged {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#login .login-info .logged i.circled {
+  background-color: #ececec;
+  color: #ececec;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+#login .login-info .logged i.checked {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  background-color: #64b671;
+  color: white;
+}
+
+#login .login-info .logged span {
+  color: #767676;
+  font-size: 0.6875em;
+  font-family: "Lora", serif;
+  margin-left: 2%;
+  margin-top: 1.2%;
+}
+
+#login .login-info .logBtn {
+  text-align: center;
+  margin-top: 10%;
+}
+
+#login .login-info .logBtn a {
+  border-radius: 30px;
+  padding: 18px 151px;
+  background-color: #425cbb;
+  text-decoration: none;
+}
+
+#login .login-info .logBtn a:hover {
+  border-color: #546cc3 !important;
+  background-color: #546cc3 !important;
+}
+
+#login .login-info .logBtn a .loggedBtn {
+  color: white;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  line-height: 1.563rem;
+}
+
+#login .login-info .forgot {
+  text-align: center;
+  margin-top: 1.625rem;
+}
+
+#login .login-info .forgot span {
+  color: #767676;
+  font-size: 0.6875em;
+  font-family: "Lora", serif;
+}
+
+#login .login-info .forgot a {
+  color: #767676;
+  font-family: "Lora", serif;
+  font-size: 0.6875em;
+  text-decoration: underline;
+}
+
+.scrolled {
+  top: 0;
 }
 /*# sourceMappingURL=style.css.map */
