@@ -1866,4 +1866,112 @@ nav.loginpage::after {
   border-color: #546cc3 !important;
   background-color: #546cc3 !important;
 }
+
+#service {
+  padding: 200px 0;
+  background-image: url(../img/about-bg/hero5.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#service::before {
+  content: "";
+  background-color: #232323;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#service .title h1 {
+  color: white;
+}
+
+#service .title h3 {
+  color: white;
+}
+
+#iconic {
+  padding: 100px 0;
+  margin-top: -200px;
+}
+
+#iconic .iconic-content {
+  margin-bottom: 30px;
+}
+
+#iconic .iconic-content .main-icon {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20% 0;
+}
+
+#iconic .iconic-content .main-icon i {
+  font-size: 4.5rem;
+}
+
+#iconic .iconic-content .iconic-text {
+  background-color: white;
+  padding: 18% 11%;
+}
+
+#iconic .iconic-content .iconic-text h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#iconic .iconic-content .iconic-text p {
+  font-family: "Lora", serif;
+  color: #767676;
+  margin-top: 1.625rem;
+}
+
+#consultation {
+  padding: 130px 0;
+  background-image: url(../img/about-bg/hero8.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#consultation::before {
+  content: "";
+  background-color: #232323;
+  opacity: .4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#consultation .consult h4 {
+  font-weight: 700;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 3%;
+}
+
+#consultation .consult .consultBtn {
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 17px 60px;
+  background-color: #425cbb;
+}
+
+#consultation .consult .consultBtn:hover {
+  border-color: #546cc3 !important;
+  background-color: #546cc3 !important;
+}
+
+#consultation .consult .consultBtn span {
+  font-size: 0.625rem;
+  color: white;
+  letter-spacing: 1px;
+}
 /*# sourceMappingURL=style.css.map */

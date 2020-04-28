@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/188ed9ca64.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,562;0,600;0,700;1,400;1,500;1,562;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Nav start -->
+
+      <section id="navBar">
+        <div id="cart-content">
+          <h5>Your Cart</h5>
+          <div class="close-cart-icon">
+            <i class="fas fa-times main"></i>
+          </div>
+          <div class="shop-content">
+            <a href="#"
+              ><img
+                src="img/cart-products/product-small-1.png"
+                class="img-fluid first"
+            /></a>
+            <div class="shop-content-txt">
+              <h5>Dave Wool Beanie</h5>
+              <span>1 X $39.00</span>
+            </div>
+            <i class="fas fa-times itemclose"></i>
+          </div>
+          <div class="shop-content">
+            <a href="#"
+              ><img
+                src="img/cart-products/product-small-2.png"
+                class="img-fluid second"
+            /></a>
+            <div class="shop-content-txt">
+              <h5>Rose Tinted Glasses</h5>
+              <span>1 X $89.00</span>
+            </div>
+            <i class="fas fa-times itemclose"></i>
+          </div>
+          <div class="cart-down">
+            <h5>Subtotal:</h5>
+            <span>$128.00</span>
+            <div class="checkBtn">
+              <a href="#"><span class="checkLink">CHECKOUT NOW</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid p-0">
+          <div id="modal">
+            <div class="closeBtn">
+              <i class="fas fa-times close"></i>
+            </div>
+            <form role="form">
+              <div class="search">
+                <i class="fas fa-search"></i>
+              </div>
+              <input
+                type="text"
+                class="form-control empty"
+                id="iconified"
+                placeholder="Type your search and hit enter"
+              />
+            </form>
+          </div>
+          <nav class="homepage-nav navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="#">
+              <img
+                src="img/logo/logo-light.png"
+                class="first img-fluid"
+                alt=""
+              />
+              <img
+                src="img/logo/logo-dark.png"
+                class="last img-fluid d-none"
+                alt=""
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop Card</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+              </ul>
+              <ul class="nav-icons list-unstyled d-flex align-items-center">
+                <li>
+                  <a href="#" id="myModal"><i class="fas fa-search"></i></a>
+                </li>
+                <li>
+                  <a href="#" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <!-- Nav end -->
+    </header>
+
+    <main>
+        <!-- Service section starts -->
+      <section id="service">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="title">
+                <h1>Full Service, No Compromise.</h1>
+                <h3>
+                  Pillar is a team of passionate designers, developers and
+                  artists working in print and <br>digital. We collaborate with
+                  clients to establish bold, effective identities.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service section ends -->
+
+      <!-- Iconic section starts -->
+      <section id="iconic" class="bg-light">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4">
+                      <div class="iconic-content">
+                          <div class="main-icon">
+                            <i class="fas fa-tv"></i>
+
+                          </div>
+                          <div class="iconic-text">
+                              <h5>Interface Design</h5>
+                              <p>Grok integrate thinker-maker-doer piverate entrepreneur sticky note iterate
+                                   waterfall is so 2000 and late 360 campaign cortado quantitative vs. qualitative.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="iconic-content">
+                          <div class="main-icon">
+                            <i class="far fa-circle"></i>
+
+                          </div>
+                          <div class="iconic-text">
+                              <h5>Interface Design</h5>
+                              <p>Grok integrate thinker-maker-doer piverate entrepreneur sticky note iterate
+                                   waterfall is so 2000 and late 360 campaign cortado quantitative vs. qualitative.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="iconic-content">
+                          <div class="main-icon">
+                            <i class="far fa-compass"></i>
+
+                          </div>
+                          <div class="iconic-text">
+                              <h5>Interface Design</h5>
+                              <p>Grok integrate thinker-maker-doer piverate entrepreneur sticky note iterate
+                                   waterfall is so 2000 and late 360 campaign cortado quantitative vs. qualitative.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="iconic-content">
+                          <div class="main-icon">
+                            <i class="fas fa-brain"></i>
+
+                          </div>
+                          <div class="iconic-text">
+                              <h5>Interface Design</h5>
+                              <p>Grok integrate thinker-maker-doer piverate entrepreneur sticky note iterate
+                                   waterfall is so 2000 and late 360 campaign cortado quantitative vs. qualitative.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="iconic-content">
+                          <div class="main-icon">
+                            <i class="fas fa-laptop-code"></i>
+
+                          </div>
+                          <div class="iconic-text">
+                              <h5>Interface Design</h5>
+                              <p>Grok integrate thinker-maker-doer piverate entrepreneur sticky note iterate
+                                   waterfall is so 2000 and late 360 campaign cortado quantitative vs. qualitative.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="iconic-content">
+                          <div class="main-icon">
+                            <i class="fas fa-laptop"></i>
+
+                          </div>
+                          <div class="iconic-text">
+                              <h5>Interface Design</h5>
+                              <p>Grok integrate thinker-maker-doer piverate entrepreneur sticky note iterate
+                                   waterfall is so 2000 and late 360 campaign cortado quantitative vs. qualitative.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- Iconic section ends -->
+
+
+      <!-- Consultation section starts -->
+      <section id="consultation">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="consult text-center">
+                <h4>What can Pillar do for your business?</h4>
+                <a href="#" class="consultBtn"
+                  ><span>ARRANGE A CONSULTATION</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Consultation section ends -->
+    </main>
+
+    <footer>
+      <!-- Email part starts -->
+      <section id="email">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="footer-content">
+                <div class="footer-logo">
+                  <img src="img/logo/logo-light.png" class="img-fluid" alt="" />
+                </div>
+                <h6>Digital Design Melbourne</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">ABOUT US</a></li>
+                  <li><a href="#">SERVICES</a></li>
+                  <li><a href="#">SELECTED WORKS</a></li>
+                  <li><a href="#">GET IN TOUCH</a></li>
+                  <li><a href="#">CAREERS</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="footer-content2">
+                <span>RECENT NEWS</span>
+                <p>
+                  We have a new template on
+                  <span class="hashtag">#Themeforest!</span> Jumpstart is a
+                  snappy site template for your next SaaS, app or other software
+                  project. Only $10 for a limited time.
+                </p>
+                <a href="#">http://mmra.re/buyjumpstart </a>
+                <p>
+                  Leap Bootstrap Template is now updated with SVG injection. Why
+                  manage SVGs the hard way? Launch on time + look on trend with
+                  Leap.
+                </p>
+                <a href="#">https://leap.mediumra.re/ </a>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1">
+              <div class="footer-content3">
+                <span>SUBSCRIBE</span>
+                <h5>Get monthly updates and free resources.</h5>
+                <div class="typing d-flex">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Email Address"
+                    value=""
+                  />
+
+                  <a href="#" class="emailBtn">GO</a>
+                </div>
+                <span>CONNECT WITH US</span>
+                <ul class="list-unstyled d-flex">
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="fab fa-dribbble"></i></a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-vimeo-v"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-spotify"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-behance"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Email part ends -->
+
+      <!-- Copyright part starts -->
+      <section id="copy">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="copy-content">
+                <p>© Copyright 2020 Medium Rare - All Rights Reserved</p>
+              </div>
+
+              <div class="moveTop">
+                <a href="#"><i class="fas fa-angle-up"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Copyright part ends -->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
