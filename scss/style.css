@@ -1696,6 +1696,53 @@ footer #copy .moveTop:hover i {
   transition: all 0.4s;
 }
 
+@media screen and (max-width: 990px) {
+  #shopCards .shop-content .item-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #shopCards .shop-content .item-description span {
+    display: block;
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #shopCards .title h1 {
+    font-size: 2rem;
+  }
+  #shopCards .shop-tab ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #shopCards .shop-tab ul li {
+    font-size: 1rem;
+  }
+  #shopCards .shop-content .item-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #shopCards .shop-content .item-description span {
+    display: block;
+    margin-left: 40%;
+  }
+}
+
 #pre-nav {
   padding: 6px 0;
   background-color: #f4f4f4;

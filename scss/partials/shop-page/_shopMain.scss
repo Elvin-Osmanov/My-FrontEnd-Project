@@ -152,3 +152,68 @@
 }
 
 
+@media screen and (max-width:990px){
+    
+
+    #shopCards{
+
+        .shop-content{
+
+            .item-description{
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                span{
+                    display: block;
+                    margin-left: 40%;
+                }
+            }
+        }
+
+
+
+    }
+}
+@media screen and (max-width:700px){
+    
+
+    #shopCards{
+        .title{
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+        .shop-tab{
+            ul{
+                display: flex;
+            
+            
+                li{
+                font-size: 1rem;
+                  }
+        
+            }
+        }
+
+        .shop-content{
+
+            .item-description{
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                span{
+                    display: block;
+                    margin-left: 40%;
+                }
+            }
+        }
+
+
+
+    }
+}
