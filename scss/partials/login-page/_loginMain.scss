@@ -287,4 +287,120 @@ nav.loginpage{
   }
 }
 
+@media screen and (max-width:990px){
+
+  #login{
+
+    
+    
+
+
+
+    .login-info{
+      
+      
+
+      padding: 190px 0;
+
+     .login-pic{
+      img{
+        display: none;
+      }
+     }
+
+
+      .typing-info{
+
+        i.user{
+          top: 25%;
+          left: 18%;
+        }
+
+        i.pass{
+
+          top: 75%;
+          left: 18%;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+@media screen and (max-width:700px){
+
+  #pre-nav{
+
+    .preNav-content{
+      text-align: center;
+    }
+
+    .pre-socialLinks{
+      display: none;
+    }
+  }
+
+  #login{
+
+    
+
+    
+    .login-pic{
+      img{
+        display: block;
+      }
+     }
+
+
+
+
+    .login-info{
+      
+      background-image: none;
+
+      padding: 50px 0;
+      
+
+      .login-title{
+
+        .logo-part{
+
+          img{
+            height: 3rem;
+          }
+        }
+      }
+
+      
+
+
+      .typing-info{
+
+        i.user{
+          top: 25%;
+          left: 10%;
+        }
+
+        i.pass{
+
+          top: 75%;
+          left: 10%;
+        }
+      }
+
+      .logged{
+
+        i.checked{
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+
+
 
