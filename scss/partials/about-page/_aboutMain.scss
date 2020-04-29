@@ -23,6 +23,7 @@
         }
         h3{
             color: $whiteText;
+            padding: 0 10%;
         }
     }
 }
@@ -114,4 +115,70 @@
         }
     }
 
+}
+
+
+@media screen and (max-width:990px){
+
+    #service{
+
+        background-attachment: scroll;
+
+        .title{
+            h3{
+                padding: 0 2%;
+            }
+        }
+    }
+
+    #consultation{
+        background-attachment: scroll;
+
+        .consult{
+            h4{
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
+@media screen and (max-width:700px){
+
+    #service{
+        padding: 100px 0;
+
+        background-attachment: scroll;
+
+        .title{
+
+            h1{
+                font-size: 1.2rem;
+                margin-bottom: 5%;
+            }
+            h3{
+                padding: 0 2%;
+                font-size: 1.3rem;
+                line-height: 2rem;
+            }
+        }
+    }
+
+    #iconic{
+        .iconic-content{
+
+            .iconic-text{
+                padding: 10% 11%;
+            }
+        }
+    }
+
+    #consultation{
+        background-attachment: scroll;
+
+        .consult{
+            h4{
+                margin-bottom: 10%;
+                font-size: 1.2rem;
+            }
+        }
+    }
 }

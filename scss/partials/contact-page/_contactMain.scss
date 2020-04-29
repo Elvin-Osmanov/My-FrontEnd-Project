@@ -247,6 +247,10 @@
 
 @media screen and (max-width:990px){
 
+    #great{
+        background-attachment: scroll;
+    }
+
 
     #corporate-info{
 
@@ -329,6 +333,7 @@
 
     #great{
         padding: 30px 0;
+        background-attachment: scroll;
 
         .title{
 
