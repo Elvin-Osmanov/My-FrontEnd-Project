@@ -271,6 +271,11 @@
     padding: 10px!important;
     @include transition(all .4s);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
 
     
     a.navbar-brand{
@@ -307,7 +312,13 @@
         margin-left: 65%;
         margin-top: 10px;
 
-      
+      span{
+          font-size: 0.625rem;
+          color:black;
+          font-family: $bodyFont;
+          font-weight: 300;
+          margin-left: 8px;
+      }
         
         
 
@@ -347,6 +358,7 @@
 .scrolled{
     background-color:#f8f8f8;
     box-shadow:0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    
     
         
        
@@ -388,6 +400,75 @@
        
         
     
+}
+
+
+
+@media screen and (max-width:990px){
+
+
+    .homepage-nav{
+    background-color:#f8f8f8;
+    box-shadow:0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    position: static;
+    @include transition (all .4s);
+
+    img.first{
+        display: none;
+    }
+    img.second{
+        display: block;
+    }
+
+
+    .navbar-toggler{
+        span{
+            display: block!important;
+            background-color: $body-color!important;
+        }
+    }
+    
+    
+        
+       
+       
+
+        ul.navbar-nav{
+            li{
+                a{color: black!important;
+                    @include transition(all .4s);
+                    &:hover{
+                        opacity: $opacityOff;
+                        @include transition(all .4s);
+                    }
+                
+                }
+            }
+        }
+    
+        .nav-icons{
+            margin-left: 3%;
+            li{
+                margin-right: 0;
+                margin-bottom: 2%;
+    
+                a{ color:black!important;
+                    @include transition(all .4s);
+    
+                    i{font-size: 14px;}
+    
+                    &:hover{
+                        opacity: $opacityOff;
+                        @include transition(all .4s);
+                    }
+                }
+            }
+        }
+        &::after{
+            background-color:rgba(146, 145, 145, 0.288);
+            
+        }
+    }
 }
 
     

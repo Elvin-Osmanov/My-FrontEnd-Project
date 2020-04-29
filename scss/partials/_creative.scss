@@ -101,3 +101,57 @@
 
     
 }
+
+
+@media screen and (max-width:990px){
+   #creative{
+
+    .pictures{
+        .overlay{
+
+            .social{
+                ul{top: 60px;}
+            }
+        }
+    }
+   }
+}
+
+@media screen and (max-width:700px){
+    #creative{
+
+        .title{
+
+            h1{
+                font-size: 1.5rem;
+            }
+
+            h3{
+
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+            }
+        }
+
+
+
+        .pictures{
+            .overlay{
+    
+                .social{
+                    ul{display: flex;
+                        
+                        top: 30px;
+                        left: -78px; 
+                        
+
+                        li{
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

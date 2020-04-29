@@ -7,15 +7,15 @@ $(document).ready(function () {
         if($("html").scrollTop() >= 127){
             $("#navBar .homepage-nav").addClass("scrolled");
             $("#navBar .navbar").addClass("fadeInDown");
-            $("#navBar .homepage-nav .navbar-brand").children("img.first").addClass("d-none")
-            $("#navBar .homepage-nav .navbar-brand").children("img.last").removeClass("d-none")
+            $("#navBar .homepage-nav .navbar-brand").children("img.first").addClass("d-lg-none")
+            $("#navBar .homepage-nav .navbar-brand").children("img.last").removeClass("d-lg-none")
             $("#navBar .loginpage").addClass("login-pos-nav");
             
         }else{
             $("#navBar .homepage-nav").removeClass("scrolled");
             $("#navBar .navbar").removeClass("fadeInDown");
-            $("#navBar .homepage-nav .navbar-brand").children("img.last").addClass("d-none")
-            $("#navBar .homepage-nav .navbar-brand").children("img.first").removeClass("d-none")
+            $("#navBar .homepage-nav .navbar-brand").children("img.last").addClass("d-lg-none")
+            $("#navBar .homepage-nav .navbar-brand").children("img.first").removeClass("d-lg-none")
             $("#navBar .loginpage").removeClass("login-pos-nav");
             
         }
@@ -104,7 +104,7 @@ $(document).ready(function () {
                 items:1
             },
             600:{
-                items:3
+                items:6
             },
             1000:{
                 items:6

@@ -121,7 +121,7 @@ footer{
                     border-bottom-right-radius: 0px;
                     border-top-right-radius: 0px;
                     padding: 7.5% 0;
-                    width: 65%;
+                    padding: 26px;
                     text-indent: 30px;
                     
 
@@ -208,6 +208,113 @@ footer{
             &:hover{
                 i{@include transition (all .3s);
                     top: -220%;
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+@media screen and (max-width:990px){
+
+    footer{
+
+
+        #email{
+
+            .footer-content3{
+    
+    
+                .typing{
+                    margin-top: 4%;
+                    margin-bottom: 6%;
+                }
+
+                ul{
+
+                    li{
+
+                        margin-right: 5%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width:700px){
+
+    footer{
+
+
+        #email{
+
+            .footer-content3{
+    
+    
+                .typing{
+                    margin-top: 4%;
+                    margin-bottom: 6%;
+                    input{
+
+                        border-bottom-left-radius: 30px;
+                        border-top-left-radius: 30px;
+                        border-bottom-right-radius: 30px;
+                        border-top-right-radius: 30px;
+                        margin-bottom: 5%;
+                        padding: 20px;
+                    }
+
+                    .emailBtn{
+                        border-bottom-left-radius: 30px;
+                        border-top-left-radius: 30px;
+                        border-bottom-right-radius: 30px;
+                        border-top-right-radius: 30px;
+                        padding: 14px 165px;
+                        
+                    }
+                }
+
+                ul{
+
+                    li{
+
+                        margin-right: 5%;
+                    }
+                }
+            }
+        }
+
+        #copy{
+            padding: 70px 0;
+
+            .copy-content{
+                text-align: center;
+
+                p{
+                    font-size: 0.625rem;
+                }
+            }
+
+            .moveTop{
+
+                a{
+                    &:hover{
+                        i{@include transition (all .3s);
+                            top: 100%;
+                        }
+                    }
+
+                    i{
+
+                        top: 100%;
+                        right: 42%;
+                    }
                 }
             }
         }

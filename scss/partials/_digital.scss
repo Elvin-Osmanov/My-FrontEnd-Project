@@ -93,3 +93,33 @@
 
 
 }
+
+
+@media screen and (max-width:700px){
+    #digital{
+
+        .title{
+
+            h1{
+                font-size: 1.5rem;
+            }
+
+            h3{
+
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        .digital-tab{
+            ul{
+                display: flex;
+
+                li{
+                    font-size: 1rem;
+                }
+            
+            }
+        }
+    }
+}

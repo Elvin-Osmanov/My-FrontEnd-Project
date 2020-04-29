@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pillar</title>
     <script src="https://kit.fontawesome.com/188ed9ca64.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,562;0,600;0,700;1,400;1,500;1,562;1,600;1,700&display=swap" rel="stylesheet">
@@ -69,10 +69,10 @@
               </div>
             </div>
           </div>
-          <nav class="homepage-nav navbar navbar-expand-lg fixed-top">
+          <nav class="homepage-nav navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">
                 <img src="img/logo/logo-light.png"  class="first img-fluid" alt="">
-                <img src="img/logo/logo-dark.png" class="last img-fluid d-none" alt="">
+                <img src="img/logo/logo-dark.png" class="last img-fluid d-lg-none" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -97,9 +97,9 @@
                 </li>
                 
               </ul>
-              <ul class="nav-icons list-unstyled d-flex align-items-center">
-                <li> <a href="#" id="myModal"><i class="fas fa-search"></i></a></li>
-                <li> <a href="#" id="cartBtn"> <i class="fas fa-shopping-cart"></i></a></li>
+              <ul class="nav-icons list-unstyled d-lg-flex  align-items-center">
+                <li> <a href="#" id="myModal"><i class="fas fa-search"><span class="d-lg-none d-md-none">SEARCH</span></i></a></li>
+                <li> <a href="#" id="cartBtn"> <i class="fas fa-shopping-cart"><span class="d-lg-none d-md-none">CART</span></i></a></li>
               </ul>
 
               
@@ -119,14 +119,14 @@
       <section id="intro">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
-              <div class="logo text-right ">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="logo">
                 <img src="img/logo/logo-light.png"  class="img-fluid" alt="">
               </div>
 
             </div>
-            <div class="col-lg-6">
-              <div class="txt text-left">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="txt">
                 <h1>A beautiful collection of<br>
                   hand-crafted web components</h1>
               </div>
@@ -145,7 +145,7 @@
           <div class="row">
             <div class="col-lg-8 offset-lg-2">
               <div class="intro-icons">
-                <ul class="list-unstyled d-flex">
+                <ul class="list-unstyled d-lg-flex d-md-flex">
                   <li >
                     <a href="#">
                       <i class="fab fa-twitter"></i>
@@ -187,7 +187,7 @@
           <div class="row">
             <div class="col-lg-6 offset-lg-3">
               <div class="digital-tab">
-                <ul class="list-unstyled d-lg-flex justify-content-center">
+                <ul class="list-unstyled d-lg-flex d-md-flex justify-content-center">
                   <li class="active" data-filter="*">Show All</li>
                   <li class="backslash" data-filter=".branding">Branding</li>
                   <li class="backslash" data-filter=".digit">Digital</li>
@@ -198,7 +198,7 @@
           </div>
           
             <div class="row no-gutters mt-4 digital-item">
-              <div class="col-lg-4 item digit">
+              <div class="col-lg-4 col-md-6 item digit">
                 <div class="photo-content ">
                   <img src="img/digital/work1.jpg" class="img-fluid" alt="">
                   <div class="overlay">
@@ -207,7 +207,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 item branding">
+              <div class="col-lg-4 col-md-6 item branding">
                 <div class="photo-content ">
                   <img src="img/digital/work2.jpg" class="img-fluid" alt="">
                   <div class="overlay">
@@ -216,7 +216,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 item branding">
+              <div class="col-lg-4 col-md-6 item branding">
                 <div class="photo-content ">
                   <img src="img/digital/work3.jpg" class="img-fluid" alt="">
                   <div class="overlay">
@@ -225,7 +225,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 item packaging">
+              <div class="col-lg-4 col-md-6 item packaging">
                 <div class="photo-content ">
                   <img src="img/digital/work4.jpg" class="img-fluid" alt="">
                   <div class="overlay">
@@ -234,7 +234,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 item branding">
+              <div class="col-lg-4 col-md-6 item branding">
                 <div class="photo-content ">
                   <img src="img/digital/work5.jpg" class="img-fluid" alt="">
                   <div class="overlay">
@@ -243,7 +243,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 item digit">
+              <div class="col-lg-4 col-md-6 item digit">
                 <div class="photo-content">
                   <img src="img/digital/work6.jpg" class="img-fluid" alt="">
                   <div class="overlay">
@@ -271,14 +271,14 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-6">
               <div class="pictures">
                 <img src="img/creative people/avatar-team-1.jpg" class="img-fluid" alt="">
                 <div class="overlay">
                   <span>DESIGNER</span>
                   <p>Isabelle Pearce</p>
                   <div class="social">
-                    <ul class="list-unstyled d-flex ">
+                    <ul class="list-unstyled d-lg-flex d-md-flex ">
                       <li >
                         <a href="#">
                           <i class="fab fa-twitter"></i>
@@ -300,14 +300,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-6">
               <div class="pictures">
                 <img src="img/creative people/avatar-team-2.jpg" class="img-fluid" alt="">
                 <div class="overlay">
                   <span>DEVELOPER</span>
                   <p>Sarah Inkerman</p>
                   <div class="social">
-                    <ul class="list-unstyled d-flex ">
+                    <ul class="list-unstyled d-lg-flex d-md-flex ">
                       <li >
                         <a href="#">
                           <i class="fab fa-twitter"></i>
@@ -329,14 +329,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-6">
               <div class="pictures">
                 <img src="img/creative people/avatar-team-3.jpg" class="img-fluid" alt="">
                 <div class="overlay">
                   <span>DESIGNER</span>
                   <p>Marcus Smith</p>
                   <div class="social">
-                    <ul class="list-unstyled d-flex ">
+                    <ul class="list-unstyled d-lg-flex d-md-flex">
                       <li >
                         <a href="#">
                           <i class="fab fa-twitter"></i>
@@ -369,7 +369,7 @@
       <section id="parallax">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-6">
               <div class="parallax-icon">
                 <i class="fas fa-user-friends"></i>
                 <h3>16,000+</h3>
@@ -378,7 +378,7 @@
               </div>
 
             </div>
-            <div class="col-lg-3 ">
+            <div class="col-lg-3 col-md-3 col-6">
               <div class="parallax-icon">
                 <i class="fas fa-fingerprint"></i>
                 <h3>16</h3>
@@ -387,7 +387,7 @@
               </div>
 
             </div>
-            <div class="col-lg-3 ">
+            <div class="col-lg-3 col-md-3 col-6">
               <div class="parallax-icon">
                 <i class="fas fa-user-astronaut"></i>
                 <h3>82</h3>
@@ -396,7 +396,7 @@
               </div>
 
             </div>
-            <div class="col-lg-3 ">
+            <div class="col-lg-3 col-md-3 col-6">
               <div class="parallax-icon">
                 <i class="fas fa-tshirt"></i>
                 <h3>Zero</h3>
@@ -424,15 +424,15 @@
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
               <div class="expert-content">
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md- col-2">
                   <div class="ex-icon">
                     <i class="fas fa-tv"></i>
   
                   </div>
                 </div>
-                <div class="col-lg-10">
+                <div class="col-lg-10 col-md-10 col-10">
                   <div class="ex-text">
                     <span >INTERFACE DESIGN</span>
                 <p>Pillar comes packed with flexible content blocks and Variant Page Builder - this makes building your perfect layout easier than ever before.</p>
@@ -440,15 +440,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
               <div class="expert-content">
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-2 col-2">
                   <div class="ex-icon">
                     <i class="far fa-circle"></i>
   
                   </div>
                 </div>
-                <div class="col-lg-10">
+                <div class="col-lg-10 col-md-10 col-10">
                   <div class="ex-text">
                     <span >USER INTERACTION</span>
                 <p>Combine multiple purpose-built elements to craft your perfect, conversion focussed landing page - and do it all in the comfort of your browser.</p>
@@ -456,15 +456,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
               <div class="expert-content">
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-2 col-2">
                   <div class="ex-icon">
                     <i class="fas fa-brain"></i>
   
                   </div>
                 </div>
-                <div class="col-lg-10">
+                <div class="col-lg-10 col-md-10 col-10">
                   <div class="ex-text">
                     <span >INTERNET OF THINGS</span>
                 <p>Clever social integrations such as Mail Chimp, Compaign Monitor and styled Twitter feeds give your site a dynamic edge.</p>
@@ -472,15 +472,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
               <div class="expert-content">
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-2 col-2">
                   <div class="ex-icon">
                     <i class="fas fa-user-astronaut"></i>
   
                   </div>
                 </div>
-                <div class="col-lg-10 ">
+                <div class="col-lg-10 col-md-10 col-10">
                   <div class="ex-text">
                     <span >
                       PRODUCT DESIGN</span>
@@ -500,12 +500,19 @@
       <section id="big-photo" class="bg-light">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 col-12 d-md-none d-lg-none">
+              <div class="photo-txt">
+                <h3>“I was a blown away by the design quality and sheer level of attention-to-detail, sweet!”</h3>
+                <p>— Dan Gibson</p>
+                <span>INTERFACE DESIGNER</span>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
               <div class="photo">
                 <img src="img/big-photo/avatar-large-2.png" class="img-fluid">
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 col-12 d-lg-block d-md-block d-none">
               <div class="photo-txt">
                 <h3>“I was a blown away by the design quality and sheer level of attention-to-detail, sweet!”</h3>
                 <p>— Dan Gibson</p>
@@ -530,7 +537,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
               <div class="card" >
                 <img src="img/news/small1.jpg" class="card-img-top" >
                 <div class="card-body">
@@ -540,7 +547,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
               <div class="card" >
                 <img src="img/news/small2.jpg" class="card-img-top" >
                 <div class="card-body">
@@ -550,7 +557,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
               <div class="card" >
                 <img src="img/news/small3.jpg" class="card-img-top" >
                 <div class="card-body">
@@ -623,7 +630,7 @@
       <section id="blue">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 offset-lg-2">
+            <div class="col-lg-12 col-md-12 text-center">
               <div class="blue-content">
                 <h3>
                   Interested in working with Pillar?
@@ -646,7 +653,7 @@
       <section id="email">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-4">
               <div class="footer-content">
                 <div class="footer-logo">
                   <img src="img/logo/logo-light.png" class="img-fluid" alt="">
@@ -664,7 +671,7 @@
               
 
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-8">
               <div class="footer-content2">
                 <span>RECENT NEWS</span>
                 <p>We have a new template on <span class="hashtag">#Themeforest!</span> Jumpstart is a snappy site template for your next SaaS, app or other software project. Only $10 for a limited time.</p>
@@ -673,18 +680,18 @@
                 <a href="#">https://leap.mediumra.re/ </a>
               </div>
             </div>
-            <div class="col-lg-4 offset-lg-1">
+            <div class="col-lg-4 offset-lg-1 col-md-12">
               <div class="footer-content3">
                 <span>SUBSCRIBE</span>
                 <h5>Get monthly updates and free resources.</h5>
-                <div class="typing d-flex">
+                <div class="typing d-lg-flex d-md-flex">
                   
-                  <input type="text" class="form-control" placeholder="Email Address" value="">
+                  <input type="text" class="form-control col-lg-8 col-md-6 col-12" placeholder="Email Address" value="">
                   
                   <a href="#" class="emailBtn">GO</a>
                 </div>
                 <span>CONNECT WITH US</span>
-                <ul class="list-unstyled d-flex">
+                <ul class="list-unstyled d-flex d-lg-flex d-md-flex">
                   <li >
                     <a href="#">
                       <i class="fab fa-twitter"></i>

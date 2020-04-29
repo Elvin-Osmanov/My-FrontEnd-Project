@@ -44,9 +44,40 @@
     height: 68.5%;
     left: 0;
     top: 31.5%;
-    background: #f4f4f4;
+    background-color: #f4f4f4;
     }
     
 
 
+}
+
+
+@media screen and (max-width:990px){
+
+    #big-photo{
+        .photo-txt{
+            margin-top: 15%;
+        }
+
+        &::before{
+            background-color: #f8f9fa;
+        }
+    }
+
+    
+}
+@media screen and (max-width:700px){
+
+    #big-photo{
+        .photo-txt{
+            text-align: center;
+            
+        }
+
+        .photo{
+            margin-top: 10%;
+        }
+    }
+
+    
 }

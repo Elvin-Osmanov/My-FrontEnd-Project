@@ -23,6 +23,7 @@
 
     .logo{
         margin-top: 5%;
+        text-align: right;
 
         img{height: 120px;}
         
@@ -30,6 +31,7 @@
 
     .txt{
         margin-top: 13%;
+        text-align: left;
 
         h1{
             font-weight: 400;
@@ -103,4 +105,65 @@
         
     }
 
+}
+
+
+@media screen and (max-width:990px){
+    #intro{
+        background-attachment: scroll;
+    }
+}
+@media screen and (max-width:700px){
+    #intro{
+        background-attachment: scroll;
+        height: 0;
+        padding: 250px 0;
+
+
+        .logo{
+            text-align: center;
+            img{
+                height: 85px;
+            }
+        }
+
+        .txt{
+            text-align: center;
+
+            h1{
+                font-size: 1.2rem;
+            }
+        }
+
+        .play-btn{
+
+            .videoBtn{
+
+                padding: 7px 40px;
+
+                
+            }
+        }
+
+        .intro-icons{
+
+            ul{
+
+                display: flex;
+                left: 28%;
+                top: 20px;
+            
+
+                li{
+                    margin-right: 50%;
+
+                    a{
+                        i{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
