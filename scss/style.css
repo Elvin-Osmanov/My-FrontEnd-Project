@@ -52,6 +52,68 @@ input {
   border: 0 !important;
 }
 
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 #navBar {
   position: relative;
   overflow: hidden;
@@ -64,16 +126,13 @@ input {
   position: fixed;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   z-index: 2000;
+  vertical-align: middle;
+  display: none;
+}
+
+#navBar #modal .pop-up {
+  margin-top: 50.5%;
 }
 
 #navBar #modal .closeBtn {
@@ -94,7 +153,6 @@ input {
 #navBar #modal #iconified {
   text-indent: 50px;
   z-index: 20000;
-  width: 725px;
   padding: 25px 0;
   border-radius: 30px;
   color: white !important;
@@ -199,7 +257,11 @@ input {
   transition: all 0.5s;
 }
 
-#navBar #cart-content .shop-content {
+#navBar #cart-content .cart-content-inner {
+  overflow-y: scroll;
+}
+
+#navBar #cart-content .cart-content-inner .shop-content-cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,18 +269,18 @@ input {
   position: relative;
 }
 
-#navBar #cart-content .shop-content img {
+#navBar #cart-content .cart-content-inner .shop-content-cart img {
   width: 7.7rem;
   height: 4.7rem;
 }
 
-#navBar #cart-content .shop-content .shop-content-txt {
+#navBar #cart-content .cart-content-inner .shop-content-cart .shop-content-txt-cart {
   position: relative;
   margin-left: 6%;
   width: 100%;
 }
 
-#navBar #cart-content .shop-content .shop-content-txt h5 {
+#navBar #cart-content .cart-content-inner .shop-content-cart .shop-content-txt-cart h5 {
   font-size: 1rem;
   font-family: "Lora", serif;
   color: #767676;
@@ -226,7 +288,7 @@ input {
   border: 0;
 }
 
-#navBar #cart-content .shop-content .shop-content-txt span {
+#navBar #cart-content .cart-content-inner .shop-content-cart .shop-content-txt-cart span {
   position: absolute;
   top: 75%;
   left: 6.5%;
@@ -234,7 +296,7 @@ input {
   color: #767676;
 }
 
-#navBar #cart-content .shop-content i.itemclose {
+#navBar #cart-content .cart-content-inner .shop-content-cart i.itemclose {
   position: absolute;
   top: 30%;
   right: 7%;
@@ -243,7 +305,7 @@ input {
   cursor: pointer;
 }
 
-#navBar #cart-content .shop-content i.itemclose:hover {
+#navBar #cart-content .cart-content-inner .shop-content-cart i.itemclose:hover {
   opacity: 1;
 }
 
@@ -821,7 +883,6 @@ input {
   margin-top: 35%;
   border: 0;
   border-radius: 0;
-  height: 475px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
@@ -1139,469 +1200,112 @@ footer #copy .moveTop:hover i {
   top: -220%;
 }
 
-#pre-nav {
-  padding: 6px 0;
-  background-color: #f4f4f4;
-}
-
-#pre-nav .preNav-content {
-  margin-top: 5px;
-}
-
-#pre-nav .preNav-content span {
-  color: #767676;
-  font-size: 0.6875em;
-  font-family: "Lora", serif;
-  margin-left: 2.6%;
-}
-
-#pre-nav .pre-socialLinks {
-  margin-top: 5px;
-}
-
-#pre-nav .pre-socialLinks ul li {
-  margin-right: 16%;
-}
-
-#pre-nav .pre-socialLinks ul li a {
-  color: black;
-  opacity: 0.5;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-#pre-nav .pre-socialLinks ul li a:hover {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  opacity: 1;
-}
-
-#pre-nav .pre-socialLinks ul li a i {
-  font-size: 13px;
-}
-
-nav.loginpage {
-  background-color: #f8f8f8;
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
-  padding: 10px !important;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-nav.loginpage a.navbar-brand {
-  margin-left: 2.6%;
-}
-
-nav.loginpage a.navbar-brand img {
-  height: 26px;
-}
-
-nav.loginpage ul.navbar-nav {
-  margin-left: 3%;
-}
-
-nav.loginpage ul.navbar-nav li {
-  font-size: 10px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-right: 10px;
-}
-
-nav.loginpage ul.navbar-nav li a {
-  color: black;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-nav.loginpage ul.navbar-nav li a:hover {
-  opacity: 0.5;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-nav.loginpage .nav-icons {
-  margin-left: 65%;
-  margin-top: 10px;
-}
-
-nav.loginpage .nav-icons li {
-  margin-right: 32px;
-}
-
-nav.loginpage .nav-icons li a {
-  color: black;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-nav.loginpage .nav-icons li a i {
-  font-size: 14px;
-}
-
-nav.loginpage .nav-icons li a:hover {
-  opacity: 0.5;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-nav.loginpage::after {
-  position: absolute;
-  content: "";
-  height: 71px;
-  width: 1px;
-  background-color: rgba(209, 209, 209, 0.41);
-  top: 0;
-  right: 9.5%;
-}
-
-.login-pos {
-  top: 56px;
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-#login {
-  padding: 100px 0;
-}
-
-#login .login-pic {
-  background-image: url(../img/login/hero13.jpg);
-  background-repeat: no-repeat;
+#service {
+  padding: 200px 0;
+  background-image: url(../img/about-bg/hero5.jpg);
+  background-attachment: fixed;
   background-size: cover;
-  opacity: 1;
-}
-
-#login .login-info .login-title {
-  text-align: center;
-  margin-bottom: 5%;
-}
-
-#login .login-info .login-title .logo-part img {
-  height: 3.25rem;
-}
-
-#login .login-info .login-title h3 {
-  font-family: "Lora", serif;
-  font-size: 1.4375em;
-  margin-top: 2.3%;
-  line-height: 2.5rem;
-  font-weight: 400;
-  color: #767676;
-}
-
-#login .login-info .typing-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  background-repeat: no-repeat;
   position: relative;
 }
 
-#login .login-info .typing-info label {
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-size: 0.625rem;
-  margin-left: 8%;
-  margin-bottom: 5%;
-}
-
-#login .login-info .typing-info i.user {
+#service::before {
+  content: "";
+  background-color: #232323;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 23%;
-  left: 27%;
-  font-size: 1.2rem;
-  color: #232323;
-}
-
-#login .login-info .typing-info i.pass {
-  position: absolute;
-  top: 73%;
-  left: 27%;
-  font-size: 1.2rem;
-  color: #232323;
-}
-
-#login .login-info .typing-info input {
-  border-radius: 30px;
-  background-color: #f8f8f8;
-  padding: 27px 63px;
-  text-indent: 0px;
-}
-
-#login .login-info .typing-info input::-webkit-input-placeholder {
-  font-family: "Lora", serif;
-  font-style: italic;
-  opacity: 0.5;
-}
-
-#login .login-info .typing-info input:-ms-input-placeholder {
-  font-family: "Lora", serif;
-  font-style: italic;
-  opacity: 0.5;
-}
-
-#login .login-info .typing-info input::-ms-input-placeholder {
-  font-family: "Lora", serif;
-  font-style: italic;
-  opacity: 0.5;
-}
-
-#login .login-info .typing-info input::placeholder {
-  font-family: "Lora", serif;
-  font-style: italic;
-  opacity: 0.5;
-}
-
-#login .login-info .logged {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#login .login-info .logged i.circled {
-  background-color: #ececec;
-  color: #ececec;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-}
-
-#login .login-info .logged i.checked {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  background-color: #64b671;
-  color: white;
-}
-
-#login .login-info .logged span {
-  color: #767676;
-  font-size: 0.6875em;
-  font-family: "Lora", serif;
-  margin-left: 2%;
-  margin-top: 1.2%;
-}
-
-#login .login-info .logBtn {
-  text-align: center;
-  margin-top: 10%;
-}
-
-#login .login-info .logBtn a {
-  border-radius: 30px;
-  padding: 18px 151px;
-  background-color: #425cbb;
-  text-decoration: none;
-}
-
-#login .login-info .logBtn a:hover {
-  border-color: #546cc3 !important;
-  background-color: #546cc3 !important;
-}
-
-#login .login-info .logBtn a .loggedBtn {
-  color: white;
-  font-size: 0.6rem;
-  text-transform: uppercase;
-  line-height: 1.563rem;
-}
-
-#login .login-info .forgot {
-  text-align: center;
-  margin-top: 1.625rem;
-}
-
-#login .login-info .forgot span {
-  color: #767676;
-  font-size: 0.6875em;
-  font-family: "Lora", serif;
-}
-
-#login .login-info .forgot a {
-  color: #767676;
-  font-family: "Lora", serif;
-  font-size: 0.6875em;
-  text-decoration: underline;
-}
-
-.scrolled {
   top: 0;
+  left: 0;
 }
 
-#shopCards {
+#service .title h1 {
+  color: white;
+}
+
+#service .title h3 {
+  color: white;
+}
+
+#iconic {
   padding: 100px 0;
-  background-color: #f4f4f4;
+  margin-top: -200px;
 }
 
-#shopCards .title {
-  margin-top: 10%;
-}
-
-#shopCards .title h1 {
-  font-size: 4rem;
-}
-
-#shopCards .shop-tab {
-  margin-top: 25%;
-}
-
-#shopCards .shop-tab ul li {
-  font-family: "Lora", serif;
-  font-size: 1.08rem;
-  opacity: 0.5;
-  font-style: italic;
-  color: #767676;
-  cursor: pointer;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-#shopCards .shop-tab ul li:hover {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  opacity: 1;
-}
-
-#shopCards .shop-tab ul li.active {
-  opacity: 1;
-}
-
-#shopCards .shop-tab ul li.backslash::before {
-  content: "/";
-  opacity: .2;
-  margin: 0 10px;
-}
-
-#shopCards .shop-content {
-  background-color: #fff;
+#iconic .iconic-content {
   margin-bottom: 30px;
-  cursor: pointer;
 }
 
-#shopCards .shop-content:hover {
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+#iconic .iconic-content .main-icon {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20% 0;
 }
 
-#shopCards .shop-content .item-description {
-  padding: 10% 3%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#iconic .iconic-content .main-icon i {
+  font-size: 4.5rem;
 }
 
-#shopCards .shop-content .item-description p {
-  letter-spacing: 1px;
-  margin-bottom: 2%;
-  font-size: 10px;
-  font-weight: 400;
-  color: #767676;
-  opacity: 0.5;
+#iconic .iconic-content .iconic-text {
+  background-color: white;
+  padding: 18% 11%;
 }
 
-#shopCards .shop-content .item-description h5 {
-  display: inline-block;
+#iconic .iconic-content .iconic-text h5 {
   font-size: 1rem;
   font-weight: 700;
 }
 
-#shopCards .shop-content .item-description .prices {
-  margin-top: -20%;
-}
-
-#shopCards .shop-content .item-description .prices span.discount {
-  opacity: 0.5;
-  text-decoration: line-through;
-  color: #767676;
+#iconic .iconic-content .iconic-text p {
   font-family: "Lora", serif;
-}
-
-#shopCards .shop-content .item-description .prices span.no-discount {
   color: #767676;
-  font-family: "Lora", serif;
+  margin-top: 1.625rem;
 }
 
-#shopCards .dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#consultation {
+  padding: 130px 0;
+  background-image: url(../img/about-bg/hero8.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-#shopCards .dots span {
-  margin: 0 5px;
-  display: inline-block;
-  color: #232323;
-  line-height: 30px;
+#consultation::before {
+  content: "";
+  background-color: #232323;
+  opacity: .4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#consultation .consult h4 {
+  font-weight: 700;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 3%;
+}
+
+#consultation .consult .consultBtn {
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 17px 60px;
+  background-color: #425cbb;
+}
+
+#consultation .consult .consultBtn:hover {
+  border-color: #546cc3 !important;
+  background-color: #546cc3 !important;
+}
+
+#consultation .consult .consultBtn span {
   font-size: 0.625rem;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-#shopCards .dots span:hover {
-  background-color: #ececec;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-#shopCards .dots span.active {
-  background-color: #ececec;
-}
-
-#shopCards .dots i {
-  font-size: 0.625rem;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  text-align: center;
-  line-height: 30px;
-  color: #767676;
-  opacity: 0.5;
-}
-
-#shopCards .dots i:hover {
-  background-color: #ececec;
-  opacity: 0.5;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  color: white;
+  letter-spacing: 1px;
 }
 
 #great {
@@ -1867,111 +1571,473 @@ nav.loginpage::after {
   background-color: #546cc3 !important;
 }
 
-#service {
-  padding: 200px 0;
-  background-image: url(../img/about-bg/hero5.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-#service::before {
-  content: "";
-  background-color: #232323;
-  opacity: .8;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#service .title h1 {
-  color: white;
-}
-
-#service .title h3 {
-  color: white;
-}
-
-#iconic {
+#shopCards {
   padding: 100px 0;
-  margin-top: -200px;
-}
-
-#iconic .iconic-content {
-  margin-bottom: 30px;
-}
-
-#iconic .iconic-content .main-icon {
-  text-align: center;
   background-color: #f4f4f4;
-  padding: 20% 0;
 }
 
-#iconic .iconic-content .main-icon i {
-  font-size: 4.5rem;
+#shopCards .title {
+  margin-top: 10%;
 }
 
-#iconic .iconic-content .iconic-text {
-  background-color: white;
-  padding: 18% 11%;
+#shopCards .title h1 {
+  font-size: 4rem;
 }
 
-#iconic .iconic-content .iconic-text h5 {
+#shopCards .shop-tab {
+  margin-top: 25%;
+}
+
+#shopCards .shop-tab ul li {
+  font-family: "Lora", serif;
+  font-size: 1.08rem;
+  opacity: 0.5;
+  font-style: italic;
+  color: #767676;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#shopCards .shop-tab ul li:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+#shopCards .shop-tab ul li.active {
+  opacity: 1;
+}
+
+#shopCards .shop-tab ul li.backslash::before {
+  content: "/";
+  opacity: .2;
+  margin: 0 10px;
+}
+
+#shopCards .shop-content {
+  background-color: #fff;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+#shopCards .shop-content:hover {
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+#shopCards .shop-content .item-description {
+  padding: 10% 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shopCards .shop-content .item-description p {
+  letter-spacing: 1px;
+  margin-bottom: 2%;
+  font-size: 10px;
+  font-weight: 400;
+  color: #767676;
+  opacity: 0.5;
+}
+
+#shopCards .shop-content .item-description h5 {
+  display: inline-block;
   font-size: 1rem;
   font-weight: 700;
 }
 
-#iconic .iconic-content .iconic-text p {
-  font-family: "Lora", serif;
-  color: #767676;
-  margin-top: 1.625rem;
+#shopCards .shop-content .item-description .prices {
+  margin-top: -20%;
 }
 
-#consultation {
-  padding: 130px 0;
-  background-image: url(../img/about-bg/hero8.jpg);
-  background-attachment: fixed;
-  background-size: cover;
+#shopCards .shop-content .item-description .prices span.discount {
+  opacity: 0.5;
+  text-decoration: line-through;
+  color: #767676;
+  font-family: "Lora", serif;
+}
+
+#shopCards .shop-content .item-description .prices span.no-discount {
+  color: #767676;
+  font-family: "Lora", serif;
+}
+
+#shopCards .dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shopCards .dots span {
+  margin: 0 5px;
+  display: inline-block;
+  color: #232323;
+  line-height: 30px;
+  font-size: 0.625rem;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#shopCards .dots span:hover {
+  background-color: #ececec;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#shopCards .dots span.active {
+  background-color: #ececec;
+}
+
+#shopCards .dots i {
+  font-size: 0.625rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  text-align: center;
+  line-height: 30px;
+  color: #767676;
+  opacity: 0.5;
+}
+
+#shopCards .dots i:hover {
+  background-color: #ececec;
+  opacity: 0.5;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#pre-nav {
+  padding: 6px 0;
+  background-color: #f4f4f4;
+}
+
+#pre-nav .preNav-content {
+  margin-top: 5px;
+}
+
+#pre-nav .preNav-content span {
+  color: #767676;
+  font-size: 0.6875em;
+  font-family: "Lora", serif;
+  margin-left: 2.6%;
+}
+
+#pre-nav .pre-socialLinks {
+  margin-top: 5px;
+}
+
+#pre-nav .pre-socialLinks ul li {
+  margin-right: 16%;
+}
+
+#pre-nav .pre-socialLinks ul li a {
+  color: black;
+  opacity: 0.5;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#pre-nav .pre-socialLinks ul li a:hover {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 1;
+}
+
+#pre-nav .pre-socialLinks ul li a i {
+  font-size: 13px;
+}
+
+nav.loginpage {
+  background-color: #f8f8f8;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  padding: 10px !important;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav.loginpage a.navbar-brand {
+  margin-left: 2.6%;
+}
+
+nav.loginpage a.navbar-brand img {
+  height: 26px;
+}
+
+nav.loginpage ul.navbar-nav {
+  margin-left: 3%;
+}
+
+nav.loginpage ul.navbar-nav li {
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+nav.loginpage ul.navbar-nav li a {
+  color: black;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+nav.loginpage ul.navbar-nav li a:hover {
+  opacity: 0.5;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+nav.loginpage .nav-icons {
+  margin-left: 65%;
+  margin-top: 10px;
+}
+
+nav.loginpage .nav-icons li {
+  margin-right: 32px;
+}
+
+nav.loginpage .nav-icons li a {
+  color: black;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+nav.loginpage .nav-icons li a i {
+  font-size: 14px;
+}
+
+nav.loginpage .nav-icons li a:hover {
+  opacity: 0.5;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+nav.loginpage::after {
+  position: absolute;
+  content: "";
+  height: 71px;
+  width: 1px;
+  background-color: rgba(209, 209, 209, 0.41);
+  top: 0;
+  right: 9.5%;
+}
+
+.login-pos-nav {
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#login .login-pic {
+  background-image: url(../../img/login/hero13.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  background-position: 50% 50%;
+}
+
+#login .login-pic img {
+  display: none;
+}
+
+#login .login-info {
+  padding: 50px 0;
+}
+
+#login .login-info .login-title {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#login .login-info .login-title .logo-part img {
+  height: 3.25rem;
+}
+
+#login .login-info .login-title h3 {
+  font-family: "Lora", serif;
+  font-size: 1.4375em;
+  margin-top: 2.3%;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: #767676;
+}
+
+#login .login-info .typing-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 
-#consultation::before {
-  content: "";
-  background-color: #232323;
-  opacity: .4;
-  width: 100%;
-  height: 100%;
+#login .login-info .typing-info label {
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 0.625rem;
+  margin-left: 8%;
+  margin-bottom: 5%;
+}
+
+#login .login-info .typing-info i.user {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 23%;
+  left: 27%;
+  font-size: 1.2rem;
+  color: #232323;
 }
 
-#consultation .consult h4 {
-  font-weight: 700;
-  color: white;
-  font-size: 1.5rem;
-  margin-bottom: 3%;
+#login .login-info .typing-info i.pass {
+  position: absolute;
+  top: 73%;
+  left: 27%;
+  font-size: 1.2rem;
+  color: #232323;
 }
 
-#consultation .consult .consultBtn {
-  text-decoration: none;
+#login .login-info .typing-info input {
   border-radius: 30px;
-  padding: 17px 60px;
-  background-color: #425cbb;
+  background-color: #f8f8f8;
+  padding: 27px 63px;
+  text-indent: 0px;
 }
 
-#consultation .consult .consultBtn:hover {
+#login .login-info .typing-info input::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#login .login-info .typing-info input:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#login .login-info .typing-info input::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#login .login-info .typing-info input::placeholder {
+  font-family: "Lora", serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#login .login-info .logged {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#login .login-info .logged i.circled {
+  background-color: #ececec;
+  color: #ececec;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+#login .login-info .logged i.checked {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  background-color: #64b671;
+  color: white;
+}
+
+#login .login-info .logged span {
+  color: #767676;
+  font-size: 0.6875em;
+  font-family: "Lora", serif;
+  margin-left: 2%;
+  margin-top: 1.2%;
+}
+
+#login .login-info .logBtn {
+  text-align: center;
+  margin-top: 10%;
+}
+
+#login .login-info .logBtn a {
+  border-radius: 30px;
+  padding: 18px 151px;
+  background-color: #425cbb;
+  text-decoration: none;
+}
+
+#login .login-info .logBtn a:hover {
   border-color: #546cc3 !important;
   background-color: #546cc3 !important;
 }
 
-#consultation .consult .consultBtn span {
-  font-size: 0.625rem;
+#login .login-info .logBtn a .loggedBtn {
   color: white;
-  letter-spacing: 1px;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  line-height: 1.563rem;
+}
+
+#login .login-info .forgot {
+  text-align: center;
+  margin-top: 1.625rem;
+}
+
+#login .login-info .forgot span {
+  color: #767676;
+  font-size: 0.6875em;
+  font-family: "Lora", serif;
+}
+
+#login .login-info .forgot a {
+  color: #767676;
+  font-family: "Lora", serif;
+  font-size: 0.6875em;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

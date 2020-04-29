@@ -2,6 +2,7 @@
 @import "./partials/mixins";
 @import "./partials/baseFeatures";
 @import "./partials/bootstrapOff";
+@import "./partials/animate";
 @import "./partials/navbar";
 @import "./partials/intro";
 @import "./partials/digital";
@@ -13,9 +14,12 @@
 @import "./partials/slider";
 @import "./partials/blue";
 @import "./partials/footer";
-@import "./partials/loginMain";
-@import "./partials/shopMain";
-@import "./partials/contactMain";
-@import "./partials/aboutMain";
+@import "./partials/about-page/aboutMain";
+@import "./partials/contact-page/contactMain";
+@import "./partials/shop-page/shopMain";
+@import "./partials/login-page/loginMain";
+
+
+
 
 

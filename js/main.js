@@ -1,14 +1,17 @@
 $(document).ready(function () {
+    
 
 
     //navBar 
     $(window).scroll(function () { 
-        if($("html").scrollTop() >= 72){
+        if($("html").scrollTop() >= 92){
             $("#navBar .navbar").addClass("scrolled");
+            $("#navBar .navbar").addClass("fadeInDown");
             $("#navBar .navbar-brand").children("img.first").addClass("d-none")
             $("#navBar .navbar-brand").children("img.last").removeClass("d-none")
         }else{
             $("#navBar .navbar").removeClass("scrolled");
+            $("#navBar .navbar").removeClass("fadeInDown");
             $("#navBar .navbar-brand").children("img.last").addClass("d-none")
             $("#navBar .navbar-brand").children("img.first").removeClass("d-none")
         }
@@ -16,7 +19,7 @@ $(document).ready(function () {
 
     //search button
 
-    $("#modal").hide()
+    
 
     $("#myModal").click(function(){
         $("#modal").fadeIn()

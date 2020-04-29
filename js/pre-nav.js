@@ -1,12 +1,16 @@
 $(document).ready(function () {
     //navBar 
     $(window).scroll(function () { 
-        if($("html").scrollTop() >= 57){
-            $("#navBar .navbar").addClass("scrolled");
+        if($("html").scrollTop() >= 58){
+            $("#navBar .navbar").addClass("login-pos-nav");
+            
+            
+            
             // $("#navBar .navbar-brand").children("img.first").addClass("d-none")
             // $("#navBar .navbar-brand").children("img.last").removeClass("d-none")
         }else{
-            $("#navBar .navbar").removeClass("scrolled");
+            $("#navBar .navbar").removeClass("login-pos-nav");
+            
             // $("#navBar .navbar-brand").children("img.last").addClass("d-none")
             // $("#navBar .navbar-brand").children("img.first").removeClass("d-none")
         }
@@ -16,7 +20,7 @@ $(document).ready(function () {
 
     //search button
 
-    $("#modal").hide()
+    
 
     $("#myModal").click(function(){
         $("#modal").fadeIn()
