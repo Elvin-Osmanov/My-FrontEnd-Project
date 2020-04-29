@@ -1500,6 +1500,7 @@ footer #copy .moveTop:hover i {
 
 #message .message-part textarea {
   border: 0;
+  height: 200px;
 }
 
 #message .message-part textarea::-webkit-input-placeholder {
@@ -1540,6 +1541,88 @@ footer #copy .moveTop:hover i {
 #message .message-part button[type=submit]:hover {
   border-color: #546cc3 !important;
   background-color: #546cc3 !important;
+}
+
+@media screen and (max-width: 990px) {
+  #corporate-info .corporate-content {
+    padding: 30px 0;
+  }
+  #corporate-info .corporate-content i {
+    font-size: 3rem;
+  }
+  #corporate-info .corporate-content p {
+    padding: 0 38%;
+  }
+  #corporate-info .corporate-content2 {
+    padding: 30px 0;
+  }
+  #corporate-info .corporate-content2 i {
+    font-size: 3rem;
+  }
+  #corporate-info .corporate-content2 p {
+    padding: 0 39%;
+  }
+  #corporate-info .corporate-content3 {
+    padding: 30px 0;
+  }
+  #corporate-info .corporate-content3 i {
+    font-size: 3rem;
+  }
+  #corporate-info .corporate-content3 p {
+    padding: 0 36%;
+  }
+  #message .message-part .name-area input[type=text] {
+    text-indent: 7.3%;
+  }
+  #message .message-part .name-area i {
+    font-size: 1rem;
+    top: 3%;
+  }
+  #message .message-part .email-number i {
+    font-size: 1rem;
+    top: 30%;
+  }
+  #message .message-part button[type=submit] {
+    padding: 10px 187px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #great {
+    padding: 30px 0;
+  }
+  #great .title h1 {
+    font-size: 1.4375em;
+    line-height: 1.625em;
+  }
+  #great .title h3 {
+    font-size: 1.4375em;
+    line-height: 1.41304348em;
+  }
+  #corporate-info .corporate-content p {
+    padding: 0px 25%;
+  }
+  #corporate-info .corporate-content2 p {
+    padding: 0px 25%;
+  }
+  #corporate-info .corporate-content3 p {
+    padding: 0px 21%;
+  }
+  #message .message-part .name-area input[type=text] {
+    text-indent: 14.3%;
+  }
+  #message .message-part .name-area i {
+    font-size: 1rem;
+    top: 2.5%;
+    left: 5%;
+  }
+  #message .message-part .email-number i {
+    font-size: 1rem;
+    top: 35%;
+  }
+  #message .message-part button[type=submit] {
+    padding: 10px 134px;
+  }
 }
 
 #shopCards {
