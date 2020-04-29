@@ -46,7 +46,8 @@ $(document).ready(function () {
 
     //cart button
 
-    $("#cartBtn").click(function(){
+    $("#cartBtn").click(function(e){
+        e.preventDefault()
         $("#cart-content").css({
             transform:"translateX(0)",
             transition:"all .5s"
@@ -160,6 +161,13 @@ $(document).ready(function () {
         })
 
         return false
+    })
+
+    //shopCards section dots
+
+    $("#shopCards .dots span").click(function(){
+        $('#shopCards .dots span').removeClass("active")
+        $(this).addClass("active")
     })
 
 
