@@ -52,6 +52,10 @@ input {
   border: 0 !important;
 }
 
+button.navbar-toggler:focus {
+  outline: none !important;
+}
+
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
@@ -543,6 +547,9 @@ input {
 }
 
 @media screen and (max-width: 700px) {
+  #navBar #modal .pop-up {
+    margin-top: 110%;
+  }
   #navBar #modal .closeBtn {
     top: 6.5%;
     right: 5%;
@@ -1173,8 +1180,14 @@ input {
 }
 
 @media screen and (max-width: 990px) {
+  #news .card {
+    margin-top: 10%;
+  }
   #news .title h3 {
     font-size: 1.35rem;
+  }
+  #news .news-button {
+    margin-top: 12%;
   }
 }
 
@@ -1187,7 +1200,7 @@ input {
     line-height: 1.5rem;
   }
   #news .card {
-    margin-top: 20%;
+    margin-top: 10%;
   }
 }
 
@@ -1678,6 +1691,9 @@ footer #copy .moveTop:hover i {
     font-size: 1.3rem;
     line-height: 2rem;
   }
+  #iconic .iconic-content .main-icon i {
+    font-size: 3.8rem;
+  }
   #iconic .iconic-content .iconic-text {
     padding: 10% 11%;
   }
@@ -1968,7 +1984,7 @@ footer #copy .moveTop:hover i {
     padding: 0 38%;
   }
   #corporate-info .corporate-content2 {
-    padding: 30px 0;
+    padding: 42px 0;
   }
   #corporate-info .corporate-content2 i {
     font-size: 3rem;
@@ -1977,7 +1993,7 @@ footer #copy .moveTop:hover i {
     padding: 0 39%;
   }
   #corporate-info .corporate-content3 {
-    padding: 30px 0;
+    padding: 42px 0;
   }
   #corporate-info .corporate-content3 i {
     font-size: 3rem;

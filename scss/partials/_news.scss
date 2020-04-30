@@ -82,11 +82,19 @@
 @media screen and (max-width:990px){
     #news{
 
+        .card{
+            margin-top: 10%;
+        }
+
         .title{
 
             h3{
                 font-size: 1.35rem;
             }
+        }
+
+        .news-button{
+            margin-top: 12%;
         }
     }
 
@@ -113,7 +121,7 @@
         }
 
         .card{
-            margin-top: 20%;
+            margin-top: 10%;
         }
     }
 }
