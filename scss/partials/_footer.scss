@@ -242,6 +242,25 @@ footer{
                 }
             }
         }
+
+        #copy{
+            .moveTop{
+
+                a{
+                    &:hover{
+                        i{@include transition (all .3s);
+                            top: -40%;
+                        }
+                    }
+
+                    i{
+
+                        top: -40%;
+                        
+                    }
+                }
+            }
+        }
     }
 
 }
@@ -253,6 +272,8 @@ footer{
 
 
         #email{
+
+            padding: 50px 0;
 
             .footer-content3{
     

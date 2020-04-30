@@ -406,6 +406,17 @@
 
 @media screen and (max-width:990px){
 
+    #navBar{
+
+        #modal{
+
+            .pop-up{
+
+                margin-top: 100%;
+            }
+        }
+    }
+
 
     .homepage-nav{
     background-color:#f8f8f8;
@@ -423,8 +434,12 @@
 
     .navbar-toggler{
         span{
-            display: block!important;
-            background-color: $body-color!important;
+            i{
+
+                color: $body-color;
+                opacity: .7;
+                margin-top: 11px;
+            }
         }
     }
     
@@ -465,8 +480,27 @@
             }
         }
         &::after{
-            background-color:rgba(146, 145, 145, 0.288);
+            background-color:transparent;
             
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+
+    #navBar{
+
+        #modal{
+
+            .closeBtn{
+                top: 6.5%;
+                right: 5%;
+            }
+        }
+
+
+        #cart-content{
+            width: 375px;
         }
     }
 }

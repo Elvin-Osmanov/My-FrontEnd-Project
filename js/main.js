@@ -65,20 +65,21 @@ $(document).ready(function () {
 
     //digital-tab
 
-    
+    var $digitalItem=$('.digital-item')
 
-    $('.digital-item').isotope({
-        
-        itemSelector: '.item',
-        layoutMode: 'fitRows'
-    });
+    window.onload = function () {
+        $digitalItem.isotope({
+          itemSelector: ".item",
+          layoutMode: "fitRows",
+        });
+      };
 
     $('#digital .digital-tab ul li').click(function(){
         $('#digital .digital-tab ul li').removeClass("active")
         $(this).addClass("active")
 
         var selector=$(this).attr("data-filter")
-        $(".digital-item").isotope({
+        $digitalItem.isotope({
             filter:selector
         })
 
@@ -112,36 +113,7 @@ $(document).ready(function () {
         }
     })
 
-      // keep logged
-
-      $("i.circled").click(function(){
-        if(!$("i.circled").hasClass("d-lg-none")){
-            $("i.circled").addClass("d-lg-none")
-            $("i.circled").next().removeClass("d-lg-none")
-
-
-        }else{
-            $("i.circled").removeClass("d-lg-none")
-            $("i.circled").next().addClass("d-lg-none")
-
-        }
-
-        
-    })
-    $("i.checked").click(function(){
-        if(!$("i.checked").hasClass("d-lg-none")){
-            $("i.checked").addClass("d-lg-none")
-            $("i.checked").prev().removeClass("d-lg-none")
-
-
-        }else{
-            $("i.checked").removeClass("d-lg-none")
-            $("i.checked").prev().addClass("d-lg-none")
-
-        }
-
-        
-    })
+  
 
     //shop-tab
 

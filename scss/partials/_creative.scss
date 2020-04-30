@@ -49,9 +49,9 @@
             ul{
                 position: absolute;
                 top: 130px;
-                left: -112px;
+                left: -76px;
                 
-                li{margin-left: 33px;
+                li{
                    
 
                     a{
@@ -66,6 +66,10 @@
                         
                         }
                     }
+                }
+
+                li:not(:last-child){
+                    margin-right: 33px;
                 }
             }
 
@@ -106,6 +110,14 @@
 @media screen and (max-width:990px){
    #creative{
 
+    .title{
+
+        h3{
+
+            font-size: 1.35rem;
+        }
+    }
+
     .pictures{
         .overlay{
 
@@ -142,11 +154,11 @@
                     ul{display: flex;
                         
                         top: 30px;
-                        left: -78px; 
+                        left: -60px; 
                         
 
-                        li{
-                            margin-left: 20px;
+                        li:not(:last-child){
+                            margin-right: 20px;
                         }
                     }
                 }
