@@ -389,7 +389,6 @@ button.navbar-toggler:focus {
   font-size: 10px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-right: 10px;
 }
 
 .homepage-nav ul.navbar-nav li a {
@@ -402,6 +401,10 @@ button.navbar-toggler:focus {
   opacity: 0.5;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.homepage-nav ul.navbar-nav li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .homepage-nav .nav-icons {
@@ -2337,6 +2340,10 @@ nav.loginpage ul.navbar-nav li a:hover {
   opacity: 0.5;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+nav.loginpage ul.navbar-nav li:not(:last-child) {
+  margin-right: 10px;
 }
 
 nav.loginpage .nav-icons {

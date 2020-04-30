@@ -293,7 +293,7 @@
             font-size: 10px;
             font-weight: 400;
             text-transform: uppercase;
-            margin-right: 10px;
+            
 
             
             a{color: $whiteText!important;
@@ -304,6 +304,10 @@
                 }
             
             }
+        }
+
+        li:not(:last-child){
+            margin-right: 10px;
         }
     }
 
