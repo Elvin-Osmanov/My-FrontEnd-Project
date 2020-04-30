@@ -44,6 +44,7 @@
     .photo-content{
         position: relative;
         @include transition(all .6s);
+        cursor: pointer;
 
         .overlay{
             width: 100%;

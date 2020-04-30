@@ -46,7 +46,7 @@ $(document).ready(function () {
 
     //cart button
 
-    $("#cartBtn").click(function(e){
+    $(".cart-button").click(function(e){
         e.preventDefault()
         $("#cart-content").css({
             transform:"translateX(0)",
@@ -72,7 +72,7 @@ $(document).ready(function () {
           itemSelector: ".item",
           layoutMode: "fitRows",
         });
-      };
+    };
 
     $('#digital .digital-tab ul li').click(function(){
         $('#digital .digital-tab ul li').removeClass("active")
@@ -99,7 +99,9 @@ $(document).ready(function () {
         mouseDrag:false,
         dots:false,
         autoplay:true,
+        autoplayHoverPause: true,
         autoplayTimeout:1750,
+        responsiveClass: true,
         responsive:{
             0:{
                 items:1
@@ -117,18 +119,23 @@ $(document).ready(function () {
 
     //shop-tab
 
-    $('.shop-item').isotope({
-        
-        itemSelector: '.item',
-        layoutMode: 'fitRows'
-    });
+    var $shopItem=$('.shop-item')
+
+    window.onload = function () {
+        $shopItem.isotope({
+          itemSelector: ".item",
+          layoutMode: "fitRows",
+        });
+    };
+
+    
 
     $('#shopCards .shop-tab ul li').click(function(){
         $('#shopCards .shop-tab ul li').removeClass("active")
         $(this).addClass("active")
 
         var selector=$(this).attr("data-filter")
-        $(".shop-item").isotope({
+        $shopItem.isotope({
             filter:selector
         })
 
