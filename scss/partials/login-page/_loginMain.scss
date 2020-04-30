@@ -45,6 +45,7 @@ nav.loginpage{
   @include transition(all .4s);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
+
   
   a.navbar-brand{
       margin-left:2.6%;
@@ -311,6 +312,7 @@ nav.loginpage{
 @media screen and (max-width:990px){
 
   nav.loginpage{
+    padding: 10px 0 !important;
 
     .nav-icons{
       margin-left: 3%;

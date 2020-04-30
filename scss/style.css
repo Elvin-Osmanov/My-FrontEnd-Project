@@ -97,7 +97,7 @@ input {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2000;
+  z-index: 2100;
   vertical-align: middle;
   display: none;
 }
@@ -183,7 +183,7 @@ input {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 2500;
+  z-index: 2000;
   padding: 10px 0;
   background-color: white;
   -webkit-transform: translateX(400px);
@@ -461,6 +461,7 @@ input {
     position: static;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
+    padding: 10px 0 !important;
   }
   .homepage-nav img.first {
     display: none;
@@ -1341,8 +1342,8 @@ footer #email .footer-content3 .typing input {
   border-top-left-radius: 30px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
-  padding: 7.5% 0;
-  padding: 26px;
+  padding: 27px 0;
+  text-indent: 25px;
 }
 
 footer #email .footer-content3 .typing input::-webkit-input-placeholder {
@@ -1472,7 +1473,6 @@ footer #copy .moveTop:hover i {
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
     margin-bottom: 5%;
-    padding: 20px;
   }
   footer #email .footer-content3 .typing .emailBtn {
     border-bottom-left-radius: 30px;
@@ -1480,9 +1480,11 @@ footer #copy .moveTop:hover i {
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
     padding: 14px 165px;
+    display: inline-block;
+    margin-bottom: 25px;
   }
   footer #email .footer-content3 ul li {
-    margin-right: 5%;
+    margin-right: 7.5%;
   }
   footer #copy {
     padding: 70px 0;
@@ -1971,11 +1973,11 @@ footer #copy .moveTop:hover i {
     background-attachment: scroll;
   }
   #great .title h1 {
-    font-size: 1.4375em;
+    font-size: 1.35rem;
     line-height: 1.625em;
   }
   #great .title h3 {
-    font-size: 1.4375em;
+    font-size: 1.2em;
     line-height: 1.41304348em;
   }
   #corporate-info .corporate-content p {
@@ -2005,7 +2007,7 @@ footer #copy .moveTop:hover i {
 }
 
 #shopCards {
-  padding: 100px 0;
+  padding: 45px 0;
   background-color: #f4f4f4;
 }
 
@@ -2544,6 +2546,9 @@ nav.loginpage::after {
 }
 
 @media screen and (max-width: 990px) {
+  nav.loginpage {
+    padding: 10px 0 !important;
+  }
   nav.loginpage .nav-icons {
     margin-left: 3%;
   }

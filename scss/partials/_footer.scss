@@ -120,8 +120,8 @@ footer{
                     border-top-left-radius: 30px;
                     border-bottom-right-radius: 0px;
                     border-top-right-radius: 0px;
-                    padding: 7.5% 0;
-                    padding: 26px;
+                    padding: 27px 0;
+                    text-indent: 25px;
                     
                     
 
@@ -288,7 +288,7 @@ footer{
                         border-bottom-right-radius: 30px;
                         border-top-right-radius: 30px;
                         margin-bottom: 5%;
-                        padding: 20px;
+                        
                     }
 
                     .emailBtn{
@@ -297,6 +297,8 @@ footer{
                         border-bottom-right-radius: 30px;
                         border-top-right-radius: 30px;
                         padding: 14px 165px;
+                        display: inline-block;
+                        margin-bottom: 25px;
                         
                     }
                 }
@@ -305,7 +307,7 @@ footer{
 
                     li{
 
-                        margin-right: 5%;
+                        margin-right: 7.5%;
                     }
                 }
             }
