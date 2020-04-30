@@ -7,9 +7,10 @@
             color:$whiteText;
             font-size: 1.4375em;
             font-weight: 700;
+            margin-top: 10px;
         }
 
-        a{ margin-right: 9%;
+        a{ margin-left: 2.5%;
             @extend %sameBtn;
             color: $whiteText;
             padding: 15px 35px;
@@ -20,6 +21,7 @@
             }
 
             span{
+                display: block;
                 letter-spacing: 1px;
             }
         }
@@ -42,6 +44,7 @@
 
             a{
                 margin-left: 0%;
+                display: inline-block;
                 
             }
         }

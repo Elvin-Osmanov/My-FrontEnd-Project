@@ -1211,10 +1211,11 @@ input {
   color: white;
   font-size: 1.4375em;
   font-weight: 700;
+  margin-top: 10px;
 }
 
 #blue .blue-content a {
-  margin-right: 9%;
+  margin-left: 2.5%;
   color: white;
   padding: 15px 35px;
   border-color: rgba(255, 255, 255, 0.1);
@@ -1225,6 +1226,7 @@ input {
 }
 
 #blue .blue-content a span {
+  display: block;
   letter-spacing: 1px;
 }
 
@@ -1235,6 +1237,7 @@ input {
   }
   #blue .blue-content a {
     margin-left: 0%;
+    display: inline-block;
   }
 }
 
