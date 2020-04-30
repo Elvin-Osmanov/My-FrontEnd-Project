@@ -1080,7 +1080,6 @@ input {
   border-radius: 0;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  cursor: pointer;
 }
 
 #news .card:hover {
@@ -1341,7 +1340,6 @@ footer #email .footer-content3 .typing input {
   border-top-right-radius: 0px;
   padding: 7.5% 0;
   padding: 26px;
-  text-indent: 30px;
 }
 
 footer #email .footer-content3 .typing input::-webkit-input-placeholder {
