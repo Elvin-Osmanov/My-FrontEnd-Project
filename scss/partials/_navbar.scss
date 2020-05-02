@@ -297,6 +297,7 @@
 
             
             a{color: $whiteText!important;
+                letter-spacing: 1px;
                 @include transition(all .4s);
                 &:hover{
                     opacity: $opacityOff;
@@ -313,7 +314,7 @@
 
 
     .nav-icons{
-        margin-left: 65%;
+        margin-left: 67%;
         margin-top: 10px;
 
       span{
@@ -371,6 +372,7 @@
         ul.navbar-nav{
             li{
                 a{color: black!important;
+                    letter-spacing: 1px;
                     @include transition(all .4s);
                     &:hover{
                         opacity: $opacityOff;

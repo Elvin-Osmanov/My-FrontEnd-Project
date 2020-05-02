@@ -143,7 +143,7 @@
         .name-area{
             input[type=text]{
                 padding: 3% 0;
-                text-indent: 7.3%;
+                
 
                 &::placeholder{
                     font-family: $fontForTitle;
@@ -152,12 +152,9 @@
                 }
             }
 
-            i{
-                font-size:1.4375rem;
-                position: absolute;
-                top: 3%;
-                left: 2.6%;
-                color: $body-color;
+            span{
+                background-color: $whiteText;
+                border: 0;
 
             }
 
@@ -169,7 +166,7 @@
 
             input[type=email]{
                 padding: 7% 0;
-                text-indent: 15%;
+                
 
                 &::placeholder{
                     font-family: $fontForTitle;
@@ -182,7 +179,7 @@
 
             input.number {
                 padding: 7% 0;
-                text-indent: 15%;
+                
 
                 &::placeholder{
                     font-family: $fontForTitle;
@@ -193,12 +190,10 @@
     
             }
 
-            i{
-                font-size:1.4375rem;
-                position: absolute;
-                top: 27%;
-                left: 6%;
-                color: $body-color;
+            span{
+                background-color: $whiteText;
+                border: 0;
+
             }
 
         }
@@ -223,12 +218,14 @@
 
         button[type=submit]{
             background-color: $primary-color;
-            padding: 10px 327px;
+            width: 100%;
+            padding: 12px 0;
 
             span{
                 font-size: 0.625rem;
                 text-align: center;
                 color: $whiteText;
+                letter-spacing: 1px;
 
             }
 
@@ -294,28 +291,7 @@
 
 
         .message-part{
-            .name-area{
-
-
-
-                input[type=text]{
-                    
-                    text-indent: 7.3%;
-    
-                }
-                i{
-                    font-size: 1rem;
-                    top: 3%;
-                }
-            }
-
-            .email-number{
-
-                i{
-                    font-size: 1rem;
-                    top: 30%;
-                }
-            }
+            
 
 
 
@@ -377,38 +353,5 @@
         }
     }
 
-    #message {
-
-
-        .message-part{
-            .name-area{
-
-                input[type=text]{
-                    
-                    text-indent: 14.3%;
     
-                }
-                i{
-                    font-size: 1rem;
-                    top:2.5%;
-                    left: 5%;
-                }
-            }
-
-            .email-number{
-
-                i{
-                    font-size: 1rem;
-                    top: 35%;
-                }
-            }
-
-
-
-            button[type=submit] {
-       
-            padding: 10px 134px;}
-
-        } 
-    }
 }

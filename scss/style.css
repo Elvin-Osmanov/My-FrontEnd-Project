@@ -393,6 +393,7 @@ button.navbar-toggler:focus {
 
 .homepage-nav ul.navbar-nav li a {
   color: white !important;
+  letter-spacing: 1px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -408,7 +409,7 @@ button.navbar-toggler:focus {
 }
 
 .homepage-nav .nav-icons {
-  margin-left: 65%;
+  margin-left: 67%;
   margin-top: 10px;
 }
 
@@ -460,6 +461,7 @@ button.navbar-toggler:focus {
 
 .scrolled ul.navbar-nav li a {
   color: black !important;
+  letter-spacing: 1px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -1532,6 +1534,8 @@ footer #copy .moveTop:hover i {
     padding: 14px 165px;
     display: inline-block;
     margin-bottom: 25px;
+    width: 100%;
+    text-align: center;
   }
   footer #email .footer-content3 ul li {
     margin-right: 7.5%;
@@ -1823,7 +1827,6 @@ footer #copy .moveTop:hover i {
 
 #message .message-part .name-area input[type=text] {
   padding: 3% 0;
-  text-indent: 7.3%;
 }
 
 #message .message-part .name-area input[type=text]::-webkit-input-placeholder {
@@ -1850,12 +1853,9 @@ footer #copy .moveTop:hover i {
   opacity: 0.5;
 }
 
-#message .message-part .name-area i {
-  font-size: 1.4375rem;
-  position: absolute;
-  top: 3%;
-  left: 2.6%;
-  color: #767676;
+#message .message-part .name-area span {
+  background-color: white;
+  border: 0;
 }
 
 #message .message-part .email-number {
@@ -1864,7 +1864,6 @@ footer #copy .moveTop:hover i {
 
 #message .message-part .email-number input[type=email] {
   padding: 7% 0;
-  text-indent: 15%;
 }
 
 #message .message-part .email-number input[type=email]::-webkit-input-placeholder {
@@ -1893,7 +1892,6 @@ footer #copy .moveTop:hover i {
 
 #message .message-part .email-number input.number {
   padding: 7% 0;
-  text-indent: 15%;
 }
 
 #message .message-part .email-number input.number::-webkit-input-placeholder {
@@ -1920,12 +1918,9 @@ footer #copy .moveTop:hover i {
   opacity: 0.5;
 }
 
-#message .message-part .email-number i {
-  font-size: 1.4375rem;
-  position: absolute;
-  top: 27%;
-  left: 6%;
-  color: #767676;
+#message .message-part .email-number span {
+  background-color: white;
+  border: 0;
 }
 
 #message .message-part textarea {
@@ -1959,13 +1954,15 @@ footer #copy .moveTop:hover i {
 
 #message .message-part button[type=submit] {
   background-color: #425cbb;
-  padding: 10px 327px;
+  width: 100%;
+  padding: 12px 0;
 }
 
 #message .message-part button[type=submit] span {
   font-size: 0.625rem;
   text-align: center;
   color: white;
+  letter-spacing: 1px;
 }
 
 #message .message-part button[type=submit]:hover {
@@ -2004,17 +2001,6 @@ footer #copy .moveTop:hover i {
   #corporate-info .corporate-content3 p {
     padding: 0 36%;
   }
-  #message .message-part .name-area input[type=text] {
-    text-indent: 7.3%;
-  }
-  #message .message-part .name-area i {
-    font-size: 1rem;
-    top: 3%;
-  }
-  #message .message-part .email-number i {
-    font-size: 1rem;
-    top: 30%;
-  }
   #message .message-part button[type=submit] {
     padding: 10px 187px;
   }
@@ -2041,21 +2027,6 @@ footer #copy .moveTop:hover i {
   }
   #corporate-info .corporate-content3 p {
     padding: 0px 21%;
-  }
-  #message .message-part .name-area input[type=text] {
-    text-indent: 14.3%;
-  }
-  #message .message-part .name-area i {
-    font-size: 1rem;
-    top: 2.5%;
-    left: 5%;
-  }
-  #message .message-part .email-number i {
-    font-size: 1rem;
-    top: 35%;
-  }
-  #message .message-part button[type=submit] {
-    padding: 10px 134px;
   }
 }
 
@@ -2332,6 +2303,7 @@ nav.loginpage ul.navbar-nav li {
 
 nav.loginpage ul.navbar-nav li a {
   color: black;
+  letter-spacing: 1px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -2347,7 +2319,7 @@ nav.loginpage ul.navbar-nav li:not(:last-child) {
 }
 
 nav.loginpage .nav-icons {
-  margin-left: 65%;
+  margin-left: 67%;
   margin-top: 10px;
 }
 
@@ -2427,52 +2399,32 @@ nav.loginpage::after {
   color: #767676;
 }
 
-#login .login-info .typing-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-}
-
 #login .login-info .typing-info label {
   letter-spacing: 1px;
   font-weight: 400;
   font-size: 0.625rem;
-  margin-left: 8%;
+  margin-left: 4%;
   margin-bottom: 5%;
 }
 
-#login .login-info .typing-info i.user {
-  position: absolute;
-  top: 23%;
-  left: 27%;
-  font-size: 1.2rem;
-  color: #232323;
+#login .login-info .typing-info span {
+  background-color: #f8f8f8;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border: 0;
+  padding: 0 20px;
 }
 
-#login .login-info .typing-info i.pass {
-  position: absolute;
-  top: 73%;
-  left: 27%;
-  font-size: 1.2rem;
+#login .login-info .typing-info i {
+  font-size: 1rem;
   color: #232323;
 }
 
 #login .login-info .typing-info input {
-  border-radius: 30px;
   background-color: #f8f8f8;
-  padding: 27px 63px;
-  text-indent: 0px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 25px 0;
 }
 
 #login .login-info .typing-info input::-webkit-input-placeholder {
@@ -2556,18 +2508,23 @@ nav.loginpage::after {
   color: #767676;
   font-size: 0.6875em;
   font-family: "Lora", serif;
-  margin-left: 2%;
-  margin-top: 1.2%;
+  margin-left: 8%;
+  margin-top: 4.2%;
 }
 
 #login .login-info .logBtn {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #login .login-info .logBtn a {
   border-radius: 30px;
-  padding: 18px 151px;
+  padding: 12px 170px;
   background-color: #425cbb;
   text-decoration: none;
 }
@@ -2646,13 +2603,8 @@ nav.loginpage::after {
   #login .login-info .login-pic img {
     display: none;
   }
-  #login .login-info .typing-info i.user {
-    top: 25%;
-    left: 18%;
-  }
-  #login .login-info .typing-info i.pass {
-    top: 75%;
-    left: 18%;
+  #login .login-info .logBtn a {
+    padding: 12px 107px;
   }
 }
 
@@ -2673,13 +2625,8 @@ nav.loginpage::after {
   #login .login-info .login-title .logo-part img {
     height: 3rem;
   }
-  #login .login-info .typing-info i.user {
-    top: 25%;
-    left: 10%;
-  }
-  #login .login-info .typing-info i.pass {
-    top: 75%;
-    left: 10%;
+  #login .login-info .logBtn a {
+    padding: 12px 113px;
   }
 }
 /*# sourceMappingURL=style.css.map */

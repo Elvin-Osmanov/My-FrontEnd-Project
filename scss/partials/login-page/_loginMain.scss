@@ -65,7 +65,8 @@ nav.loginpage{
           margin-right: 10px;
 
           
-          a{color: black;
+          a{  color: black;
+            letter-spacing: 1px;
               @include transition(all .4s);
               &:hover{
                   opacity: $opacityOff;
@@ -81,7 +82,7 @@ nav.loginpage{
 
 
   .nav-icons{
-      margin-left: 65%;
+      margin-left: 67%;
       margin-top: 10px;
 
     
@@ -171,40 +172,40 @@ nav.loginpage{
     }
 
     .typing-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
+      
 
       label {
         letter-spacing: 1px;
         font-weight: 400;
         font-size: 0.625rem;
-        margin-left: 8%;
+        margin-left: 4%;
         margin-bottom: 5%;
       }
 
-      i.user {
-        position: absolute;
-        top: 23%;
-        left: 27%;
-        font-size: 1.2rem;
-        color: #232323;
-      }
-      i.pass {
-        position: absolute;
-        top: 73%;
-        left: 27%;
-        font-size: 1.2rem;
-        color: #232323;
+      span{
+        background-color: #f8f8f8;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        border: 0;
+        padding: 0 20px;
+        
+
       }
 
+      i {
+        
+        font-size: 1rem;
+        color: #232323;
+      }
+      
+
       input {
-        border-radius: 30px;
+        
         background-color: #f8f8f8;
-        padding: 27px 63px;
-        text-indent: 0px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        padding: 25px 0;
+        
 
         &::placeholder {
           font-family: $fontForTitle;
@@ -263,19 +264,20 @@ nav.loginpage{
 
       span {
         color: $body-color;
-        font-size: 0.6875em;
-        font-family: $fontForTitle;
-        margin-left: 2%;
-        margin-top: 1.2%;
+    font-size: 0.6875em;
+    font-family: "Lora", serif;
+    margin-left: 8%;
+    margin-top: 4.2%;
       }
     }
 
     .logBtn {
-      text-align: center;
+      display: flex;
       margin-top: 10%;
+      justify-content: center;
       a {
         border-radius: 30px;
-        padding: 18px 151px;
+        padding: 12px 170px;
         background-color: $primary-color;
         text-decoration: none;
         &:hover {
@@ -384,20 +386,16 @@ nav.loginpage{
       }
      }
 
+     .logBtn{
 
-      .typing-info{
+      a{
 
-        i.user{
-          top: 25%;
-          left: 18%;
-        }
-
-        i.pass{
-
-          top: 75%;
-          left: 18%;
-        }
+        padding: 12px 107px;
       }
+    }
+
+
+     
     }
   }
 
@@ -449,23 +447,23 @@ nav.loginpage{
           }
         }
       }
+      .logBtn{
+
+        a{
+
+          padding: 12px 113px;
+        }
+      }
+
+      
+
+       
+      
 
       
 
 
-      .typing-info{
-
-        i.user{
-          top: 25%;
-          left: 10%;
-        }
-
-        i.pass{
-
-          top: 75%;
-          left: 10%;
-        }
-      }
+    
 
       
     }
