@@ -156,4 +156,61 @@ $(document).ready(function () {
         e.preventDefault();
         $("html").animate({scrollTop: 0}, 1000);
     });
+
+    //contact page value control
+
+    var name=$("input[name=username]")
+    var email=$("input[name=email]")
+    var phone=$("input[name=phone]")
+    var message=$("textarea[name=message]")
+    
+    
+
+    $("button[type=submit]").click(function(e){
+        e.preventDefault()
+        console.log("clikck")
+
+        if($(name).val()=="" || $(email).val()=="" || $(phone).val()=="" || $(message).val()==""){
+            alert("please fill the spaces")
+        }else if(/[0-9]/.test($(name).val())){
+            alert("Please enter your name correctly without any number")
+        }else if(!/[0-9]/.test($(phone).val())){
+            alert("Please enter your phone correctly")
+        }else{
+            alert("We'll get in touch you soon")
+        }
+    })
+
+    //footer email input value control
+
+    var footerEmail=$(".typing input[type=text]")
+    $(".typing .emailBtn").click(function(e){
+
+        e.preventDefault()
+
+        if($(footerEmail).val()==""){
+            alert("please enter your email")
+        }else{
+            alert("We'll get in touch you soon")
+        }
+
+        
+    })
+
+    //login page value control
+
+
+    var loginName=$("#login .typing-info .login-name")
+    var loginPass=$("#login .typing-info .login-pass")
+
+    $("#login .logBtn").click(function(e){
+        e.preventDefault()
+
+        if($(loginName).val()=="" || $(loginPass).val()==""){
+            alert("please enter your username and password")
+        }else{
+            alert("Welcome " + loginName.val())
+        }
+
+    })
 })
