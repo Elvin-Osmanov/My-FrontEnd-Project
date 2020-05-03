@@ -37,6 +37,24 @@ body {
   transition: all 0.3s;
 }
 
+#navBar #cart-content .cart-down .checkBtn a, #intro .play-btn .videoBtn, #consultation .consult .consultBtn, #message .message-part button[type="submit"], #login .login-info .logBtn a {
+  border-radius: 30px;
+  background-color: #425cbb;
+}
+
+#navBar #cart-content .cart-down .checkBtn a:hover, #intro .play-btn .videoBtn:hover, #consultation .consult .consultBtn:hover, #message .message-part button:hover[type="submit"], #login .login-info .logBtn a:hover {
+  border-color: #546cc3 !important;
+  background-color: #546cc3 !important;
+}
+
+#navBar #cart-content .cart-down .checkBtn a span, #intro .play-btn .videoBtn span, #consultation .consult .consultBtn span, #message .message-part button[type="submit"] span, #login .login-info .logBtn a span {
+  color: white;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  line-height: 1.563rem;
+  letter-spacing: 1px;
+}
+
 .btn:active,
 .btn:focus,
 .btn.active {
@@ -235,7 +253,7 @@ button.navbar-toggler:focus {
   font-weight: 700;
   margin: 0 6%;
   padding: 20px 0;
-  border-bottom: 1px solid  #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 #navBar #cart-content .close-cart-icon {
@@ -252,7 +270,7 @@ button.navbar-toggler:focus {
   line-height: 41px;
   border-radius: 50%;
   background-color: #232323;
-  opacity: .7;
+  opacity: 0.7;
   color: white;
   text-align: center;
   -webkit-transition: all 0.5s;
@@ -309,7 +327,7 @@ button.navbar-toggler:focus {
   top: 30%;
   right: 7%;
   color: #767676;
-  opacity: .7;
+  opacity: 0.7;
   cursor: pointer;
 }
 
@@ -347,17 +365,11 @@ button.navbar-toggler:focus {
 #navBar #cart-content .cart-down .checkBtn a {
   text-decoration: none;
   padding: 16px 66px;
-  background-color: #425cbb;
+  border-radius: 0;
 }
 
-#navBar #cart-content .cart-down .checkBtn a span.checkLink {
-  color: white;
-  font-size: 0.625rem;
+#navBar #cart-content .cart-down .checkBtn a span {
   font-family: "Montserrat", sans-serif;
-}
-
-#navBar #cart-content .cart-down .checkBtn a:hover {
-  background-color: #546cc3 !important;
 }
 
 .homepage-nav {
@@ -409,7 +421,7 @@ button.navbar-toggler:focus {
 }
 
 .homepage-nav .nav-icons {
-  margin-left: 67%;
+  margin-left: 66%;
   margin-top: 10px;
 }
 
@@ -513,7 +525,7 @@ button.navbar-toggler:focus {
   }
   .homepage-nav .navbar-toggler span i {
     color: #767676;
-    opacity: .7;
+    opacity: 0.7;
     margin-top: 11px;
   }
   .homepage-nav ul.navbar-nav li a {
@@ -558,9 +570,6 @@ button.navbar-toggler:focus {
   #navBar #modal .closeBtn {
     top: 6.5%;
     right: 5%;
-  }
-  #navBar #cart-content {
-    width: 375px;
   }
 }
 
@@ -610,7 +619,7 @@ button.navbar-toggler:focus {
   line-height: 1.69565217em;
   font-family: "Lora", serif;
   color: white;
-  opacity: .9;
+  opacity: 0.9;
   z-index: 5;
 }
 
@@ -619,21 +628,7 @@ button.navbar-toggler:focus {
 }
 
 #intro .play-btn .videoBtn {
-  border-radius: 30px;
   padding: 10px 67px;
-  background-color: #425cbb;
-}
-
-#intro .play-btn .videoBtn:hover {
-  border-color: #546cc3 !important;
-  background-color: #546cc3 !important;
-}
-
-#intro .play-btn .videoBtn span {
-  color: white;
-  font-size: 0.6rem;
-  text-transform: uppercase;
-  line-height: 1.563rem;
 }
 
 #intro .intro-icons {
@@ -747,7 +742,7 @@ button.navbar-toggler:focus {
 
 #digital .digital-tab ul li.backslash::before {
   content: "/";
-  opacity: .2;
+  opacity: 0.2;
   margin: 0 10px;
 }
 
@@ -869,7 +864,7 @@ button.navbar-toggler:focus {
   margin-left: 8%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  opacity: .75;
+  opacity: 0.75;
   margin-bottom: 1%;
 }
 
@@ -1345,7 +1340,7 @@ footer #email .footer-content2 p {
   margin-top: 6%;
   color: #f5f5f5;
   font-family: "Lora", serif;
-  opacity: .9;
+  opacity: 0.9;
   margin-bottom: 0;
 }
 
@@ -1356,18 +1351,18 @@ footer #email .footer-content2 p span {
 }
 
 footer #email .footer-content2 p span:hover {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 footer #email .footer-content2 a {
   color: #f5f5f5;
   font-family: "Lora", serif;
-  opacity: .9;
+  opacity: 0.9;
   text-decoration: underline;
 }
 
 footer #email .footer-content2 a:hover {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 footer #email .footer-content3 span {
@@ -1380,7 +1375,7 @@ footer #email .footer-content3 span {
 footer #email .footer-content3 h5 {
   font-size: 1em;
   color: white;
-  opacity: .9;
+  opacity: 0.9;
   font-family: "Lora", serif;
 }
 
@@ -1572,7 +1567,7 @@ footer #copy .moveTop:hover i {
 #service::before {
   content: "";
   background-color: #232323;
-  opacity: .8;
+  opacity: 0.8;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1636,7 +1631,7 @@ footer #copy .moveTop:hover i {
 #consultation::before {
   content: "";
   background-color: #232323;
-  opacity: .4;
+  opacity: 0.4;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1653,20 +1648,7 @@ footer #copy .moveTop:hover i {
 
 #consultation .consult .consultBtn {
   text-decoration: none;
-  border-radius: 30px;
   padding: 17px 60px;
-  background-color: #425cbb;
-}
-
-#consultation .consult .consultBtn:hover {
-  border-color: #546cc3 !important;
-  background-color: #546cc3 !important;
-}
-
-#consultation .consult .consultBtn span {
-  font-size: 0.625rem;
-  color: white;
-  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 990px) {
@@ -1825,29 +1807,29 @@ footer #copy .moveTop:hover i {
   position: relative;
 }
 
-#message .message-part .name-area input[type=text] {
+#message .message-part .name-area input[type="text"] {
   padding: 3% 0;
 }
 
-#message .message-part .name-area input[type=text]::-webkit-input-placeholder {
+#message .message-part .name-area input[type="text"]::-webkit-input-placeholder {
   font-family: "Lora", serif;
   font-style: italic;
   opacity: 0.5;
 }
 
-#message .message-part .name-area input[type=text]:-ms-input-placeholder {
+#message .message-part .name-area input[type="text"]:-ms-input-placeholder {
   font-family: "Lora", serif;
   font-style: italic;
   opacity: 0.5;
 }
 
-#message .message-part .name-area input[type=text]::-ms-input-placeholder {
+#message .message-part .name-area input[type="text"]::-ms-input-placeholder {
   font-family: "Lora", serif;
   font-style: italic;
   opacity: 0.5;
 }
 
-#message .message-part .name-area input[type=text]::placeholder {
+#message .message-part .name-area input[type="text"]::placeholder {
   font-family: "Lora", serif;
   font-style: italic;
   opacity: 0.5;
@@ -1862,29 +1844,29 @@ footer #copy .moveTop:hover i {
   position: relative;
 }
 
-#message .message-part .email-number input[type=email] {
+#message .message-part .email-number input[type="email"] {
   padding: 7% 0;
 }
 
-#message .message-part .email-number input[type=email]::-webkit-input-placeholder {
+#message .message-part .email-number input[type="email"]::-webkit-input-placeholder {
   font-family: "Lora", serif;
   font-style: italic;
   opacity: 0.5;
 }
 
-#message .message-part .email-number input[type=email]:-ms-input-placeholder {
+#message .message-part .email-number input[type="email"]:-ms-input-placeholder {
   font-family: "Lora", serif;
   font-style: italic;
   opacity: 0.5;
 }
 
-#message .message-part .email-number input[type=email]::-ms-input-placeholder {
+#message .message-part .email-number input[type="email"]::-ms-input-placeholder {
   font-family: "Lora", serif;
   font-style: italic;
   opacity: 0.5;
 }
 
-#message .message-part .email-number input[type=email]::placeholder {
+#message .message-part .email-number input[type="email"]::placeholder {
   font-family: "Lora", serif;
   font-style: italic;
   opacity: 0.5;
@@ -1952,22 +1934,10 @@ footer #copy .moveTop:hover i {
   opacity: 0.5;
 }
 
-#message .message-part button[type=submit] {
-  background-color: #425cbb;
+#message .message-part button[type="submit"] {
   width: 100%;
   padding: 12px 0;
-}
-
-#message .message-part button[type=submit] span {
-  font-size: 0.625rem;
-  text-align: center;
-  color: white;
-  letter-spacing: 1px;
-}
-
-#message .message-part button[type=submit]:hover {
-  border-color: #546cc3 !important;
-  background-color: #546cc3 !important;
+  border-radius: 3px;
 }
 
 @media screen and (max-width: 990px) {
@@ -2000,9 +1970,6 @@ footer #copy .moveTop:hover i {
   }
   #corporate-info .corporate-content3 p {
     padding: 0 36%;
-  }
-  #message .message-part button[type=submit] {
-    padding: 10px 187px;
   }
 }
 
@@ -2070,7 +2037,7 @@ footer #copy .moveTop:hover i {
 
 #shopCards .shop-tab ul li.backslash::before {
   content: "/";
-  opacity: .2;
+  opacity: 0.2;
   margin: 0 10px;
 }
 
@@ -2319,7 +2286,7 @@ nav.loginpage ul.navbar-nav li:not(:last-child) {
 }
 
 nav.loginpage .nav-icons {
-  margin-left: 67%;
+  margin-left: 66%;
   margin-top: 10px;
 }
 
@@ -2523,22 +2490,8 @@ nav.loginpage::after {
 }
 
 #login .login-info .logBtn a {
-  border-radius: 30px;
-  padding: 12px 170px;
-  background-color: #425cbb;
   text-decoration: none;
-}
-
-#login .login-info .logBtn a:hover {
-  border-color: #546cc3 !important;
-  background-color: #546cc3 !important;
-}
-
-#login .login-info .logBtn a .loggedBtn {
-  color: white;
-  font-size: 0.6rem;
-  text-transform: uppercase;
-  line-height: 1.563rem;
+  padding: 12px 170px;
 }
 
 #login .login-info .forgot {

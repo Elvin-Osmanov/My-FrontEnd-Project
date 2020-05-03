@@ -1,7 +1,7 @@
+//section that is above the navbar starts
 #pre-nav {
   padding: 6px 0;
   background-color: #f4f4f4;
-  
 
   .preNav-content {
     margin-top: 5px;
@@ -37,90 +37,82 @@
     }
   }
 }
+//section that is above the navbar ends
 
-nav.loginpage{
+//login page navbar starts
+nav.loginpage {
   background-color: #f8f8f8;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
-  padding: 10px!important;
-  @include transition(all .4s);
+  padding: 10px !important;
+  @include transition(all 0.4s);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
+  a.navbar-brand {
+    margin-left: 2.6%;
 
-  
-  a.navbar-brand{
-      margin-left:2.6%;
-
-      img{
-          height: 26px;
-      }
-  }
-
-
-  ul.navbar-nav{
-      margin-left: 3%;
-      li{
-          font-size: 10px;
-          font-weight: 400;
-          text-transform: uppercase;
-          margin-right: 10px;
-
-          
-          a{  color: black;
-            letter-spacing: 1px;
-              @include transition(all .4s);
-              &:hover{
-                  opacity: $opacityOff;
-                  @include transition(all .4s);
-              }
-          
-          }
-      }
-      li:not(:last-child){
-        margin-right: 10px;
+    img {
+      height: 26px;
     }
   }
 
+  ul.navbar-nav {
+    margin-left: 3%;
+    li {
+      font-size: 10px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-right: 10px;
 
-  .nav-icons{
-      margin-left: 67%;
-      margin-top: 10px;
-
-    
-      
-      
-
-      
-
-      li{
-          margin-right: 32px;
-
-          a{ color:black;
-              @include transition(all .4s);
-
-              i{font-size: 14px;}
-
-              &:hover{
-                  opacity: $opacityOff;
-                  @include transition(all .4s);
-              }
-          }
+      a {
+        color: black;
+        letter-spacing: 1px;
+        @include transition(all 0.4s);
+        &:hover {
+          opacity: $opacityOff;
+          @include transition(all 0.4s);
+        }
       }
-      
-  
+    }
+    li:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 
-  &::after{
-      position: absolute;
-      content:"";
-      height: 71px;
-      width: 1px;
-      background-color:rgba(209, 209, 209, 0.41);
-      top: 0;
-      right:9.5%;
+  .nav-icons {
+    margin-left: 66%;
+    margin-top: 10px;
+
+    li {
+      margin-right: 32px;
+
+      a {
+        color: black;
+        @include transition(all 0.4s);
+
+        i {
+          font-size: 14px;
+        }
+
+        &:hover {
+          opacity: $opacityOff;
+          @include transition(all 0.4s);
+        }
+      }
+    }
   }
 
-  
+  &::after {
+    position: absolute;
+    content: "";
+    height: 71px;
+    width: 1px;
+    background-color: rgba(209, 209, 209, 0.41);
+    top: 0;
+    right: 9.5%;
+  }
 }
+
+//login page navbar ends
 
 .login-pos-nav {
   top: 0;
@@ -128,12 +120,10 @@ nav.loginpage{
   right: 0;
   left: 0;
   z-index: 1030;
-  @include transition (all .4s);
+  @include transition(all 0.4s);
 }
 
 #login {
-  
-
   .login-pic {
     background-image: url(../img/login/login.jpg);
     background-repeat: no-repeat;
@@ -143,13 +133,12 @@ nav.loginpage{
     width: 100%;
     background-position: 50% 50%;
 
-    img{
+    img {
       display: none;
     }
   }
 
   .login-info {
-
     padding: 50px 0;
     .login-title {
       text-align: center;
@@ -172,8 +161,6 @@ nav.loginpage{
     }
 
     .typing-info {
-      
-
       label {
         letter-spacing: 1px;
         font-weight: 400;
@@ -182,30 +169,24 @@ nav.loginpage{
         margin-bottom: 5%;
       }
 
-      span{
+      span {
         background-color: #f8f8f8;
         border-bottom-left-radius: 30px;
         border-top-left-radius: 30px;
         border: 0;
         padding: 0 20px;
-        
-
       }
 
       i {
-        
         font-size: 1rem;
         color: #232323;
       }
-      
 
       input {
-        
         background-color: #f8f8f8;
         border-bottom-right-radius: 30px;
         border-top-right-radius: 30px;
         padding: 25px 0;
-        
 
         &::placeholder {
           font-family: $fontForTitle;
@@ -221,53 +202,53 @@ nav.loginpage{
 
       .round {
         position: relative;
-      }
-      
-      .round label {
-        background-color: #f8f8f8;
-        border: 1px solid #f8f8f8;
-        border-radius: 50%;
-        cursor: pointer;
-        height: 28px;
-        left: -10px;
-        position: absolute;
-        top: 3px;
-        width: 28px;
-      }
-      
-      .round label:after {
-        border: 2px solid #fff;
-        border-top: none;
-        border-right: none;
-        content: "";
-        height: 6px;
-        left: 7px;
-        opacity: 0;
-        position: absolute;
-        top: 8px;
-        transform: rotate(-45deg);
-        width: 12px;
-      }
-      
-      .round input[type="checkbox"] {
-        visibility: hidden;
-      }
-      
-      .round input[type="checkbox"]:checked + label {
-        background-color: #66bb6a;
-        border-color: #66bb6a;
-      }
-      
-      .round input[type="checkbox"]:checked + label:after {
-        opacity: 1;
+
+        label {
+          background-color: #f8f8f8;
+          border: 1px solid #f8f8f8;
+          border-radius: 50%;
+          cursor: pointer;
+          height: 28px;
+          left: -10px;
+          position: absolute;
+          top: 3px;
+          width: 28px;
+
+          &:after {
+            border: 2px solid #fff;
+            border-top: none;
+            border-right: none;
+            content: "";
+            height: 6px;
+            left: 7px;
+            opacity: 0;
+            position: absolute;
+            top: 8px;
+            transform: rotate(-45deg);
+            width: 12px;
+          }
+        }
+
+        input[type="checkbox"] {
+          visibility: hidden;
+        }
+
+        input[type="checkbox"]:checked + label {
+          background-color: #66bb6a;
+          border-color: #66bb6a;
+        }
+
+        input[type="checkbox"]:checked + label:after {
+          opacity: 1;
+        }
       }
 
       span {
         color: $body-color;
-    font-size: 0.6875em;
-    font-family: "Lora", serif;
-    margin-left: 8%;
-    margin-top: 4.2%;
+        font-size: 0.6875em;
+        font-family: "Lora", serif;
+        margin-left: 8%;
+        margin-top: 4.2%;
       }
     }
 
@@ -276,21 +257,9 @@ nav.loginpage{
       margin-top: 10%;
       justify-content: center;
       a {
-        border-radius: 30px;
-        padding: 12px 170px;
-        background-color: $primary-color;
+        @extend %primaryBtn;
         text-decoration: none;
-        &:hover {
-          border-color: #546cc3 !important;
-          background-color: #546cc3 !important;
-        }
-
-        .loggedBtn {
-          color: $whiteText;
-          font-size: 0.6rem;
-          text-transform: uppercase;
-          line-height: 1.563rem;
-        }
+        padding: 12px 170px;
       }
     }
 
@@ -314,162 +283,108 @@ nav.loginpage{
   }
 }
 
-@media screen and (max-width:990px){
-
-  nav.loginpage{
+@media screen and (max-width: 990px) {
+  nav.loginpage {
     padding: 10px 0 !important;
 
-    .nav-icons{
+    .nav-icons {
       margin-left: 3%;
-            li{
-                margin-right: 0;
-                margin-bottom: 2%;
-    
-                a{ color:black!important;
-                    @include transition(all .4s);
-    
-                    i{font-size: 14px;}
-    
-                    &:hover{
-                        opacity: $opacityOff;
-                        @include transition(all .4s);
-                    }
-                }
-            }
+      li {
+        margin-right: 0;
+        margin-bottom: 2%;
 
-      span{
+        a {
+          color: black !important;
+          @include transition(all 0.4s);
+
+          i {
+            font-size: 14px;
+          }
+
+          &:hover {
+            opacity: $opacityOff;
+            @include transition(all 0.4s);
+          }
+        }
+      }
+
+      span {
         font-size: 0.625rem;
-        color:black;
+        color: black;
         font-family: $bodyFont;
         font-weight: 300;
-        margin-left: 8px;}
-
-       
-
+        margin-left: 8px;
+      }
     }
 
-    &::after{
-      background-color:transparent;
-      
-  }
-    
+    &::after {
+      background-color: transparent;
+    }
   }
 
-  #login{
-
-    .login-info{
-
-      .logged{
-
+  #login {
+    .login-info {
+      .logged {
         .round label {
-         left: -15px;
+          left: -15px;
           top: 0px;
-          
         }
       }
     }
 
-    
-    
-
-
-
-    .login-info{
-      
-      
-
+    .login-info {
       padding: 195px 0;
 
-     .login-pic{
-      img{
-        display: none;
+      .login-pic {
+        img {
+          display: none;
+        }
       }
-     }
 
-     .logBtn{
-
-      a{
-
-        padding: 12px 107px;
+      .logBtn {
+        a {
+          padding: 12px 107px;
+        }
       }
-    }
-
-
-     
     }
   }
-
 }
 
-
-
-
-@media screen and (max-width:700px){
-
-  #pre-nav{
-
-    .preNav-content{
+@media screen and (max-width: 700px) {
+  #pre-nav {
+    .preNav-content {
       text-align: center;
     }
 
-    .pre-socialLinks{
+    .pre-socialLinks {
       display: none;
     }
   }
 
-  #login{
-
-    
-
-    
-    .login-pic{
-      img{
+  #login {
+    .login-pic {
+      img {
         display: block;
       }
-     }
+    }
 
-
-
-
-    .login-info{
-      
+    .login-info {
       background-image: none;
 
       padding: 50px 0;
-      
 
-      .login-title{
-
-        .logo-part{
-
-          img{
+      .login-title {
+        .logo-part {
+          img {
             height: 3rem;
           }
         }
       }
-      .logBtn{
-
-        a{
-
+      .logBtn {
+        a {
           padding: 12px 113px;
         }
       }
-
-      
-
-       
-      
-
-      
-
-
-    
-
-      
     }
   }
-
 }
-
-
-

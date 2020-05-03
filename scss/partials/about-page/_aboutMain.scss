@@ -1,190 +1,162 @@
-#service{
-    padding: 200px 0;
-    background-image: url(../img/about-bg/hero5.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    &::before{
-        content: "";
-        background-color: #232323;
-        opacity: .8;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        
-    }
+#service {
+  padding: 200px 0;
+  background-image: url(../img/about-bg/hero5.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  &::before {
+    content: "";
+    background-color: #232323;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-    .title{
-        h1{
-            color: $whiteText;
-        }
-        h3{
-            color: $whiteText;
-            padding: 0 10%;
-        }
+  .title {
+      
+    h1 {
+      color: $whiteText;
     }
+    h3 {
+      color: $whiteText;
+      padding: 0 10%;
+    }
+  }
 }
 
+#iconic {
+  padding: 100px 0;
+  margin-top: -200px;
 
-#iconic{
+  .iconic-content {
+    margin-bottom: 30px;
+
+    .main-icon {
+      text-align: center;
+      background-color: #f4f4f4;
+      padding: 20% 0;
+
+      i {
+        font-size: 4.5rem;
+      }
+    }
+    .iconic-text {
+      background-color: $whiteText;
+      padding: 18% 11%;
+      h5 {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-family: $fontForTitle;
+        color: $body-color;
+        margin-top: 1.625rem;
+      }
+    }
+  }
+}
+
+#consultation {
+  padding: 130px 0;
+  background-image: url(../img/about-bg/hero8.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  &::before {
+    content: "";
+    background-color: #232323;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .consult {
+    h4 {
+      font-weight: 700;
+      color: $whiteText;
+      font-size: 1.5rem;
+      margin-bottom: 3%;
+    }
+
+    .consultBtn {
+      @extend %primaryBtn;
+      text-decoration: none;
+      padding: 17px 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #service {
+    background-attachment: scroll;
+
+    .title {
+      h3 {
+        padding: 0 2%;
+      }
+    }
+  }
+
+  #consultation {
+    background-attachment: scroll;
+
+    .consult {
+      h4 {
+        margin-bottom: 5%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  #service {
     padding: 100px 0;
-    margin-top: -200px;
-    
-    
 
-    .iconic-content{
-        margin-bottom: 30px;
-        
-        
+    background-attachment: scroll;
 
-        .main-icon{
-            text-align: center;
-            background-color: #f4f4f4;
-            padding: 20% 0;
-
-            i{
-                font-size: 4.5rem;
-                
-            }
-
-        }
-        .iconic-text{
-            background-color: $whiteText;
-            padding: 18% 11%;
-            h5{
-                font-size: 1rem;
-                font-weight: 700;            
-            }
-
-            p{
-                font-family: $fontForTitle;
-                color: $body-color;
-                margin-top: 1.625rem;
-                
-            }
-
-        }
+    .title {
+      h1 {
+        font-size: 1.2rem;
+        margin-bottom: 5%;
+      }
+      h3 {
+        padding: 0 2%;
+        font-size: 1.3rem;
+        line-height: 2rem;
+      }
     }
-}
+  }
 
-#consultation{
-    padding: 130px 0;
-    background-image: url(../img/about-bg/hero8.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    &::before{
-        content: "";
-        background-color: #232323;
-        opacity: .4;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        
-    }
-
-    .consult{
-        h4{
-            font-weight: 700;
-            color: $whiteText;
-            font-size: 1.5rem;
-            margin-bottom:3%;
+  #iconic {
+    .iconic-content {
+      .main-icon {
+        i {
+          font-size: 3.8rem;
         }
+      }
 
-        .consultBtn{
-            text-decoration: none;
-            border-radius: 30px;
-            padding: 17px 60px;
-            background-color: $primary-color;
-            &:hover{
-                border-color: #546cc3!important;
-                background-color:#546cc3!important;
-            }
-
-            span{
-                font-size: 0.625rem;
-                color: $whiteText;
-                letter-spacing: 1px;
-            }
-        }
+      .iconic-text {
+        padding: 10% 11%;
+      }
     }
+  }
 
-}
+  #consultation {
+    background-attachment: scroll;
 
-
-@media screen and (max-width:990px){
-
-    #service{
-
-        background-attachment: scroll;
-
-        .title{
-            h3{
-                padding: 0 2%;
-            }
-        }
+    .consult {
+      h4 {
+        margin-bottom: 10%;
+        font-size: 1.2rem;
+      }
     }
-
-    #consultation{
-        background-attachment: scroll;
-
-        .consult{
-            h4{
-                margin-bottom: 5%;
-            }
-        }
-    }
-}
-@media screen and (max-width:700px){
-
-    #service{
-        padding: 100px 0;
-
-        background-attachment: scroll;
-
-        .title{
-
-            h1{
-                font-size: 1.2rem;
-                margin-bottom: 5%;
-            }
-            h3{
-                padding: 0 2%;
-                font-size: 1.3rem;
-                line-height: 2rem;
-            }
-        }
-    }
-
-    #iconic{
-        .iconic-content{
-            .main-icon{
-
-                i{
-                    font-size: 3.8rem;
-                }
-            }
-
-            .iconic-text{
-                padding: 10% 11%;
-            }
-        }
-    }
-
-    #consultation{
-        background-attachment: scroll;
-
-        .consult{
-            h4{
-                margin-bottom: 10%;
-                font-size: 1.2rem;
-            }
-        }
-    }
+  }
 }

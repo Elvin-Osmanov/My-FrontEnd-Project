@@ -1,351 +1,290 @@
-footer{
+footer {
+  #email {
+    padding: 100px 0;
+    background-color: #232323;
 
+    .footer-content {
+      .footer-logo {
+        margin-bottom: 5%;
 
-    #email{
-        
-        
-        padding: 100px 0;
-        background-color: #232323;
+        img {
+          height: 33px;
+        }
+      }
 
+      h6 {
+        margin-bottom: 8%;
+        color: #f5f5f5;
+        font-family: $fontForTitle;
+        font-style: italic;
+      }
 
-        .footer-content{
+      ul {
+        li {
+          margin-bottom: 2%;
 
-            .footer-logo{
-                margin-bottom: 5%;
+          a {
+            letter-spacing: 1px;
+            color: $whiteText;
+            opacity: $opacityOff;
+            text-decoration: none;
+            font-size: 0.625rem;
+            @include transition(all 0.4s);
 
-              img{height: 33px;}
-           }
-        
+            &:hover {
+              opacity: $opacityOn;
+              @include transition(all 0.4s);
+            }
+          }
+        }
+      }
+    }
 
-        h6{
-            margin-bottom: 8%;
-            color:#f5f5f5;
+    .footer-content2 {
+      span {
+        font-size: 0.625rem;
+        color: $whiteText;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.625em;
+        margin-top: 6%;
+        color: #f5f5f5;
+        font-family: $fontForTitle;
+        opacity: 0.9;
+        margin-bottom: 0;
+
+        span {
+          font-size: 1rem;
+          cursor: pointer;
+          text-decoration: underline;
+          &:hover {
+            opacity: 0.75;
+          }
+        }
+      }
+
+      a {
+        color: #f5f5f5;
+        font-family: $fontForTitle;
+        opacity: 0.9;
+        text-decoration: underline;
+
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+
+    .footer-content3 {
+      span {
+        display: block;
+        font-size: 0.625rem;
+        color: $whiteText;
+        margin-bottom: 8%;
+      }
+
+      h5 {
+        font-size: 1em;
+        color: $whiteText;
+        opacity: 0.9;
+        font-family: $fontForTitle;
+      }
+
+      .typing {
+        margin-top: 10%;
+        margin-bottom: 18%;
+        input {
+          border-bottom-left-radius: 30px;
+          border-top-left-radius: 30px;
+          border-bottom-right-radius: 0px;
+          border-top-right-radius: 0px;
+          padding: 27px 0;
+          text-indent: 25px;
+
+          &::placeholder {
             font-family: $fontForTitle;
             font-style: italic;
-
-        }
-
-        ul{
-
-            li{
-                margin-bottom: 2%;
-
-                a{
-                    letter-spacing: 1px;
-                    color:$whiteText;
-                    opacity: $opacityOff;
-                    text-decoration: none;
-                    font-size: 0.625rem;
-                    @include transition (all .4s);
-
-                    &:hover{
-                        opacity: $opacityOn;
-                        @include transition (all .4s)
-                      }
-                   }
-               }
-           }
-        }
-
-
-
-        .footer-content2{
-            
-
-            span{
-                font-size: 0.625rem;
-                color: $whiteText;
-                
-
-            }
-
-            p{
-                font-size: 1rem;
-                line-height: 1.625em;
-                margin-top: 6%;
-                color:#f5f5f5;
-                font-family: $fontForTitle;
-                opacity: .9;
-                margin-bottom: 0;
-
-                span{
-                    font-size: 1rem;
-                    cursor: pointer;
-                    text-decoration: underline;
-                    &:hover{
-                        opacity: .75;
-                    }
-
-                }
-               
-
-            }
-
-            a{
-                color:#f5f5f5;
-                font-family: $fontForTitle;
-                opacity: .9;
-                text-decoration: underline;
-
-                &:hover{
-                    opacity: .75;
-                }
-            }
-
-        }
-
-
-
-        .footer-content3{
-
-            span{display:block;
-                font-size: 0.625rem;
-                color: $whiteText;
-                margin-bottom: 8%;
-                
-
-            }
-
-            h5{ font-size: 1em;
-                color: $whiteText;
-                opacity: .9;
-                font-family: $fontForTitle;
-            }
-
-            .typing{
-                margin-top: 10%;
-                margin-bottom: 18%;
-                input{
-                    border-bottom-left-radius: 30px;
-                    border-top-left-radius: 30px;
-                    border-bottom-right-radius: 0px;
-                    border-top-right-radius: 0px;
-                    padding: 27px 0;
-                    text-indent: 25px;
-                    
-                    
-
-                    &::placeholder{
-                        font-family: $fontForTitle;
-                        font-style: italic;
-                        opacity: $opacityOff;
-                    }
-                }
-                .emailBtn{
-                    border-bottom-right-radius: 30px;
-                    border-top-right-radius: 30px;
-                    border-bottom-left-radius: 0px;
-                    border-top-left-radius: 0px;
-                    background-color: $primary-color;
-                    color: $whiteText;
-                    font-size: 0.625rem;
-                    padding: 14px 35px;
-                    line-height: 25px;
-                    text-decoration: none;
-                    
-
-                }
-
-
-            }
-
-
-
-            ul{
-
-                li{ margin-right: 9%;
-
-                    a{
-                        color: $whiteText;
-                        opacity: $opacityOff;
-                        @include transition (all .4s);
-
-                        &:hover{
-                            @include transition (all .4s);
-                            opacity: $opacityOn;
-                        }
-
-                        i{
-                            font-size: 1rem;
-                        }
-                    }
-                }
-            }
-        }
-        
-    }
-
-
-    #copy{
-        position: relative;
-        padding: 40px 0;
-        background-color: #1e1e1e;
-
-        p{
-            color:$whiteText;
             opacity: $opacityOff;
-            font-size: 0.7rem;
-            font-family: $fontForTitle;
+          }
         }
+        .emailBtn {
+          border-bottom-right-radius: 30px;
+          border-top-right-radius: 30px;
+          border-bottom-left-radius: 0px;
+          border-top-left-radius: 0px;
+          background-color: $primary-color;
+          color: $whiteText;
+          font-size: 0.625rem;
+          padding: 14px 35px;
+          line-height: 25px;
+          text-decoration: none;
+        }
+      }
 
-        .moveTop{
-            
-            
-            a{
-                color: $whiteText;
-               i{height: 50px;
-                width: 50px;
-                text-align: center;
-                line-height: 50px;
-                background-color: #3d3d3d;
-                border-radius: 50%;
-                position: absolute;
-                top: -200%;
-                right: 0;
-                @include transition (all .3s);
-                } 
+      ul {
+        li {
+          margin-right: 9%;
+
+          a {
+            color: $whiteText;
+            opacity: $opacityOff;
+            @include transition(all 0.4s);
+
+            &:hover {
+              @include transition(all 0.4s);
+              opacity: $opacityOn;
             }
 
-            &:hover{
-                i{@include transition (all .3s);
-                    top: -220%;
-                }
+            i {
+              font-size: 1rem;
             }
+          }
         }
+      }
+    }
+  }
+
+  #copy {
+    position: relative;
+    padding: 40px 0;
+    background-color: #1e1e1e;
+
+    p {
+      color: $whiteText;
+      opacity: $opacityOff;
+      font-size: 0.7rem;
+      font-family: $fontForTitle;
     }
 
+    .moveTop {
+      a {
+        color: $whiteText;
+        i {
+          height: 50px;
+          width: 50px;
+          text-align: center;
+          line-height: 50px;
+          background-color: #3d3d3d;
+          border-radius: 50%;
+          position: absolute;
+          top: -200%;
+          right: 0;
+          @include transition(all 0.3s);
+        }
+      }
 
+      &:hover {
+        i {
+          @include transition(all 0.3s);
+          top: -220%;
+        }
+      }
+    }
+  }
 }
 
-
-
-@media screen and (max-width:990px){
-
-    footer{
-
-
-        #email{
-
-            .footer-content3{
-    
-    
-                .typing{
-                    margin-top: 4%;
-                    margin-bottom: 6%;
-                }
-
-                ul{
-
-                    li{
-
-                        margin-right: 5%;
-                    }
-                }
-            }
+@media screen and (max-width: 990px) {
+  footer {
+    #email {
+      .footer-content3 {
+        .typing {
+          margin-top: 4%;
+          margin-bottom: 6%;
         }
 
-        #copy{
-            .moveTop{
-
-                a{
-                    &:hover{
-                        i{@include transition (all .3s);
-                            top: -40%;
-                        }
-                    }
-
-                    i{
-
-                        top: -40%;
-                        
-                    }
-                }
-            }
+        ul {
+          li {
+            margin-right: 5%;
+          }
         }
+      }
     }
 
+    #copy {
+      .moveTop {
+        a {
+          &:hover {
+            i {
+              @include transition(all 0.3s);
+              top: -40%;
+            }
+          }
+
+          i {
+            top: -40%;
+          }
+        }
+      }
+    }
+  }
 }
 
+@media screen and (max-width: 700px) {
+  footer {
+    #email {
+      padding: 50px 0;
 
-@media screen and (max-width:700px){
+      .footer-content3 {
+        .typing {
+          margin-top: 4%;
+          margin-bottom: 6%;
+          input {
+            border-bottom-left-radius: 30px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 30px;
+            margin-bottom: 5%;
+          }
 
-    footer{
-
-
-        #email{
-
-            padding: 50px 0;
-
-            .footer-content3{
-    
-    
-                .typing{
-                    margin-top: 4%;
-                    margin-bottom: 6%;
-                    input{
-
-                        border-bottom-left-radius: 30px;
-                        border-top-left-radius: 30px;
-                        border-bottom-right-radius: 30px;
-                        border-top-right-radius: 30px;
-                        margin-bottom: 5%;
-                        
-                    }
-
-                    .emailBtn{
-                        border-bottom-left-radius: 30px;
-                        border-top-left-radius: 30px;
-                        border-bottom-right-radius: 30px;
-                        border-top-right-radius: 30px;
-                        padding: 14px 165px;
-                        display: inline-block;
-                        margin-bottom: 25px;
-                        width: 100%;
-                        text-align: center;
-                        
-                        
-                    }
-                }
-
-                ul{
-
-                    li{
-
-                        margin-right: 7.5%;
-                    }
-                }
-            }
+          .emailBtn {
+            border-bottom-left-radius: 30px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 30px;
+            padding: 14px 165px;
+            display: inline-block;
+            margin-bottom: 25px;
+            width: 100%;
+            text-align: center;
+          }
         }
 
-        #copy{
-            padding: 70px 0;
-
-            .copy-content{
-                text-align: center;
-
-                p{
-                    font-size: 0.625rem;
-                }
-            }
-
-            .moveTop{
-
-                a{
-                    &:hover{
-                        i{@include transition (all .3s);
-                            top: 100%;
-                        }
-                    }
-
-                    i{
-
-                        top: 100%;
-                        right: 42%;
-                    }
-                }
-            }
+        ul {
+          li {
+            margin-right: 7.5%;
+          }
         }
+      }
     }
 
+    #copy {
+      padding: 70px 0;
 
+      .copy-content {
+        text-align: center;
+
+        p {
+          font-size: 0.625rem;
+        }
+      }
+
+      .moveTop {
+        a {
+          &:hover {
+            i {
+              @include transition(all 0.3s);
+              top: 100%;
+            }
+          }
+
+          i {
+            top: 100%;
+            right: 42%;
+          }
+        }
+      }
+    }
+  }
 }

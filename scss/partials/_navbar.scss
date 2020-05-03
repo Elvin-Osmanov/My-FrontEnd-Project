@@ -1,518 +1,430 @@
 
-#navBar{
-    position: relative;
-    overflow: hidden;
-    #modal{
-
-        background-color: rgba(0, 0, 0, 0.7);
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        // display: flex;
-        // align-items: center;
-        z-index: 2100;
-        vertical-align: middle;
-        display: none;
-
-        .pop-up{
-            margin-top: 50.5%;
-        }
-        
-        
-        
-        
-        
-    
-        .closeBtn{
-            position: absolute;
-            top: 3.5%;
-            right: 2%;
-            z-index: 3000;
-            @include transition (all .5s);
-            i{color:$whiteText;
-            @include transition (all .5s)}
-        }
-
-        
-    
-    
-        #iconified{
-            text-indent: 50px;
-            z-index: 20000;
-            padding: 25px 0;
-            
-            
-            
-            border-radius: 30px;
-            color:$whiteText!important;
-            background-color:#aaaaaa7a;;
-            box-sizing: border-box;
-            &:focus{
-                color: $whiteText;
-            }
-    
-            &::placeholder{
-                font-family: $fontForTitle;
-                font-style: italic;
-                text-align:left;
-                color: white
-                
-                
-                
-            }
-        }
-    
-    
-        .search{
-            display: inline;
-            position: relative;
-            i{
-                position: absolute;
-                top: 17px;
-                left: 17px;
-                z-index: 3000;
-                color: $whiteText;
-            }
-        }
-    
-        
-        
-    
-    
-        
-    }
-
-
-    #cart-content{
-        width: 400px;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 2000;
-        padding: 10px 0;
-        background-color: white;
-        transform: translateX(400px);
-        @include transition (all .5s);
-        
-        
-
-
-        h5{
-            font-size: 1rem;
-            line-height: 1.625rem;
-            font-weight: 700;
-            margin: 0 6%;
-            padding: 20px 0;
-            border-bottom: 1px solid  #f1f1f1;
-        }
-
-        .close-cart-icon{
-            position: relative;
-            cursor: pointer;
-           
-
-
-            i.main{
-                position: absolute;
-                top: -60px;
-                right: 25px;
-                width: 40px;
-                height: 40px;
-                line-height: 41px;
-                border-radius: 50%;
-                background-color: #232323;
-                opacity: .7;
-                color:$whiteText;
-                text-align: center;
-                @include transition (all .5s);
-
-                &:hover{
-                    opacity: $opacityOn;
-                    @include transition (all .5s);
-                }
-
-            }
-
-            
-        }
-
-
-        .cart-content-inner{
-            overflow-y: scroll;
-            .shop-content-cart{
-                display: flex;
-                padding: 35px 25px;
-                position: relative;
-    
-    
-                img{
-                    
-                    width: 7.7rem;
-                    height: 4.7rem;
-                }
-    
-                .shop-content-txt-cart{
-                    position: relative;
-                    margin-left: 6%;
-                    width: 100%;
-                    h5{
-                        font-size: 1rem;
-                        font-family: $fontForTitle;
-                        color: $body-color;
-                        font-weight: 400;
-                        border: 0;
-                        
-                    }
-    
-    
-    
-    
-                    span{
-                        position: absolute;
-                        top: 75%;
-                        left: 6.5%;
-                        font-size: 0.625em;
-                        color: $body-color
-                    }
-    
-                    
-                }
-    
-                i.itemclose{
-                    position: absolute;
-                    top: 30%;
-                    right: 7%;
-                    color: $body-color;
-                    opacity: .7;
-                    cursor: pointer;
-    
-                    &:hover{
-                        opacity: $opacityOn;
-                    }
-                }
-    
-    
-            }
-    
-        }
-        .cart-down{
-
-            margin-top: 10%;
-            padding-top: 10%;
-            border-top: 1px solid #f1f1f1;
-            margin: 0 6%;
-
-
-            h5{
-            font-size: 1rem;
-            line-height: 1.625rem;
-            font-weight: 700;
-            display: inline;
-            border-bottom: 0;
-
-            }
-
-            span{
-                font-size: 1rem;
-                font-family: $fontForTitle;
-                color: $body-color;
-                font-weight: 400;
-
-
-            }
-
-            .checkBtn{
-                margin-top: 20%;
-                text-align: center;
-
-                a{
-                    
-                    
-                    text-decoration: none;
-                    padding: 16px 66px;
-                    background-color: $primary-color;
-    
-    
-    
-                    span.checkLink{
-                        color: $whiteText;
-                        font-size: 0.625rem;
-                        font-family: $bodyFont;
-                    }
-
-
-                    &:hover{
-                        background-color: #546cc3!important;
-                    }
-                }
-
-                
-            }
-
-
-        }
-
-
-
-
-    }
-
-
-
-    
-}
-    
-.homepage-nav{
-    
-    background-color: transparent;
-    padding: 10px!important;
-    @include transition(all .4s);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+#navBar {
+  position: relative;
+  overflow: hidden;
+  // search buuton modal starts
+  #modal {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    z-index: 1030;
+    // display: flex;
+    // align-items: center;
+    z-index: 2100;
+    vertical-align: middle;
+    display: none;
 
-    
-    a.navbar-brand{
-        margin-left:2.6%;
-
-        img{
-            height: 26px;
-        }
+    .pop-up {
+      margin-top: 50.5%;
     }
 
-
-    ul.navbar-nav{
-        margin-left: 3%;
-        li{
-            font-size: 10px;
-            font-weight: 400;
-            text-transform: uppercase;
-            
-
-            
-            a{color: $whiteText!important;
-                letter-spacing: 1px;
-                @include transition(all .4s);
-                &:hover{
-                    opacity: $opacityOff;
-                    @include transition(all .4s);
-                }
-            
-            }
-        }
-
-        li:not(:last-child){
-            margin-right: 10px;
-        }
-    }
-
-
-    .nav-icons{
-        margin-left: 67%;
-        margin-top: 10px;
-
-      span{
-          font-size: 0.625rem;
-          color:black;
-          font-family: $bodyFont;
-          font-weight: 300;
-          margin-left: 8px;
+    .closeBtn {
+      position: absolute;
+      top: 3.5%;
+      right: 2%;
+      z-index: 3000;
+      @include transition(all 0.5s);
+      i {
+        color: $whiteText;
+        @include transition(all 0.5s);
       }
-        
-        
-
-        
-
-        li{
-            margin-right: 32px;
-
-            a{ color:$whiteText!important;
-                @include transition(all .4s);
-
-                i{font-size: 14px;}
-
-                &:hover{
-                    opacity: $opacityOff;
-                    @include transition(all .4s);
-                }
-            }
-        }
-        
-    
     }
 
-    &::after{
+    #iconified {
+      text-indent: 50px;
+      z-index: 20000;
+      padding: 25px 0;
+
+      border-radius: 30px;
+      color: $whiteText !important;
+      background-color: #aaaaaa7a;
+      box-sizing: border-box;
+      &:focus {
+        color: $whiteText;
+      }
+
+      &::placeholder {
+        font-family: $fontForTitle;
+        font-style: italic;
+        text-align: left;
+        color: white;
+      }
+    }
+
+    .search {
+      display: inline;
+      position: relative;
+      i {
         position: absolute;
-        content:"";
-        height: 71px;
-        width: 1px;
-        background-color:rgba(255, 255, 255, 0.1);
-        top: 0;
-        right:9.5%;
+        top: 17px;
+        left: 17px;
+        z-index: 3000;
+        color: $whiteText;
+      }
+    }
+  }
+  // search buuton modal ends
+
+
+
+
+  //cart button content starts
+  #cart-content {
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+    padding: 10px 0;
+    background-color: white;
+    transform: translateX(400px);
+    @include transition(all 0.5s);
+
+    h5 {
+      font-size: 1rem;
+      line-height: 1.625rem;
+      font-weight: 700;
+      margin: 0 6%;
+      padding: 20px 0;
+      border-bottom: 1px solid #f1f1f1;
     }
 
+    .close-cart-icon {
+      position: relative;
+      cursor: pointer;
 
-}
+      i.main {
+        position: absolute;
+        top: -60px;
+        right: 25px;
+        width: 40px;
+        height: 40px;
+        line-height: 41px;
+        border-radius: 50%;
+        background-color: #232323;
+        opacity: 0.7;
+        color: $whiteText;
+        text-align: center;
+        @include transition(all 0.5s);
 
-.scrolled{
-    background-color:#f8f8f8;
-    box-shadow:0px 0px 30px 0px rgba(0, 0, 0, 0.05);
-    
-    
-        
-       
-        @include transition (all .4s);
-
-        ul.navbar-nav{
-            li{
-                a{color: black!important;
-                    letter-spacing: 1px;
-                    @include transition(all .4s);
-                    &:hover{
-                        opacity: $opacityOff;
-                        @include transition(all .4s);
-                    }
-                
-                }
-            }
+        &:hover {
+          opacity: $opacityOn;
+          @include transition(all 0.5s);
         }
-    
-        .nav-icons{
-            li{
-                
-    
-                a{ color:black!important;
-                    @include transition(all .4s);
-    
-                    i{font-size: 14px;}
-    
-                    &:hover{
-                        opacity: $opacityOff;
-                        @include transition(all .4s);
-                    }
-                }
-            }
-        }
-        &::after{
-            background-color:rgba(146, 145, 145, 0.288);
-            
-        }
-       
-        
-    
-}
-
-
-
-@media screen and (max-width:990px){
-
-    #navBar{
-
-        #modal{
-
-            .pop-up{
-
-                margin-top: 100%;
-            }
-        }
+      }
     }
 
+    .cart-content-inner {
+      overflow-y: scroll;
+      .shop-content-cart {
+        display: flex;
+        padding: 35px 25px;
+        position: relative;
 
-    .homepage-nav{
-    background-color:#f8f8f8;
-    box-shadow:0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+        img {
+          width: 7.7rem;
+          height: 4.7rem;
+        }
+
+        .shop-content-txt-cart {
+          position: relative;
+          margin-left: 6%;
+          width: 100%;
+          h5 {
+            font-size: 1rem;
+            font-family: $fontForTitle;
+            color: $body-color;
+            font-weight: 400;
+            border: 0;
+          }
+
+          span {
+            position: absolute;
+            top: 75%;
+            left: 6.5%;
+            font-size: 0.625em;
+            color: $body-color;
+          }
+        }
+
+        i.itemclose {
+          position: absolute;
+          top: 30%;
+          right: 7%;
+          color: $body-color;
+          opacity: 0.7;
+          cursor: pointer;
+
+          &:hover {
+            opacity: $opacityOn;
+          }
+        }
+      }
+    }
+    .cart-down {
+      margin-top: 10%;
+      padding-top: 10%;
+      border-top: 1px solid #f1f1f1;
+      margin: 0 6%;
+
+      h5 {
+        font-size: 1rem;
+        line-height: 1.625rem;
+        font-weight: 700;
+        display: inline;
+        border-bottom: 0;
+      }
+
+      span {
+        font-size: 1rem;
+        font-family: $fontForTitle;
+        color: $body-color;
+        font-weight: 400;
+      }
+
+      .checkBtn {
+        margin-top: 20%;
+        text-align: center;
+
+        a {
+          @extend %primaryBtn;
+          text-decoration: none;
+          padding: 16px 66px;
+          border-radius: 0;
+
+          span {
+            font-family: $bodyFont;
+          }
+        }
+      }
+    }
+  }
+
+  //cart button content ends
+}
+
+//home page navbar starts
+.homepage-nav {
+  background-color: transparent;
+  padding: 10px !important;
+  @include transition(all 0.4s);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+
+  a.navbar-brand {
+    margin-left: 2.6%;
+
+    img {
+      height: 26px;
+    }
+  }
+
+  ul.navbar-nav {
+    margin-left: 3%;
+    li {
+      font-size: 10px;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      a {
+        color: $whiteText !important;
+        letter-spacing: 1px;
+        @include transition(all 0.4s);
+        &:hover {
+          opacity: $opacityOff;
+          @include transition(all 0.4s);
+        }
+      }
+    }
+
+    li:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .nav-icons {
+    margin-left: 66%;
+    margin-top: 10px;
+
+    span {
+      font-size: 0.625rem;
+      color: black;
+      font-family: $bodyFont;
+      font-weight: 300;
+      margin-left: 8px;
+    }
+
+    li {
+      margin-right: 32px;
+
+      a {
+        color: $whiteText !important;
+        @include transition(all 0.4s);
+
+        i {
+          font-size: 14px;
+        }
+
+        &:hover {
+          opacity: $opacityOff;
+          @include transition(all 0.4s);
+        }
+      }
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 71px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    top: 0;
+    right: 9.5%;
+  }
+}
+
+//home page navbar ends
+
+
+//initiation of scrolling starst
+.scrolled {
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+
+  @include transition(all 0.4s);
+
+  ul.navbar-nav {
+    li {
+      a {
+        color: black !important;
+        letter-spacing: 1px;
+        @include transition(all 0.4s);
+        &:hover {
+          opacity: $opacityOff;
+          @include transition(all 0.4s);
+        }
+      }
+    }
+  }
+
+  .nav-icons {
+    li {
+      a {
+        color: black !important;
+        @include transition(all 0.4s);
+
+        i {
+          font-size: 14px;
+        }
+
+        &:hover {
+          opacity: $opacityOff;
+          @include transition(all 0.4s);
+        }
+      }
+    }
+  }
+  &::after {
+    background-color: rgba(146, 145, 145, 0.288);
+  }
+}
+
+//initiation of scrolling ends
+
+@media screen and (max-width: 990px) {
+  #navBar {
+    #modal {
+      .pop-up {
+        margin-top: 100%;
+      }
+    }
+  }
+
+  .homepage-nav {
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
     position: static;
-    @include transition (all .4s);
+    @include transition(all 0.4s);
     padding: 10px 0 !important;
 
-    img.first{
-        display: none;
+    img.first {
+      display: none;
     }
-    img.second{
-        display: block;
+    img.second {
+      display: block;
     }
 
-
-    .navbar-toggler{
-        span{
-            i{
-
-                color: $body-color;
-                opacity: .7;
-                margin-top: 11px;
-            }
+    .navbar-toggler {
+      span {
+        i {
+          color: $body-color;
+          opacity: 0.7;
+          margin-top: 11px;
         }
+      }
     }
-    
-    
-        
-       
-       
 
-        ul.navbar-nav{
-            li{
-                a{color: black!important;
-                    @include transition(all .4s);
-                    &:hover{
-                        opacity: $opacityOff;
-                        @include transition(all .4s);
-                    }
-                
-                }
-            }
+    ul.navbar-nav {
+      li {
+        a {
+          color: black !important;
+          @include transition(all 0.4s);
+          &:hover {
+            opacity: $opacityOff;
+            @include transition(all 0.4s);
+          }
         }
-    
-        .nav-icons{
-            margin-left: 3%;
-            li{
-                margin-right: 0;
-                margin-bottom: 2%;
-    
-                a{ color:black!important;
-                    @include transition(all .4s);
-    
-                    i{font-size: 14px;}
-    
-                    &:hover{
-                        opacity: $opacityOff;
-                        @include transition(all .4s);
-                    }
-                }
-            }
-        }
-        &::after{
-            background-color:transparent;
-            
-        }
+      }
     }
+
+    .nav-icons {
+      margin-left: 3%;
+      li {
+        margin-right: 0;
+        margin-bottom: 2%;
+
+        a {
+          color: black !important;
+          @include transition(all 0.4s);
+
+          i {
+            font-size: 14px;
+          }
+
+          &:hover {
+            opacity: $opacityOff;
+            @include transition(all 0.4s);
+          }
+        }
+      }
+    }
+    &::after {
+      background-color: transparent;
+    }
+  }
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width: 700px) {
+  #navBar {
+    #modal {
+      .pop-up {
+        margin-top: 110%;
+      }
 
-    #navBar{
-
-        #modal{
-            .pop-up{
-                margin-top: 110%;
-            }
-
-            .closeBtn{
-                top: 6.5%;
-                right: 5%;
-            }
-        }
-
-
-        #cart-content{
-            width: 375px;
-        }
+      .closeBtn {
+        top: 6.5%;
+        right: 5%;
+      }
     }
-}
 
     
+  }
+}

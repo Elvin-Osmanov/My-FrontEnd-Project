@@ -1,357 +1,254 @@
-#great{
-    padding: 175px 0;
-    background-image: url(../img/contact-pagebg/hero16.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    &::before{
-        content: "";
-        background-color: rgba(0, 0, 0, 0.438);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        
-    }
+#great {
+  padding: 175px 0;
+  background-image: url(../img/contact-pagebg/hero16.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  &::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-    .title{
-        h1{
-            color: $whiteText;
-        }
-        h3{
-            color: $whiteText;
-        }
+  .title {
+    h1 {
+      color: $whiteText;
     }
+    h3 {
+      color: $whiteText;
+    }
+  }
 }
 
-
-#corporate-info{
-    
-
-    .corporate-content{
-        padding: 100px 0;
-        text-align: center;
-
-        i{
-            font-size: 4rem;
-
-        }
-
-        h5{
-            font-weight: 700;
-            margin: 7% 0;
-
-        }
-
-        p{
-            font-family: $fontForTitle;
-            color: $body-color;
-            padding: 0 33%;
-
-
-        }
-    }
-
-
-    .corporate-content2{
-        background-color: #f4f4f4;
-        text-align: center;
-        padding: 112px 0;
-
-        i{
-            font-size: 4rem;
-
-        }
-
-        h5{
-            font-weight: 700;
-            margin: 7% 0;
-
-
-        }
-
-        p{
-            font-family: $fontForTitle;
-            color: $body-color;
-            padding: 0 34%;
-
-
-        }
-
-    }
-
-
-
-    .corporate-content3{
-        padding: 112px 0;
-        text-align: center;
-        background-color: #232323;
-
-        i{
-            font-size: 4rem;
-            color: $whiteText;
-
-
-        }
-
-        h5{
-            font-weight: 700;
-            color: $whiteText;
-            margin: 7% 0;
-
-
-        }
-
-        p{
-            font-family: $fontForTitle;
-            color: $whiteText;
-            padding: 0 29%;
-
-            a{
-                color: $whiteText;
-                text-decoration: underline;
-            }
-
-
-        }
-
-    }
-}
-
-
-#message{
-
+#corporate-info {
+  .corporate-content {
     padding: 100px 0;
-    
+    text-align: center;
 
-    .message-title{
-        margin-bottom: 3.5%;
-
-        h5{
-            font-weight: 700;
-        }
+    i {
+      font-size: 4rem;
     }
 
-    
-
-    .message-part{
-        position: relative;
-
-
-        .name-area{
-            input[type=text]{
-                padding: 3% 0;
-                
-
-                &::placeholder{
-                    font-family: $fontForTitle;
-                    font-style: italic;
-                    opacity: $opacityOff;
-                }
-            }
-
-            span{
-                background-color: $whiteText;
-                border: 0;
-
-            }
-
-        }
-        
-
-        .email-number{
-            position: relative;
-
-            input[type=email]{
-                padding: 7% 0;
-                
-
-                &::placeholder{
-                    font-family: $fontForTitle;
-                    font-style: italic;
-                    opacity: $opacityOff;
-                }
-     
-            }
-
-
-            input.number {
-                padding: 7% 0;
-                
-
-                &::placeholder{
-                    font-family: $fontForTitle;
-                    font-style: italic;
-                    opacity: $opacityOff;
-                }
-    
-    
-            }
-
-            span{
-                background-color: $whiteText;
-                border: 0;
-
-            }
-
-        }
-
-        
-
-        
-
-        textarea{
-            border: 0;
-            height: 200px;
-            
-
-            &::placeholder{
-                font-family: $fontForTitle;
-                font-style: italic;
-                opacity: $opacityOff;
-            }
-
-            
-        }
-
-        button[type=submit]{
-            background-color: $primary-color;
-            width: 100%;
-            padding: 12px 0;
-
-            span{
-                font-size: 0.625rem;
-                text-align: center;
-                color: $whiteText;
-                letter-spacing: 1px;
-
-            }
-
-            
-            &:hover{
-                    border-color: #546cc3!important;
-                    background-color:#546cc3!important;
-            }
-            
-        }
-
+    h5 {
+      font-weight: 700;
+      margin: 7% 0;
     }
 
+    p {
+      font-family: $fontForTitle;
+      color: $body-color;
+      padding: 0 33%;
+    }
+  }
+
+  .corporate-content2 {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 112px 0;
+
+    i {
+      font-size: 4rem;
+    }
+
+    h5 {
+      font-weight: 700;
+      margin: 7% 0;
+    }
+
+    p {
+      font-family: $fontForTitle;
+      color: $body-color;
+      padding: 0 34%;
+    }
+  }
+
+  .corporate-content3 {
+    padding: 112px 0;
+    text-align: center;
+    background-color: #232323;
+
+    i {
+      font-size: 4rem;
+      color: $whiteText;
+    }
+
+    h5 {
+      font-weight: 700;
+      color: $whiteText;
+      margin: 7% 0;
+    }
+
+    p {
+      font-family: $fontForTitle;
+      color: $whiteText;
+      padding: 0 29%;
+
+      a {
+        color: $whiteText;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
+#message {
+  padding: 100px 0;
 
-@media screen and (max-width:990px){
+  .message-title {
+    margin-bottom: 3.5%;
 
-    #great{
-        background-attachment: scroll;
+    h5 {
+      font-weight: 700;
+    }
+  }
+
+  .message-part {
+    position: relative;
+
+    .name-area {
+      input[type="text"] {
+        padding: 3% 0;
+
+        &::placeholder {
+          font-family: $fontForTitle;
+          font-style: italic;
+          opacity: $opacityOff;
+        }
+      }
+
+      span {
+        background-color: $whiteText;
+        border: 0;
+      }
     }
 
+    .email-number {
+      position: relative;
 
-    #corporate-info{
+      input[type="email"] {
+        padding: 7% 0;
 
-
-        .corporate-content{
-            padding: 30px 0;
-
-            i{
-                font-size: 3rem;
-            }
-
-            p{
-                padding: 0 38%;
-            }
+        &::placeholder {
+          font-family: $fontForTitle;
+          font-style: italic;
+          opacity: $opacityOff;
         }
-        .corporate-content2{
-            padding: 42px 0;
-            i{
-                font-size: 3rem;
-            }
+      }
 
-            p{
-                padding: 0 39%;
-            }
-        }
-        .corporate-content3{
-            padding: 42px 0;
-            i{
-                font-size: 3rem;
-            }
+      input.number {
+        padding: 7% 0;
 
-            p{
-                padding: 0 36%;
-            }
+        &::placeholder {
+          font-family: $fontForTitle;
+          font-style: italic;
+          opacity: $opacityOff;
         }
+      }
+
+      span {
+        background-color: $whiteText;
+        border: 0;
+      }
     }
 
+    textarea {
+      border: 0;
+      height: 200px;
 
-
-    #message {
-
-
-        .message-part{
-            
-
-
-
-            button[type=submit] {
-       
-            padding: 10px 187px;}
-
-        } 
+      &::placeholder {
+        font-family: $fontForTitle;
+        font-style: italic;
+        opacity: $opacityOff;
+      }
     }
-    
+
+    button[type="submit"] {
+      @extend %primaryBtn;
+      width: 100%;
+      padding: 12px 0;
+      border-radius: 3px;
+    }
+  }
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width: 990px) {
+  #great {
+    background-attachment: scroll;
+  }
 
+  #corporate-info {
+    .corporate-content {
+      padding: 30px 0;
 
-    #great{
-        padding: 30px 0;
-        background-attachment: scroll;
+      i {
+        font-size: 3rem;
+      }
 
-        .title{
-
-            h1{
-                font-size: 1.35rem;
-                line-height: 1.625em;
-            }
-
-
-            h3{
-                font-size: 1.2em;
-                line-height: 1.41304348em;
-            }
-        }
+      p {
+        padding: 0 38%;
+      }
     }
+    .corporate-content2 {
+      padding: 42px 0;
+      i {
+        font-size: 3rem;
+      }
 
-
-    #corporate-info{
-
-
-        .corporate-content{
-            
-
-            p{
-                padding: 0px 25%;
-            }
-        }
-        .corporate-content2{
-            
-
-            p{
-                padding: 0px 25%;
-            }
-        }
-        .corporate-content3{
-            
-
-            p{
-                padding: 0px 21%;
-            }
-        }
+      p {
+        padding: 0 39%;
+      }
     }
+    .corporate-content3 {
+      padding: 42px 0;
+      i {
+        font-size: 3rem;
+      }
 
-    
+      p {
+        padding: 0 36%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #great {
+    padding: 30px 0;
+    background-attachment: scroll;
+
+    .title {
+      h1 {
+        font-size: 1.35rem;
+        line-height: 1.625em;
+      }
+
+      h3 {
+        font-size: 1.2em;
+        line-height: 1.41304348em;
+      }
+    }
+  }
+
+  #corporate-info {
+    .corporate-content {
+      p {
+        padding: 0px 25%;
+      }
+    }
+    .corporate-content2 {
+      p {
+        padding: 0px 25%;
+      }
+    }
+    .corporate-content3 {
+      p {
+        padding: 0px 21%;
+      }
+    }
+  }
 }

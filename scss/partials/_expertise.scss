@@ -1,85 +1,60 @@
-#expertise{
-    padding: 100px 0;
+#expertise {
+  padding: 100px 0;
 
-    .expert-content{
-        display: flex;
-        margin-top: 12%;
-        
-       
+  .expert-content {
+    display: flex;
+    margin-top: 12%;
 
-        .ex-icon{
-            
-            i{
-                font-size: 2.8125rem;
-                color: $primary-color;
-                
-            }
-            
-            
-
-        }
-
-        .ex-text{
-            span{
-                letter-spacing: 1px;
-                font-size:0.625rem;
-                color: $body-color;
-                
-            }
-    
-            p{  
-                
-                margin-top: 5%;
-                font-weight: 300;
-                color: $body-color;
-                font-family: $fontForTitle;
-            }
-        }
-
-
+    .ex-icon {
+      i {
+        font-size: 2.8125rem;
+        color: $primary-color;
+      }
     }
+
+    .ex-text {
+      span {
+        letter-spacing: 1px;
+        font-size: 0.625rem;
+        color: $body-color;
+      }
+
+      p {
+        margin-top: 5%;
+        font-weight: 300;
+        color: $body-color;
+        font-family: $fontForTitle;
+      }
+    }
+  }
 }
 
-
-@media screen and (max-width:990px){
-
-
-    #expertise{
-
-        .expert-content{
-
-            .ex-text{
-
-                margin-left: 5%;
-            }
-        }
+@media screen and (max-width: 990px) {
+  #expertise {
+    .expert-content {
+      .ex-text {
+        margin-left: 5%;
+      }
     }
+  }
 }
-@media screen and (max-width:700px){
+@media screen and (max-width: 700px) {
+  #expertise {
+    .title {
+      h1 {
+        font-size: 1.5rem;
+      }
 
-
-    #expertise{
-
-        .title{
-
-            h1{
-                font-size: 1.5rem;
-            }
-
-            h3{
-
-                font-size: 1.1rem;
-                line-height: 1.5rem;
-            }
-        }
-
-        .expert-content{
-
-            .ex-icon{
-                margin-top: 27%;
-            }
-        }
+      h3 {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+      }
     }
+
+    .expert-content {
+      .ex-icon {
+        margin-top: 27%;
+      }
+    }
+  }
 }
-
-
