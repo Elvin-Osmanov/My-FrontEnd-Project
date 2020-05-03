@@ -571,6 +571,9 @@ button.navbar-toggler:focus {
     top: 6.5%;
     right: 5%;
   }
+  #navBar #cart-content {
+    width: 375px;
+  }
 }
 
 #intro {
@@ -1526,7 +1529,7 @@ footer #copy .moveTop:hover i {
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
-    padding: 14px 165px;
+    padding: 14px 0px;
     display: inline-block;
     margin-bottom: 25px;
     width: 100%;
